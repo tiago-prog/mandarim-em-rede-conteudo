@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "codigo": "B02",
+    "titulo": "Perguntar, responder e devolver",
+    "nivel": "iniciante",
+    "status": "revisao_linguistica",
+    "objetivo_comunicativo": "Perguntar se alguém é estudante, professor ou se está bem; responder afirmativa ou negativamente; e devolver a pergunta para manter a conversa.",
+    "resultado_minimo": "Produzir três trocas curtas de pergunta e resposta usando 吗 e 呢 sem ler o diálogo inteiro.",
+    "situacao_principal": "Depois de cumprimentar uma pessoa nova, descobrir uma informação simples sobre ela em uma aula, reunião ou apresentação.",
+    "estruturas": [
+      {"funcao": "perguntar se alguém é estudante", "mandarim": "你是学生吗？", "pinyin": "Nǐ shì xuésheng ma?", "sentido_funcional": "Você é estudante?", "tipo": "particula", "particula": "吗"},
+      {"funcao": "responder afirmativamente", "mandarim": "我是学生。", "pinyin": "Wǒ shì xuésheng.", "sentido_funcional": "Eu sou estudante.", "tipo": "base"},
+      {"funcao": "perguntar se alguém é professor", "mandarim": "你是老师吗？", "pinyin": "Nǐ shì lǎoshī ma?", "sentido_funcional": "Você é professor ou professora?", "tipo": "particula", "particula": "吗"},
+      {"funcao": "responder negativamente", "mandarim": "我不是老师。", "pinyin": "Wǒ bú shì lǎoshī.", "sentido_funcional": "Eu não sou professor ou professora.", "tipo": "base"},
+      {"funcao": "perguntar se alguém está bem", "mandarim": "你好吗？", "pinyin": "Nǐ hǎo ma?", "sentido_funcional": "Você está bem?", "tipo": "particula", "particula": "吗"},
+      {"funcao": "responder sobre estado", "mandarim": "我很好。", "pinyin": "Wǒ hěn hǎo.", "sentido_funcional": "Eu estou bem.", "tipo": "base"},
+      {"funcao": "devolver a pergunta", "mandarim": "你呢？", "pinyin": "Nǐ ne?", "sentido_funcional": "E você?", "tipo": "operador", "particula": "呢"},
+      {"funcao": "perguntar se alguém está ocupado", "mandarim": "你忙吗？", "pinyin": "Nǐ máng ma?", "sentido_funcional": "Você está ocupado?", "tipo": "particula", "particula": "吗"}
+    ],
+    "sequencia": ["ouvir", "identificar_intencao", "tentar", "consultar", "reconstruir", "recombinar", "transferir", "produzir_sem_olhar"],
+    "audios": [
+      {"faixa": "A01", "titulo": "Depois do cumprimento", "objetivo": "exposição da troca principal"},
+      {"faixa": "A02", "titulo": "Perguntar e responder", "objetivo": "contraste entre pergunta e afirmação"},
+      {"faixa": "B01", "titulo": "Escolha e responda", "objetivo": "prompts com 吗 e pausas"},
+      {"faixa": "C01", "titulo": "Reconstrução guiada", "objetivo": "pergunta, resposta e devolução"},
+      {"faixa": "D01", "titulo": "Troca de elemento", "objetivo": "variar estudante, professor, colega e estado"},
+      {"faixa": "D02", "titulo": "Segunda tentativa", "objetivo": "produzir com pausas menores"},
+      {"faixa": "E01", "titulo": "Transferência", "objetivo": "manter uma troca em aula ou reunião"},
+      {"faixa": "F01", "titulo": "Revisão espaçada", "objetivo": "recuperar 吗 e 呢 em perguntas reais"}
+    ],
+    "pacotes": {
+      "essencial": ["R1", "R2", "R3", "R4", "V1"],
+      "extensoes": {"pronuncia": true, "escrita": true, "caracteres": false, "contraste": true, "vocabulario": true, "quiz": false, "anotacoes": false, "consolidacao": false}
+    },
+    "proxima_unidade_sugerida": "Identificar pessoas e objetos usando 这、那、谁 e 什么"
+  }
+}

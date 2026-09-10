@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mandarim-em-rede/unidade-v1",
+  "title": "Mandarim em Rede — Unidade v1",
+  "type": "object",
+  "required": ["schema_version", "produto", "unidade"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "produto": {"type": "string", "minLength": 1},
+    "unidade": {
+      "type": "object",
+      "required": ["codigo", "titulo", "nivel", "status", "objetivo_comunicativo", "resultado_minimo", "situacao_principal", "estruturas", "sequencia", "audios", "pacotes"],
+      "properties": {
+        "codigo": {"type": "string", "pattern": "^[A-Z][0-9]{2}$"},
+        "titulo": {"type": "string", "minLength": 1},
+        "nivel": {"type": "string", "minLength": 1},
+        "status": {"enum": ["draft", "revisao_linguistica", "revisao_visual", "piloto", "aprovado", "publicado"]},
+        "objetivo_comunicativo": {"type": "string", "minLength": 1},
+        "resultado_minimo": {"type": "string", "minLength": 1},
+        "situacao_principal": {"type": "string", "minLength": 1},
+        "estruturas": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 12,
+          "items": {
+            "type": "object",
+            "required": ["funcao", "mandarim", "pinyin", "sentido_funcional", "tipo"],
+            "properties": {
+              "funcao": {"type": "string", "minLength": 1},
+              "mandarim": {"type": "string", "minLength": 1},
+              "pinyin": {"type": "string", "minLength": 1},
+              "sentido_funcional": {"type": "string", "minLength": 1},
+              "tipo": {"enum": ["fixo", "substituivel", "particula", "operador", "base"]},
+              "slot": {"type": "string"},
+              "particula": {"type": "string"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "sequencia": {"type": "array", "minItems": 5, "items": {"type": "string"}},
+        "audios": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["faixa", "titulo", "objetivo"],
+            "properties": {
+              "faixa": {"type": "string", "minLength": 1},
+              "titulo": {"type": "string", "minLength": 1},
+              "objetivo": {"type": "string", "minLength": 1}
+            },
+            "additionalProperties": false
+          }
+        },
+        "pacotes": {
+          "type": "object",
+          "required": ["essencial", "extensoes"],
+          "properties": {
+            "essencial": {"type": "array", "items": {"type": "string"}},
+            "extensoes": {
+              "type": "object",
+              "properties": {
+                "pronuncia": {"type": "boolean"},
+                "escrita": {"type": "boolean"},
+                "caracteres": {"type": "boolean"},
+                "contraste": {"type": "boolean"},
+                "vocabulario": {"type": "boolean"},
+                "quiz": {"type": "boolean"},
+                "anotacoes": {"type": "boolean"},
+                "consolidacao": {"type": "boolean"}
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "proxima_unidade_sugerida": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

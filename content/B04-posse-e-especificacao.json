@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "codigo": "B04",
+    "titulo": "Posse e especificação",
+    "nivel": "iniciante",
+    "status": "revisao_linguistica",
+    "objetivo_comunicativo": "Identificar a relação entre pessoa e objeto usando 我的、你的 e uma estrutura simples com 的.",
+    "resultado_minimo": "Perguntar e responder de quem é um objeto em quatro trocas curtas sem consultar a tabela principal.",
+    "situacao_principal": "Em uma sala ou reunião, distinguir objetos e pessoas e dizer a quem cada item pertence.",
+    "estruturas": [
+      {"funcao": "identificar objeto próprio", "mandarim": "这是我的书。", "pinyin": "Zhè shì wǒ de shū.", "sentido_funcional": "Este é o meu livro.", "tipo": "base"},
+      {"funcao": "identificar objeto do interlocutor", "mandarim": "那是你的书。", "pinyin": "Nà shì nǐ de shū.", "sentido_funcional": "Aquele é o seu livro.", "tipo": "base"},
+      {"funcao": "perguntar de quem é", "mandarim": "谁的书？", "pinyin": "Shéi de shū?", "sentido_funcional": "Livro de quem?", "tipo": "particula", "particula": "谁的"},
+      {"funcao": "identificar objeto de professor", "mandarim": "这是老师的书。", "pinyin": "Zhè shì lǎoshī de shū.", "sentido_funcional": "Este é o livro da professora.", "tipo": "base"},
+      {"funcao": "responder posse própria", "mandarim": "这是我的。", "pinyin": "Zhè shì wǒ de.", "sentido_funcional": "Este é o meu.", "tipo": "base"},
+      {"funcao": "responder posse do interlocutor", "mandarim": "那是你的。", "pinyin": "Nà shì nǐ de.", "sentido_funcional": "Aquele é o seu.", "tipo": "base"},
+      {"funcao": "especificar pessoa", "mandarim": "我的朋友", "pinyin": "wǒ de péngyou", "sentido_funcional": "meu amigo ou minha amiga", "tipo": "substituivel", "slot": "pessoa"},
+      {"funcao": "especificar colega", "mandarim": "我的同学", "pinyin": "wǒ de tóngxué", "sentido_funcional": "meu colega de turma", "tipo": "substituivel", "slot": "pessoa"}
+    ],
+    "sequencia": ["ouvir", "identificar_possuidor", "tentar", "consultar", "reconstruir", "recombinar", "transferir", "produzir_sem_olhar"],
+    "audios": [
+      {"faixa": "A01", "titulo": "De quem é?", "objetivo": "exposição da situação de posse"},
+      {"faixa": "A02", "titulo": "Meu, seu e de outra pessoa", "objetivo": "contraste entre 我的、你的 e 老师的"},
+      {"faixa": "B01", "titulo": "Pergunte e responda", "objetivo": "prompts com 谁的"},
+      {"faixa": "C01", "titulo": "Reconstrução guiada", "objetivo": "possuidor, 的 e objeto"},
+      {"faixa": "D01", "titulo": "Troca de objeto", "objetivo": "variar livro, telefone, nome e pessoa"},
+      {"faixa": "D02", "titulo": "Resposta curta", "objetivo": "reduzir a resposta quando o objeto já está claro"},
+      {"faixa": "E01", "titulo": "Transferência na sala", "objetivo": "usar objetos e possuidores novos"},
+      {"faixa": "F01", "titulo": "Revisão espaçada", "objetivo": "recuperar 的 e as combinações"}
+    ],
+    "pacotes": {
+      "essencial": ["R1", "R2", "R3", "R4", "V1"],
+      "extensoes": {"pronuncia": true, "escrita": true, "caracteres": true, "contraste": true, "vocabulario": true, "quiz": false, "anotacoes": false, "consolidacao": false}
+    },
+    "proxima_unidade_sugerida": "Números e informações pessoais"
+  }
+}

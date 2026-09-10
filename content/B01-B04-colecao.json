@@ -1,0 +1,41 @@
+{
+  "produto": "Mandarim em Rede",
+  "colecao": "Fundamentos de Interação",
+  "status": "revisao_linguistica",
+  "topicos": [
+    {
+      "ordem": 1,
+      "codigo": "B01",
+      "titulo": "Cumprimentos em contexto",
+      "markdown": "markdown/B01-cumprimentos-em-contexto.md",
+      "json": "B01-cumprimentos-em-contexto.json"
+    },
+    {
+      "ordem": 2,
+      "codigo": "B02",
+      "titulo": "Perguntar, responder e devolver",
+      "markdown": "markdown/B02-perguntar-responder-e-devolver.md",
+      "json": "B02-perguntar-responder-e-devolver.json"
+    },
+    {
+      "ordem": 3,
+      "codigo": "B03",
+      "titulo": "Identificar pessoas e objetos",
+      "markdown": "markdown/B03-identificar-pessoas-e-objetos.md",
+      "json": "B03-identificar-pessoas-e-objetos.json"
+    },
+    {
+      "ordem": 4,
+      "codigo": "B04",
+      "titulo": "Posse e especificação",
+      "markdown": "markdown/B04-posse-e-especificacao.md",
+      "json": "B04-posse-e-especificacao.json"
+    }
+  ],
+  "estrutura_por_topico": {
+    "workbook_paginas": 5,
+    "complementos": ["P1", "W1", "X1", "S1"],
+    "paginas_por_complemento": 3,
+    "audios_planejados": 8
+  }
+}

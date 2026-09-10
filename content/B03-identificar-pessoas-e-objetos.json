@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "codigo": "B03",
+    "titulo": "Identificar pessoas e objetos",
+    "nivel": "iniciante",
+    "status": "revisao_linguistica",
+    "objetivo_comunicativo": "Identificar uma pessoa ou um objeto e perguntar o que ou quem está sendo apontado.",
+    "resultado_minimo": "Produzir quatro perguntas e respostas curtas sobre pessoas e objetos usando 这、那、谁 e 什么.",
+    "situacao_principal": "Chegar a uma sala, observar pessoas e objetos e descobrir quem ou o que está presente.",
+    "estruturas": [
+      {"funcao": "perguntar sobre objeto próximo", "mandarim": "这是什么？", "pinyin": "Zhè shì shénme?", "sentido_funcional": "O que é isto?", "tipo": "particula", "particula": "什么"},
+      {"funcao": "perguntar sobre objeto distante", "mandarim": "那是什么？", "pinyin": "Nà shì shénme?", "sentido_funcional": "O que é aquilo?", "tipo": "particula", "particula": "什么"},
+      {"funcao": "perguntar sobre pessoa próxima", "mandarim": "这是谁？", "pinyin": "Zhè shì shéi?", "sentido_funcional": "Quem é este ou esta?", "tipo": "particula", "particula": "谁"},
+      {"funcao": "perguntar sobre pessoa distante", "mandarim": "那是谁？", "pinyin": "Nà shì shéi?", "sentido_funcional": "Quem é aquele ou aquela?", "tipo": "particula", "particula": "谁"},
+      {"funcao": "identificar objeto próximo", "mandarim": "这是书。", "pinyin": "Zhè shì shū.", "sentido_funcional": "Isto é um livro.", "tipo": "base"},
+      {"funcao": "identificar objeto distante", "mandarim": "那是电话。", "pinyin": "Nà shì diànhuà.", "sentido_funcional": "Aquilo é um telefone.", "tipo": "base"},
+      {"funcao": "identificar pessoa próxima", "mandarim": "这是老师。", "pinyin": "Zhè shì lǎoshī.", "sentido_funcional": "Esta é a professora.", "tipo": "base"},
+      {"funcao": "identificar pessoa distante", "mandarim": "那是朋友。", "pinyin": "Nà shì péngyou.", "sentido_funcional": "Aquele é um amigo.", "tipo": "base"}
+    ],
+    "sequencia": ["ouvir", "classificar_referente", "tentar", "consultar", "reconstruir", "recombinar", "transferir", "produzir_sem_olhar"],
+    "audios": [
+      {"faixa": "A01", "titulo": "Quem ou o quê?", "objetivo": "exposição de pessoas e objetos"},
+      {"faixa": "A02", "titulo": "Perto ou longe", "objetivo": "contraste entre 这 e 那"},
+      {"faixa": "B01", "titulo": "Faça a pergunta", "objetivo": "prompts com 谁 e 什么"},
+      {"faixa": "C01", "titulo": "Reconstrução guiada", "objetivo": "pergunta e resposta"},
+      {"faixa": "D01", "titulo": "Troca de referente", "objetivo": "variar pessoas e objetos"},
+      {"faixa": "D02", "titulo": "Segunda tentativa", "objetivo": "produzir com menos apoio visual"},
+      {"faixa": "E01", "titulo": "Transferência na sala", "objetivo": "identificar referentes em uma cena nova"},
+      {"faixa": "F01", "titulo": "Revisão espaçada", "objetivo": "recuperar 这、那、谁 e 什么"}
+    ],
+    "pacotes": {
+      "essencial": ["R1", "R2", "R3", "R4", "V1"],
+      "extensoes": {"pronuncia": true, "escrita": true, "caracteres": true, "contraste": true, "vocabulario": true, "quiz": false, "anotacoes": false, "consolidacao": false}
+    },
+    "proxima_unidade_sugerida": "Posse e especificação usando 的"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0-premium-manifest",
+  "produto": "Mandarim em Rede",
+  "unidade": "B01",
+  "titulo": "Iniciar uma interação",
+  "status": "arquitetura",
+  "pacotes": {
+    "essencial": {
+      "pdfs": ["01-workbook-aluno.pdf"],
+      "audios": ["A01-exposicao.mp3", "B01-tentativa.mp3", "C01-reconstrucao.mp3", "E01-transferencia.mp3", "F01-revisao.mp3"],
+      "guias": ["09-guia-do-facilitador.pdf", "10-gabarito.pdf"]
+    },
+    "expandido": {
+      "pdfs": [
+        "01-workbook-aluno.pdf",
+        "02-pronuncia-e-tons.pdf",
+        "03-pratica-de-escrita.pdf",
+        "06-vocabulario-funcional.pdf",
+        "09-guia-do-facilitador.pdf",
+        "10-gabarito.pdf"
+      ],
+      "audios": [
+        "A01-exposicao.mp3",
+        "B01-tentativa.mp3",
+        "B02-tentativa-com-pausa.mp3",
+        "C01-reconstrucao.mp3",
+        "D01-recombinacao.mp3",
+        "E01-transferencia.mp3",
+        "F01-revisao.mp3"
+      ]
+    },
+    "completo": {
+      "pdfs": [
+        "00-leia-primeiro.pdf",
+        "01-workbook-aluno.pdf",
+        "02-pronuncia-e-tons.pdf",
+        "03-pratica-de-escrita.pdf",
+        "04-exercicio-de-caracteres.pdf",
+        "05-contraste-funcional.pdf",
+        "06-vocabulario-funcional.pdf",
+        "07-quiz-de-transferencia.pdf",
+        "08-anotacoes-e-revisao.pdf",
+        "09-guia-do-facilitador.pdf",
+        "10-gabarito.pdf",
+        "11-manifesto-do-pacote.pdf"
+      ],
+      "audios": [
+        "A01-exposicao.mp3",
+        "B01-tentativa.mp3",
+        "B02-tentativa-com-pausa.mp3",
+        "C01-reconstrucao.mp3",
+        "C02-reconstrucao-lenta.mp3",
+        "D01-recombinacao.mp3",
+        "D02-recombinacao-com-pausa.mp3",
+        "E01-transferencia.mp3",
+        "F01-revisao.mp3"
+      ]
+    }
+  },
+  "ordem_recomendada": [
+    "00-leia-primeiro.pdf",
+    "01-workbook-aluno.pdf",
+    "A01-exposicao.mp3",
+    "B01-tentativa.mp3",
+    "03-pratica-de-escrita.pdf",
+    "C01-reconstrucao.mp3",
+    "02-pronuncia-e-tons.pdf",
+    "06-vocabulario-funcional.pdf",
+    "D01-recombinacao.mp3",
+    "E01-transferencia.mp3",
+    "07-quiz-de-transferencia.pdf",
+    "08-anotacoes-e-revisao.pdf",
+    "F01-revisao.mp3"
+  ],
+  "proximos_componentes": ["W1", "P1", "S1", "W2", "X1", "Q1", "N1", "R5"],
+  "observacao": "Este manifesto define a arquitetura comercial; os PDFs e áudios devem ser produzidos em etapas, com validação pedagógica antes da publicação."
+}

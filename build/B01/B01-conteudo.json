@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "codigo": "B01",
+    "titulo": "Iniciar uma interação",
+    "nivel": "iniciante",
+    "status": "aprovado",
+    "objetivo_comunicativo": "Iniciar uma interação curta, perguntar o nome, dizer o próprio nome e devolver a pergunta.",
+    "resultado_minimo": "Produzir por 30–60 segundos sem consultar o mapa completo, usando um nome novo.",
+    "situacao_principal": "Conhecer uma pessoa nova em uma reunião on-line.",
+    "estruturas": [
+      {
+        "funcao": "cumprimentar",
+        "mandarim": "你好。",
+        "pinyin": "Nǐ hǎo.",
+        "sentido_funcional": "Olá.",
+        "tipo": "fixo"
+      },
+      {
+        "funcao": "perguntar o nome",
+        "mandarim": "你叫什么名字？",
+        "pinyin": "Nǐ jiào shénme míngzi?",
+        "sentido_funcional": "Qual é o seu nome?",
+        "tipo": "fixo"
+      },
+      {
+        "funcao": "dizer o próprio nome",
+        "mandarim": "我叫 + nome。",
+        "pinyin": "Wǒ jiào + nome.",
+        "sentido_funcional": "Eu me chamo + nome.",
+        "tipo": "substituivel",
+        "slot": "nome"
+      },
+      {
+        "funcao": "devolver a pergunta",
+        "mandarim": "你呢？",
+        "pinyin": "Nǐ ne?",
+        "sentido_funcional": "E você?",
+        "tipo": "operador"
+      }
+    ],
+    "sequencia": [
+      "ouvir",
+      "tentar",
+      "consultar",
+      "reconstruir",
+      "recombinar",
+      "transferir",
+      "produzir_sem_olhar"
+    ],
+    "audios": [
+      {
+        "faixa": "01",
+        "titulo": "Demonstração principal",
+        "objetivo": "exposição inicial"
+      },
+      {
+        "faixa": "02",
+        "titulo": "Tentativa do estudante",
+        "objetivo": "recuperação"
+      },
+      {
+        "faixa": "03",
+        "titulo": "Reconstrução guiada",
+        "objetivo": "repetição com apoio"
+      },
+      {
+        "faixa": "04",
+        "titulo": "Transferência",
+        "objetivo": "produção em situação nova"
+      },
+      {
+        "faixa": "05",
+        "titulo": "Autoavaliação oral",
+        "objetivo": "produção independente"
+      }
+    ],
+    "pacotes": {
+      "essencial": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "V1"
+      ],
+      "extensoes": {
+        "pronuncia": false,
+        "escrita": false,
+        "caracteres": false,
+        "contraste": false,
+        "vocabulario": false,
+        "quiz": false,
+        "anotacoes": false,
+        "consolidacao": false
+      }
+    },
+    "proxima_unidade_sugerida": "Perguntas sim/não com 吗 e devolução com 呢"
+  }
+}
