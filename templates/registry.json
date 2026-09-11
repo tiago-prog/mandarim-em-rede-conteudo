@@ -3,12 +3,22 @@
   "templates": {
     "b01-cumprimentos-v2": {
       "label": "B01 — workbook visual e escrito corrigido",
-      "source": "prototypes/B01-pdf-first/B01-workbook.typ",
+      "source": "templates/b01/B01-workbook.typ",
       "expected_pages_without_cover": 12,
       "expected_pages_with_cover": 13,
       "cover_renderer": "scripts/render_workbook_cover.py",
       "cover_asset": "templates/assets/capa-base.webp",
       "background_asset": "templates/assets/bg-fundo-prime.png",
+      "status": "pilot"
+    },
+    "b-family-workbook-v1": {
+      "label": "Família B — workbook parametrizado visual e escrito",
+      "source": "templates/b-family/B-family-workbook.typ",
+      "expected_pages_without_cover": 10,
+      "expected_pages_with_cover": 11,
+      "cover_renderer": "scripts/render_workbook_cover.py",
+      "cover_asset": "templates/assets/capa-base.webp",
+      "background_asset": "templates/b-family/bg-fundo-prime.png",
       "status": "pilot"
     }
   }

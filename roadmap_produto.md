@@ -118,7 +118,7 @@ Congelar capa, tipografia, paleta, cartões, mapas, áreas de escrita, formulár
 
 ### Fase 2 — protótipo B01 — concluída tecnicamente
 
-B01 foi implementado integralmente com 12 páginas. O protótipo inclui cena visual, banco de palavras, hanzi, pinyin, recuperação escrita, reorganização, recombinação, produção prática e revisão. O PDF e a fonte estão em `prototypes/B01-pdf-first/`.
+B01 foi implementado integralmente com 12 páginas. O protótipo inclui cena visual, banco de palavras, hanzi, pinyin, recuperação escrita, reorganização, recombinação, produção prática e revisão. As auditorias e protótipos históricos estão em `archive/prototypes/B01-pdf-first/`; a fonte ativa está em `templates/b01/B01-workbook.typ`.
 
 ### Fase 3 — teste de uso — próxima etapa
 

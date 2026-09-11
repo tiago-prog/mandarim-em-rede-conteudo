@@ -1,0 +1,15 @@
+{
+  "schema_version": "pdf-first-batch-v1",
+  "produto": "Mandarim em Rede",
+  "template_registry": "templates/registry.json",
+  "output_label": "b-family-pilot",
+  "units": [
+    {
+      "id": "B02",
+      "source": "content/pdf_first/B02-perguntar-responder-e-devolver.json",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    }
+  ]
+}

@@ -147,7 +147,7 @@ Depois dessas correções, o B01 pode ser usado como padrão para os demais tóp
 
 [1]: https://github.com/tiago-prog/mandarim-em-rede-conteudo "Repositório do conteúdo do Mandarim em Rede"
 
-[2]: https://github.com/tiago-prog/mandarim-em-rede-conteudo/tree/main/prototypes/B01-pdf-first "Protótipo B01 visual e escrito"
+[2]: https://github.com/tiago-prog/mandarim-em-rede-conteudo/tree/main/archive/prototypes/B01-pdf-first "Protótipo B01 visual e escrito"
 
 ## Atualização após a implementação das correções
 

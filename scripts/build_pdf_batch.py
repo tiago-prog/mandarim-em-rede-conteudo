@@ -142,8 +142,10 @@ def build_one(batch: dict, item: dict, registry: dict, output_root: Path) -> dic
 
     original_data, enriched_data = unit_payload(source, item["material"], item["edicao"])
     content_path = out / f"{unit_id}-content.json"
+    template_content_path = out / "content.json"
     cover_content_path = out / f"{unit_id}-cover-content.json"
     write_json(content_path, original_data)
+    write_json(template_content_path, original_data)
     write_json(cover_content_path, enriched_data)
 
     cover_path = assets / "capa-workbook.png"

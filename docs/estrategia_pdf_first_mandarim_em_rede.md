@@ -345,7 +345,7 @@ A mudança não deve ser escondida apenas em documentos comerciais. O pipeline a
 6. adicionar campos para hanzi, pinyin, tom visual, slot e produção;
 7. criar templates de oito páginas do workbook;
 8. criar um gerador de pacotes por nível: Essencial, Premium e Premium Plus;
-9. manter `audio_scripts/` como arquivo opcional, sem bloquear a compilação;
+9. manter `archive/audio-scripts/` como arquivo opcional, sem bloquear a compilação;
 10. atualizar os manifestos para informar claramente que não há áudio incluído.
 
 O schema não deve ser alterado antes de fechar a arquitetura de páginas. Primeiro deve-se estabilizar o conteúdo PDF-first de B01. Depois, a alteração do schema pode ser validada contra B01–B04.

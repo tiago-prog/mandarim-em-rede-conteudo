@@ -63,7 +63,7 @@ O gerador interrompe a unidade que falhar por padrão. A opção `--continue-on-
 | `templates/assets/bg-fundo-prime.png` | Fundo dos workbooks pedagógicos |
 | `scripts/render_workbook_cover.py` | Capa parametrizada em PNG e SVG |
 | `scripts/build_pdf_batch.py` | Orquestração, compilação, QA e empacotamento |
-| `prototypes/B01-pdf-first/B01-workbook.typ` | Perfil Typst validado do B01 |
+| `templates/b01/B01-workbook.typ` | Perfil Typst validado do B01 |
 | `build/pdf-first/` | Saída reproduzível do lote |
 
 ## Estrutura do pacote gerado
