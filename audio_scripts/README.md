@@ -1,8 +1,8 @@
-# Roteiros de áudio — Mandarim em Rede
+# Roteiros de áudio — arquivo opcional do Mandarim em Rede
 
 ## Objetivo
 
-Esta pasta contém os roteiros essenciais de áudio dos tópicos B01–B04. Os roteiros usam uma sequência audio-first de exposição, antecipação, recuperação, recombinação, transferência e revisão espaçada.
+Esta pasta contém os roteiros essenciais de áudio dos tópicos B01–B04. Eles ficam arquivados para uma futura edição, parceria ou produção externa. **Não fazem parte da oferta PDF-first atual e não são necessários para gerar os PDFs.**
 
 A referência metodológica é a lógica de aprendizagem por escuta e fala, com vocabulário controlado e pausas para antecipação. O texto dos roteiros é original do Mandarim em Rede. Não reproduz diálogos, frases de instrução ou roteiros de terceiros.
 
@@ -38,7 +38,7 @@ As instruções em português devem ser curtas e não competir com o mandarim. A
 
 A fala-modelo deve ser gravada primeiro em ritmo claro e natural. A versão lenta deve reduzir o ritmo, mas não alterar artificialmente os sons. A pronúncia, o sandhi tonal e a adequação das frases devem passar por revisão de falante competente antes da publicação.
 
-Os roteiros não devem ser publicados como promessa de “curso Pimsleur”. A comunicação correta é que o Mandarim em Rede usa uma abordagem **audio-first com apoio visual e produção guiada**, inspirada em recuperação ativa e revisão espaçada.
+Os roteiros não devem ser publicados como promessa de “curso Pimsleur”. Se forem usados no futuro, a comunicação correta será que o Mandarim em Rede possui uma edição de áudio própria, com apoio visual e produção guiada, inspirada em recuperação ativa e revisão espaçada.
 
 ## Fluxo de gravação
 

@@ -3,7 +3,9 @@
   "tipo": "roteiros_audio_essenciais",
   "metodo_de_trabalho": "audio-first com antecipação, recuperação, recombinação, transferência e revisão espaçada",
   "observacao": "Os roteiros são originais do Mandarim em Rede e usam Pimsleur apenas como referência metodológica, não como texto ou marca.",
-  "status": "revisao_linguistica",
+  "status": "arquivo_opcional",
+  "incluido_na_oferta_pdf_first": false,
+  "motivo": "A produção própria de áudio foi retirada da primeira oferta para reduzir custo e manter o produto acessível.",
   "aulas_por_topico": 8,
   "topicos": [
     {

@@ -1,6 +1,6 @@
 # Pipeline v1 — Mandarim em Rede
 
-Este diretório transforma uma unidade JSON aprovada em um pacote distribuível. A unidade JSON é a fonte de conteúdo; o tema Typst controla a tipografia e o layout; o gerador cria workbook, roteiros, guia, manifesto e ZIP.
+Este diretório transforma uma unidade JSON aprovada em um pacote PDF-first distribuível. A unidade JSON é a fonte de conteúdo; o tema Typst controla a tipografia e o layout; o gerador cria workbook, complementos, guia, manifesto e ZIP.
 
 ## Estrutura
 
@@ -21,11 +21,11 @@ mvp_pipeline/
 python3 generate_unit.py content/B01-iniciar-interacao.json
 ```
 
-O resultado aparece em `build/B01/` e inclui o PDF do workbook, os roteiros, o guia, uma cópia do JSON e um ZIP da unidade.
+O resultado aparece em `build/B01/` e inclui o PDF do workbook, o guia, uma cópia do JSON e um ZIP da unidade. Os roteiros de áudio podem ser mantidos separadamente como material opcional.
 
 ## Roteiros de áudio
 
-Os roteiros essenciais B01–B04 ficam em `audio_scripts/`. Cada tópico possui oito aulas: exposição, contraste, tentativa, reconstrução, recombinação, recuperação independente, transferência e revisão espaçada. As marcas de voz e pausa estão documentadas em `audio_scripts/README.md`.
+Os roteiros B01–B04 ficam em `audio_scripts/` como arquivo opcional para uma futura edição ou produção externa. Cada tópico possui oito aulas planejadas, mas nenhum áudio próprio é obrigatório na oferta atual. As marcas de voz e pausa estão documentadas em `audio_scripts/README.md`.
 
 ## Validar sem gerar
 
@@ -39,11 +39,11 @@ Uma unidade deve passar por `draft`, `revisao_linguistica`, `revisao_visual`, `p
 
 ## Regra de aprovação
 
-O pipeline valida campos, tipos, pacotes, sequência e áudios. Ele não substitui a revisão linguística do mandarim nem a decisão pedagógica. Uma unidade só deve ser publicada depois de revisão humana.
+O pipeline valida campos, tipos, pacotes, sequência e, quando presentes, referências de áudio. Ele não substitui a revisão linguística do mandarim nem a decisão pedagógica. Uma unidade só deve ser publicada depois de revisão humana.
 
 ## Escopo seguro da v1
 
-A v1 já valida o JSON, registra o estado editorial, gera os roteiros, o guia, o manifesto e recompila o workbook aprovado da B01 como caso de regressão. Ela ainda não substitui automaticamente todos os textos do workbook pelas estruturas de uma nova unidade. Isso é intencional: evita que B02–B04 sejam produzidas com um layout correto, mas conteúdo visual incorreto.
+A v1 valida o JSON, registra o estado editorial, gera o guia, o manifesto e recompila o workbook aprovado da B01 como caso de regressão. Os roteiros de áudio são arquivos de referência e não bloqueiam o produto PDF-first. O pipeline ainda não substitui automaticamente todos os textos do workbook pelas estruturas de uma nova unidade. Isso é intencional: evita que B02–B04 sejam produzidas com um layout correto, mas conteúdo visual incorreto.
 
 ## Próxima evolução
 
