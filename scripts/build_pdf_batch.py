@@ -10,10 +10,13 @@ import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import typst_pdf
+import verify_pdf_content
+
 ROOT = Path(__file__).resolve().parents[1]
 RENDER_COVER = ROOT / "scripts" / "render_workbook_cover.py"
-GENERATE_PDF = Path("/home/ubuntu/skills/typst-pdf-maker/scripts/generate_pdf.py")
-VERIFY_PDF = Path("/home/ubuntu/skills/typst-pdf-maker/scripts/verify_pdf.py")
 
 
 def read_json(path: Path) -> dict:
@@ -49,14 +52,7 @@ def validate_source(source: Path) -> dict:
     return payload
 
 
-def pdf_pages(path: Path) -> int:
-    result = run(["pdfinfo", str(path)])
-    if result.returncode != 0:
-        raise RuntimeError(result.stderr.strip() or "pdfinfo falhou")
-    for line in result.stdout.splitlines():
-        if line.startswith("Pages:"):
-            return int(line.split(":", 1)[1].strip())
-    raise RuntimeError("pdfinfo não encontrou número de páginas")
+
 
 
 def package_unit(out: Path, unit_id: str) -> Path:
@@ -160,34 +156,19 @@ def build_one(batch: dict, item: dict, registry: dict, output_root: Path) -> dic
         raise RuntimeError(f"renderer da capa falhou: {cover_result.stderr.strip()}")
 
     pdf_path = out / f"{unit_id}-workbook.pdf"
-    compile_result = run([
-        sys.executable,
-        str(GENERATE_PDF),
-        "workbook.typ",
-        "--output",
-        pdf_path.name,
-        "--strict",
-    ], cwd=out)
-    if compile_result.returncode != 0:
-        raise RuntimeError(f"compilação falhou: {compile_result.stdout[-1200:]} {compile_result.stderr[-1200:]}")
-    diagnostics_path = out / f"{pdf_path.stem}.typst-diagnostics.log"
-    if diagnostics_path.is_file() and diagnostics_path.stat().st_size == 0:
-        diagnostics_path.unlink()
+    warnings = typst_pdf.compile_pdf(Path("workbook.typ"), Path(pdf_path.name), cwd=out)
+    if warnings:
+        (out / f"{pdf_path.stem}.typst-diagnostics.log").write_text(warnings + "\n", encoding="utf-8")
 
-    verify_result = run([
-        sys.executable,
-        str(VERIFY_PDF),
-        pdf_path.name,
-        "--profile",
-        "text-document",
-    ], cwd=out)
-    if verify_result.returncode != 0:
-        raise RuntimeError(f"verificação falhou: {verify_result.stdout[-1200:]} {verify_result.stderr[-1200:]}")
-
-    pages = pdf_pages(pdf_path)
     expected = profile["expected_pages_with_cover"]
-    if pages != expected:
-        raise RuntimeError(f"paginação inesperada: {pages}; esperado {expected}")
+    pdf_report = typst_pdf.verify_pdf(pdf_path, expected)
+    if not pdf_report["valid"]:
+        raise RuntimeError(f"verificação do PDF falhou: {pdf_report['errors']}")
+    pages = pdf_report["pages"]
+
+    content_report = verify_pdf_content.verify(pdf_path, source, source.parent)
+    if not content_report["valid"]:
+        raise RuntimeError(f"portão conteúdo↔PDF falhou: {content_report['errors']}")
 
     manifest = {
         "unit_id": unit_id,
@@ -199,6 +180,7 @@ def build_one(batch: dict, item: dict, registry: dict, output_root: Path) -> dic
         "pages": pages,
         "audio_included": False,
         "content_validation": validation,
+        "pdf_content_gate": content_report,
         "status": "pilot-ready",
         "notes": [
             "O campo audios legado do JSON é preservado apenas para compatibilidade histórica.",

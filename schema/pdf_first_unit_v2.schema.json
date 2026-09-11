@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mandarim-em-rede/pdf-first-unit-v2",
+  "title": "Mandarim em Rede — Unidade PDF-first rica v2",
+  "description": "Contrato pdf-first-rich-v2. Todo o conteúdo pedagógico do workbook vem deste arquivo; o template Typst não deve conter vocabulário, frases nem cenários fixos.",
+  "type": "object",
+  "required": ["schema_version", "produto", "unidade"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "2.0"},
+    "produto": {"type": "string", "minLength": 1},
+    "unidade": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "content_profile", "codigo", "titulo", "colecao", "nivel", "status",
+        "objetivo_comunicativo", "resultado_minimo", "situacao_principal",
+        "contexto_emocional", "dificuldade_principal", "preparacao",
+        "estruturas", "mapa_decisao", "hanzi_alvo", "palavras_chave",
+        "atividades", "producao", "artefato_pratico", "criterios_autoavaliacao",
+        "sequencia", "pacotes", "proxima_unidade_sugerida"
+      ],
+      "properties": {
+        "content_profile": {"const": "pdf-first-rich-v2"},
+        "codigo": {"type": "string", "pattern": "^[A-Z][0-9]{2}$"},
+        "titulo": {"type": "string", "minLength": 1},
+        "colecao": {"type": "string", "minLength": 1},
+        "nivel": {"type": "string", "minLength": 1},
+        "status": {"enum": ["draft", "revisao_linguistica", "revisao_visual", "piloto", "aprovado", "publicado"]},
+        "objetivo_comunicativo": {"type": "string", "minLength": 1},
+        "resultado_minimo": {"type": "string", "minLength": 1},
+        "situacao_principal": {"type": "string", "minLength": 1},
+        "contexto_emocional": {"type": "string", "minLength": 1},
+        "dificuldade_principal": {"type": "string", "minLength": 1},
+        "preparacao": {
+          "description": "Instruções curtas da página de abertura.",
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "estruturas": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 10,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["funcao", "mandarim", "pinyin", "sentido_funcional", "tipo"],
+            "properties": {
+              "funcao": {"type": "string", "minLength": 1},
+              "mandarim": {"type": "string", "minLength": 1},
+              "pinyin": {"type": "string", "minLength": 1},
+              "sentido_funcional": {"type": "string", "minLength": 1},
+              "tipo": {"enum": ["fixo", "substituivel", "particula", "operador", "base"]},
+              "slot": {"type": "string", "minLength": 1},
+              "particula": {"type": "string", "minLength": 1}
+            },
+            "allOf": [
+              {
+                "if": {"properties": {"tipo": {"const": "substituivel"}}, "required": ["tipo"]},
+                "then": {"required": ["slot"]}
+              },
+              {
+                "if": {"properties": {"tipo": {"const": "particula"}}, "required": ["tipo"]},
+                "then": {"required": ["particula"]}
+              }
+            ]
+          }
+        },
+        "mapa_decisao": {
+          "description": "Ligação explícita entre intenção comunicativa e forma. Substitui a escolha por posição no template.",
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["intencao", "mandarim"],
+            "properties": {
+              "intencao": {"type": "string", "minLength": 1},
+              "mandarim": {"type": "string", "minLength": 1},
+              "pinyin": {"type": "string", "minLength": 1}
+            }
+          }
+        },
+        "hanzi_alvo": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["hanzi", "pinyin", "sentido", "prioridade"],
+            "properties": {
+              "hanzi": {"type": "string", "minLength": 1},
+              "pinyin": {"type": "string", "minLength": 1},
+              "sentido": {"type": "string", "minLength": 1},
+              "prioridade": {"enum": ["alta", "media"]}
+            }
+          }
+        },
+        "palavras_chave": {
+          "type": "array",
+          "minItems": 8,
+          "maxItems": 12,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["hanzi", "pinyin", "sentido", "categoria"],
+            "properties": {
+              "hanzi": {"type": "string", "minLength": 1},
+              "pinyin": {"type": "string", "minLength": 1},
+              "sentido": {"type": "string", "minLength": 1},
+              "categoria": {"enum": ["pessoa", "objeto", "acao", "lugar", "informacao", "estado", "quantidade"]},
+              "uso": {"type": "string", "minLength": 1}
+            }
+          }
+        },
+        "atividades": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["reconhecimento", "reorganizacao", "recombinacao"],
+          "properties": {
+            "reconhecimento": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 5,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["situacao", "opcao_a", "opcao_b", "resposta"],
+                "properties": {
+                  "situacao": {"type": "string", "minLength": 1},
+                  "opcao_a": {"type": "string", "minLength": 1},
+                  "opcao_b": {"type": "string", "minLength": 1},
+                  "resposta": {"enum": ["a", "b"]}
+                }
+              }
+            },
+            "reorganizacao": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["instrucao", "blocos", "resultado_esperado", "reconstrucoes"],
+              "properties": {
+                "instrucao": {"type": "string", "minLength": 1},
+                "blocos": {"type": "array", "minItems": 3, "maxItems": 5, "items": {"type": "string", "minLength": 1}},
+                "resultado_esperado": {"type": "string", "minLength": 1},
+                "reconstrucoes": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 4,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["pedido", "mandarim"],
+                    "properties": {
+                      "pedido": {"type": "string", "minLength": 1},
+                      "mandarim": {"type": "string", "minLength": 1}
+                    }
+                  }
+                }
+              }
+            },
+            "recombinacao": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["instrucao", "banco", "moldes"],
+              "properties": {
+                "instrucao": {"type": "string", "minLength": 1},
+                "banco": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 6,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["rotulo", "hanzi", "pinyin"],
+                    "properties": {
+                      "rotulo": {"type": "string", "minLength": 1},
+                      "hanzi": {"type": "string", "minLength": 1},
+                      "pinyin": {"type": "string", "minLength": 1}
+                    }
+                  }
+                },
+                "moldes": {"type": "array", "minItems": 2, "maxItems": 4, "items": {"type": "string", "minLength": 1}}
+              }
+            }
+          }
+        },
+        "producao": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["cenarios"],
+          "properties": {
+            "cenarios": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 3,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["titulo", "instrucao", "apoio"],
+                "properties": {
+                  "titulo": {"type": "string", "minLength": 1},
+                  "instrucao": {"type": "string", "minLength": 1},
+                  "apoio": {"enum": ["com_apoio", "menos_apoio", "sem_apoio"]},
+                  "campos": {"type": "array", "minItems": 1, "maxItems": 3, "items": {"type": "string", "minLength": 1}}
+                }
+              }
+            }
+          }
+        },
+        "artefato_pratico": {"type": "string", "minLength": 1},
+        "criterios_autoavaliacao": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 5,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "sequencia": {
+          "type": "array",
+          "minItems": 10,
+          "maxItems": 10,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "pacotes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["essencial", "extensoes"],
+          "properties": {
+            "essencial": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+            "extensoes": {"type": "object", "additionalProperties": {"type": "boolean"}}
+          }
+        },
+        "proxima_unidade_sugerida": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

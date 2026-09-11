@@ -55,13 +55,37 @@ python3 scripts/build_pdf_batch.py \
   --output-root build/pdf-first
 ```
 
-O pipeline valida o JSON, localiza o perfil em `templates/registry.json`, gera a capa, compila o Typst, verifica o PDF, confere a paginação e cria o pacote ZIP.
+O pipeline valida o JSON, localiza o perfil em `templates/registry.json`, gera a capa, compila o Typst, verifica o PDF, confere a paginação, aplica o portão conteúdo↔PDF e cria o pacote ZIP.
+
+O build precisa do Typst no PATH ou da variável `TYPST_BIN` apontando para o executável, além das dependências de `requirements.txt`. Nenhum script fora do repositório é necessário.
+
+## Contrato de conteúdo
+
+Unidades novas usam o contrato rico `pdf-first-rich-v2` (`schema/pdf_first_unit_v2.schema.json`), em que todo o conteúdo pedagógico vem do JSON: mapa de decisão, hanzi-alvo, banco de palavras, atividades de reconhecimento, reorganização e recombinação, cenários de produção e critérios de autoavaliação. O prompt de geração correspondente está em `docs/prompt_unidade_rica_v2.md`.
+
+Unidades antigas continuam válidas no contrato `1.0`. O validador decide o contrato pelo campo `schema_version`:
+
+```bash
+python3 scripts/validate_pdf_first.py content/pdf_first/B03-identificar-pessoas-e-objetos.json --json
+```
+
+Além do schema, o validador v2 confere a coerência entre conteúdo e atividades: hanzi-alvo e palavras que não aparecem nas estruturas, opções de reconhecimento inventadas, blocos que não reconstroem o resultado esperado e pinyin sem marca tonal.
+
+## Portão conteúdo↔PDF
+
+Paginação correta não prova conteúdo correto: um template com frases fixas gera 11 páginas válidas imprimindo outra unidade. O portão extrai o texto do PDF e reprova quando falta conteúdo da unidade ou quando aparece uma forma exclusiva de outra unidade.
+
+```bash
+python3 scripts/verify_pdf_content.py \
+  build/pdf-first/B03/B03-workbook.pdf \
+  content/pdf_first/B03-identificar-pessoas-e-objetos.json
+```
 
 ## Templates ativos
 
 O perfil `b01-cumprimentos-v2` usa `templates/b01/B01-workbook.typ` e preserva o protótipo específico do B01.
 
-O perfil `b-family-workbook-v1` usa `templates/b-family/B-family-workbook.typ` e foi validado com o B02. Ele gera uma capa e dez páginas pedagógicas, totalizando 11 páginas A4.
+O perfil `b-family-workbook-v1` usa `templates/b-family/B-family-workbook.typ` e foi validado com o B02 e o B03. Ele gera uma capa e dez páginas pedagógicas, totalizando 11 páginas A4. O template não contém hanzi, frases nem cenários fixos: tudo vem do JSON da unidade.
 
 Um template novo deve ser registrado antes de aparecer em um manifesto de lote. O layout de uma unidade não deve ser aplicado automaticamente a outro tópico sem compilação, verificação e revisão visual próprias.
 
@@ -77,4 +101,6 @@ A compilação do PDF não equivale à aprovação linguística ou pedagógica. 
 
 ## Estado atual
 
-B01 possui um template específico validado. B02 possui um piloto no template parametrizado da família B. B03 e B04 ainda precisam de adaptação editorial e validação próprias antes da produção em massa.
+B01 possui um template específico validado. B02 e B03 estão migrados para o contrato rico e passam no template parametrizado da família B com o portão conteúdo↔PDF. B04 ainda precisa de migração editorial e validação própria antes da produção em massa.
+
+O conteúdo em mandarim das unidades migradas continua marcado como `draft`: a revisão linguística humana é obrigatória antes da publicação.

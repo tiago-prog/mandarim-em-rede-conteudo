@@ -1,14 +1,24 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "produto": "Mandarim em Rede",
   "unidade": {
+    "content_profile": "pdf-first-rich-v2",
     "codigo": "B02",
     "titulo": "Perguntar, responder e devolver",
+    "colecao": "Coleção 01 · Primeiras interações",
     "nivel": "iniciante",
     "status": "draft",
     "objetivo_comunicativo": "Perguntar se alguém é estudante, professor ou se está bem; responder afirmativa ou negativamente; e devolver a pergunta para manter uma conversa curta.",
     "resultado_minimo": "Produzir três trocas curtas de pergunta e resposta usando 吗 e 呢, com apoio reduzido do mapa principal.",
     "situacao_principal": "Depois de cumprimentar uma pessoa nova em uma aula, reunião ou apresentação, descobrir uma informação simples sobre ela e devolver a pergunta.",
+    "contexto_emocional": "O aluno já cumprimentou a pessoa e teme travar no segundo turno da conversa.",
+    "dificuldade_principal": "Confundir a posição de 吗 com a de 呢 e responder sem devolver a pergunta, encerrando a conversa.",
+    "preparacao": [
+      "Observe quem faz a pergunta.",
+      "Identifique o que deve ser respondido.",
+      "Tente antes de consultar o mapa.",
+      "Registre a dúvida que aparecer."
+    ],
     "estruturas": [
       {
         "funcao": "perguntar se alguém é estudante",
@@ -60,8 +70,7 @@
         "mandarim": "你呢？",
         "pinyin": "Nǐ ne?",
         "sentido_funcional": "E você?",
-        "tipo": "operador",
-        "particula": "呢"
+        "tipo": "operador"
       },
       {
         "funcao": "perguntar se alguém está ocupado",
@@ -71,6 +80,96 @@
         "tipo": "particula",
         "particula": "吗"
       }
+    ],
+    "mapa_decisao": [
+      {"intencao": "Perguntar", "mandarim": "你是学生吗？", "pinyin": "Nǐ shì xuésheng ma?"},
+      {"intencao": "Responder", "mandarim": "我是学生。", "pinyin": "Wǒ shì xuésheng."},
+      {"intencao": "Devolver a pergunta", "mandarim": "你呢？", "pinyin": "Nǐ ne?"}
+    ],
+    "hanzi_alvo": [
+      {"hanzi": "我", "pinyin": "wǒ", "sentido": "eu", "prioridade": "alta"},
+      {"hanzi": "是", "pinyin": "shì", "sentido": "ser", "prioridade": "alta"},
+      {"hanzi": "吗", "pinyin": "ma", "sentido": "marca de pergunta", "prioridade": "alta"},
+      {"hanzi": "呢", "pinyin": "ne", "sentido": "devolve a pergunta", "prioridade": "alta"},
+      {"hanzi": "好", "pinyin": "hǎo", "sentido": "bem, bom", "prioridade": "media"},
+      {"hanzi": "忙", "pinyin": "máng", "sentido": "ocupado", "prioridade": "media"}
+    ],
+    "palavras_chave": [
+      {"hanzi": "我", "pinyin": "wǒ", "sentido": "eu", "categoria": "pessoa", "uso": "resposta"},
+      {"hanzi": "你", "pinyin": "nǐ", "sentido": "você", "categoria": "pessoa", "uso": "pergunta"},
+      {"hanzi": "是", "pinyin": "shì", "sentido": "ser", "categoria": "acao", "uso": "identidade"},
+      {"hanzi": "不", "pinyin": "bù", "sentido": "não", "categoria": "informacao", "uso": "negação"},
+      {"hanzi": "学生", "pinyin": "xuésheng", "sentido": "estudante", "categoria": "pessoa", "uso": "ocupação"},
+      {"hanzi": "老师", "pinyin": "lǎoshī", "sentido": "professor ou professora", "categoria": "pessoa", "uso": "ocupação"},
+      {"hanzi": "吗", "pinyin": "ma", "sentido": "pergunta de sim ou não", "categoria": "informacao", "uso": "pergunta"},
+      {"hanzi": "呢", "pinyin": "ne", "sentido": "e você?", "categoria": "informacao", "uso": "devolução"},
+      {"hanzi": "好", "pinyin": "hǎo", "sentido": "bem, bom", "categoria": "estado", "uso": "estado"},
+      {"hanzi": "忙", "pinyin": "máng", "sentido": "ocupado", "categoria": "estado", "uso": "estado"},
+      {"hanzi": "很", "pinyin": "hěn", "sentido": "muito, bastante", "categoria": "informacao", "uso": "apoio da resposta"}
+    ],
+    "atividades": {
+      "reconhecimento": [
+        {
+          "situacao": "Descobrir se a pessoa é estudante",
+          "opcao_a": "你是学生吗？",
+          "opcao_b": "我是学生。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Dizer que você não é professor ou professora",
+          "opcao_a": "我是学生。",
+          "opcao_b": "我不是老师。",
+          "resposta": "b"
+        },
+        {
+          "situacao": "Devolver a pergunta para a outra pessoa",
+          "opcao_a": "你呢？",
+          "opcao_b": "你好吗？",
+          "resposta": "a"
+        }
+      ],
+      "reorganizacao": {
+        "instrucao": "Escreva a ordem dos blocos para formar a pergunta completa.",
+        "blocos": ["吗", "你是", "学生", "？"],
+        "resultado_esperado": "你是学生吗？",
+        "reconstrucoes": [
+          {"pedido": "Você é professor ou professora?", "mandarim": "你是老师吗？"},
+          {"pedido": "E você?", "mandarim": "你呢？"}
+        ]
+      },
+      "recombinacao": {
+        "instrucao": "Mantenha o início da pergunta e troque somente o elemento necessário.",
+        "banco": [
+          {"rotulo": "ocupação", "hanzi": "学生", "pinyin": "xuésheng"},
+          {"rotulo": "ocupação", "hanzi": "老师", "pinyin": "lǎoshī"},
+          {"rotulo": "estado", "hanzi": "忙", "pinyin": "máng"}
+        ],
+        "moldes": ["你是…吗？", "我…。", "你…呢？"]
+      }
+    },
+    "producao": {
+      "cenarios": [
+        {
+          "titulo": "Conversa depois do cumprimento",
+          "instrucao": "Você acabou de cumprimentar alguém em uma aula. Descubra se a pessoa é estudante ou professor(a), responda sobre você e devolva a pergunta.",
+          "apoio": "com_apoio",
+          "campos": ["Pergunta", "Resposta e devolução"]
+        },
+        {
+          "titulo": "Três trocas novas",
+          "instrucao": "Escreva três trocas novas usando pelo menos duas estruturas do mapa, sem copiar as frases prontas.",
+          "apoio": "menos_apoio",
+          "campos": ["Minhas trocas"]
+        }
+      ]
+    },
+    "artefato_pratico": "Ficha de três trocas curtas de pergunta, resposta e devolução, pronta para usar em uma apresentação real.",
+    "criterios_autoavaliacao": [
+      "Reconheço a função de 吗 e de 呢",
+      "Completo uma pergunta e uma resposta",
+      "Devolvo a pergunta sem encerrar a conversa",
+      "Escrevo uma variação trocando apenas o slot",
+      "Leio minha produção em voz alta"
     ],
     "sequencia": [
       "situar",
@@ -85,7 +184,7 @@
       "revisar"
     ],
     "pacotes": {
-      "essencial": ["R1", "R2", "R3", "R4", "V1"],
+      "essencial": ["W1", "W2", "V1", "R1"],
       "extensoes": {
         "pronuncia": true,
         "escrita": true,
