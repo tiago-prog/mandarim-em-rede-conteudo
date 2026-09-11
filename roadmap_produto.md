@@ -116,11 +116,11 @@ Os números são metas de arquitetura. Nenhum PDF deve entrar apenas para aument
 
 Congelar capa, tipografia, paleta, cartões, mapas, áreas de escrita, formulários, códigos de seção e tratamento de hanzi.
 
-### Fase 2 — protótipo B01
+### Fase 2 — protótipo B01 — concluída tecnicamente
 
-Produzir B01 integralmente com 12 páginas. Incluir cena visual, banco de palavras, hanzi, pinyin, recuperação escrita, reorganização, recombinação e produção.
+B01 foi implementado integralmente com 12 páginas. O protótipo inclui cena visual, banco de palavras, hanzi, pinyin, recuperação escrita, reorganização, recombinação, produção prática e revisão. O PDF e a fonte estão em `prototypes/B01-pdf-first/`.
 
-### Fase 3 — teste de uso
+### Fase 3 — teste de uso — próxima etapa
 
 Entregar B01 a leitores externos. Medir onde o estudante para, copia, consulta, confunde hanzi e pinyin ou não entende a instrução.
 
