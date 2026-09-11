@@ -2,6 +2,8 @@
 
 Este diretório transforma uma unidade JSON aprovada em um pacote visual e escrito distribuível. A unidade JSON é a fonte de conteúdo; o tema Typst controla a tipografia e o layout; o gerador cria workbook, complementos, guia, manifesto e ZIP.
 
+Para começar, consulte o [Guia de produção em massa](docs/guia_producao_pdf_em_massa.md) e o [Prompt para gerar JSONs com IA](docs/prompt_para_gerar_json_pdf_first.md). As dependências Python estão em `requirements.txt`.
+
 ## Estrutura
 
 ```text
@@ -14,6 +16,7 @@ mvp_pipeline/
 ├── prototypes/              # workbooks Typst e PDFs de validação
 ├── scripts/                 # capa parametrizada e geração em lote
 ├── content/pdf_first/       # manifestos de lotes PDF-first
+├── requirements.txt         # dependências Python do fluxo PDF-first
 ├── build/                   # pacotes gerados
 ├── validate_unit.py         # validação antes da compilação
 └── generate_unit.py         # geração e empacotamento
