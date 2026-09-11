@@ -331,6 +331,23 @@
         "consolidacao": false
       }
     },
-    "proxima_unidade_sugerida": "Números e informações pessoais"
+    "proxima_unidade_sugerida": "Números e informações pessoais",
+    "matching": {
+      "instrucao": "Ligue cada situação ao ícone que melhor combina com a intenção. Não olhe a resposta; fale sua escolha em voz alta.",
+      "itens": [
+        {
+          "prompt": "Qual ícone combina com algo que pertence a alguém?",
+          "asset_a": "B04-a",
+          "asset_b": "B04-b",
+          "resposta": "a"
+        },
+        {
+          "prompt": "Qual ícone combina com uma especificação?",
+          "asset_a": "B04-a",
+          "asset_b": "B04-b",
+          "resposta": "b"
+        }
+      ]
+    }
   }
 }

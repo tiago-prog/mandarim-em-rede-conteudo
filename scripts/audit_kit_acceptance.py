@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import json, subprocess, sys
+import json, os, subprocess, sys
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-BUILD=Path('/tmp/mandarim-impl-rich10')
+BUILD=Path(os.environ.get('BUILD_ROOT', '/tmp/mandarim-impl-rich10'))
 units=[]
 for source in sorted((ROOT/'content/pdf_first').glob('B[0-9][0-9]-*.json')):
     data=json.loads(source.read_text(encoding='utf-8')); u=data['unidade']

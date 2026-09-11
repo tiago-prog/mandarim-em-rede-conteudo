@@ -331,6 +331,23 @@
         "consolidacao": false
       }
     },
-    "proxima_unidade_sugerida": "Rotina e atividades"
+    "proxima_unidade_sugerida": "Rotina e atividades",
+    "matching": {
+      "instrucao": "Ligue cada situação ao ícone que melhor combina com a intenção. Não olhe a resposta; fale sua escolha em voz alta.",
+      "itens": [
+        {
+          "prompt": "Qual ícone combina com um pedido de ajuda?",
+          "asset_a": "B10-a",
+          "asset_b": "B10-b",
+          "resposta": "a"
+        },
+        {
+          "prompt": "Qual ícone combina com colaboração?",
+          "asset_a": "B10-a",
+          "asset_b": "B10-b",
+          "resposta": "b"
+        }
+      ]
+    }
   }
 }

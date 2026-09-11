@@ -1,0 +1,381 @@
+PROMPT MESTRE DE IMPLEMENTAÇÃO — MANDARIM EM REDE
+Versão: desejável / pós-refined-v2
+Objetivo: transformar o workbook refined v2 de “correto” em “desejável”, sem destruir o método, a identidade visual nem a arquitetura PDF-first.
+
+==================================================
+1. CONTEXTO OBRIGATÓRIO
+==================================================
+
+Você vai trabalhar no repositório `mandarim-em-rede-conteudo`.
+
+Estado atual:
+- Existe pipeline PDF-first funcional
+- Existe contrato rich v2
+- Existe template da família B
+- Existe lote B02–B11
+- Já foi aplicada a rodada refined v2 com:
+  - autoavaliação legível
+  - critérios mais curtos
+  - separação artefato × próxima recuperação
+  - cue oral
+  - bloco mínimo de escrita de hanzi
+  - reescrita parcial da linguagem
+
+Problema atual:
+A versão refined v2 melhorou a higiene técnica, mas ainda NÃO é o produto desejável.
+Ainda parece apostila limpa, elegante e vazia demais.
+Ainda falta prazer de uso, densidade visual útil e sensação de valor comercial alto.
+
+Meta desta rodada:
+Manter o método e a identidade.
+Aumentar fortemente o prazer de uso, a sensação de completude e a vontade de preencher o material.
+
+==================================================
+2. PRINCÍPIOS NÃO NEGOCIÁVEIS
+==================================================
+
+1. Não reinventar a identidade visual.
+2. Não infantilizar o material.
+3. Não destruir o método:
+   mapa → recuperação → reorganização → recombinação → produção
+4. Não colocar gabarito na mesma página do exercício.
+5. Não colocar banco completo nem mapa completo na página de produção.
+6. Consulta de um lado. Produção de outro. Resposta em outro lugar ainda.
+7. Espaço vazio generoso só é bom se tiver função clara.
+8. Critérios de autoavaliação devem ser curtos, observáveis e comportamentais.
+9. Preferir poucos componentes excelentes e repetíveis a muitos enfeites.
+10. O produto precisa parecer premium, adulto, limpo e desejável.
+
+==================================================
+3. O QUE JÁ ESTÁ RESOLVIDO E NÃO DEVE SER DESFEITO
+==================================================
+
+Preservar:
+- autoavaliação legível
+- critérios curtos
+- separação entre ARTEFATO PRÁTICO e PRÓXIMA RECUPERAÇÃO
+- cue oral:
+  “Fale primeiro. Escreva depois. Consulte o mapa só depois da tentativa.”
+- estrutura de 11 páginas por unidade, a menos que a implementação de um componente prove a necessidade clara de 12
+- portão conteúdo↔PDF
+- schema rich v2
+- perfil b-family-workbook-v2 como base
+
+==================================================
+4. O QUE AINDA FALTA E DEVE SER IMPLEMENTADO
+==================================================
+
+### A. Fortalecer a prática de hanzi
+Hoje o bloco existe, mas é fraco demais.
+Ele não entrega o ritual que o usuário gosta.
+
+Implementar:
+- bloco visualmente generoso de escrita de hanzi
+- 4 a 6 caracteres-alvo por unidade
+- modelo + espaço de cópia
+- linha/área de escrita de memória
+- label forte, por exemplo:
+  “ESCRITA DE HANZI · FALE PRIMEIRO, ESCREVA DEPOIS”
+- sensação de ritual, não de detalhe minúsculo
+
+Preferência:
+- usar SVG/grade reutilizável
+- reaproveitar `references/material/PRATICA-DE-ESCRITA.svg` se fizer sentido
+- não sacrificar a página de produção para isso
+
+Se precisar escolher entre:
+- página de produção forte
+- e página de hanzi forte
+mantenha produção forte e faça hanzi generoso dentro da página lexical/consulta, ou crie uma página adicional apenas se isso não quebrar o pipeline.
+
+### B. Adicionar 1 componente visual de matching por unidade
+Implementar matching simples, adulto e limpo.
+
+Formatos aceitos:
+- ligue a frase à imagem/ícone
+- escolha a cena correta
+- marque a opção visual correspondente à estrutura
+
+Regras:
+- estilo adulto
+- sem visual infantil
+- sem solução na mesma página
+- preferir ícones vetoriais limpos antes de fotos
+- fontes aprovadas de ícones:
+  - Lucide
+  - Phosphor
+  - Tabler
+  - Heroicons
+- se usar foto:
+  - Pexels / Unsplash / Openverse
+  - clean, legível, sem texto embutido
+
+Começar com matching simples e repetível.
+Não criar um sistema complexo de assets na primeira rodada.
+
+### C. Redesenhar a página de produção para ser o ponto alto
+A produção precisa deixar de parecer formulário seco.
+
+Implementar:
+- hierarquia visual mais forte
+- campos de escrita generosos e convidativos
+- cue oral bem posicionada
+- sensação de desafio e conquista
+- checklist de autonomia observável
+- menos cara de “preencha aqui” e mais cara de “agora você usa de verdade”
+
+### D. Redesenhar o fechamento para celebrar conquista
+A página final não pode parecer só checklist burocrático.
+
+Estrutura desejada:
+1. Autoavaliação
+2. Revisão programada
+3. Artefato prático com peso visual real
+4. Campos “Ainda preciso praticar” e “Minha observação”
+5. Próxima recuperação em peso menor
+
+O artefato precisa parecer produto da unidade.
+A próxima unidade não pode competir visualmente com o artefato.
+
+### E. Nomear espaços generosos
+Todo espaço grande de escrita/prática deve ter função explícita.
+
+Labels prioritários:
+- FALE PRIMEIRO · ESCREVA DEPOIS
+- MINHA TENTATIVA SEM OLHAR
+- O QUE AINDA CONFUNDO
+- SEGUNDA RODADA SEM MAPA
+- MEU EXEMPLO PRÓPRIO
+- NOTA DE TOM / PRONÚNCIA
+
+Não rotular microespaçamentos estruturais.
+Rotular apenas áreas de prática reais.
+
+### F. Continuar a reescrita de voz
+A linguagem melhorou, mas ainda sobram restos burocráticos.
+
+Evitar como padrão dominante:
+- Observe
+- Identifique
+- Tente
+- Registre
+- Complete
+- Ordene
+- Reconheça
+- Releia
+- Repita
+- Mantive o sentido
+
+Preferir:
+- Quem está falando?
+- O que essa pessoa quer saber?
+- Feche o mapa. Tente sozinho.
+- Monte a frase.
+- Troque só o que precisa mudar.
+- Crie 3 trocas suas.
+- Você distingue 吗 de 呢?
+- Fale em voz alta.
+
+Tom:
+- adulto
+- direto
+- ativo
+- limpo
+- com leve desafio
+- sem infantilização
+
+==================================================
+5. COMPONENTES PRIORITÁRIOS DESTA RODADA
+==================================================
+
+Prioridade máxima:
+1. Prática de hanzi generosa
+2. Matching visual simples por unidade
+3. Produção redesenhada como ponto alto
+4. Fechamento com peso de conquista
+5. Espaços nomeados
+6. Voz ativa residual limpa
+
+Não fazer agora:
+- gamificação complexa
+- personagens novos
+- novo skin visual
+- excesso decorativo
+- sistema enorme de assets
+- consolidado com divisórias, a menos que sobre tempo depois do núcleo
+
+==================================================
+6. POLÍTICA DE SEPARAÇÃO EDITORIAL
+==================================================
+
+Na página de produção NÃO pode haver:
+- banco de palavras completo
+- mapa completo
+- exemplos completos com tradução
+- gabarito
+
+Pode haver:
+- cenário
+- molde mínimo
+- campo de escrita
+- checklist de autonomia
+- cue oral
+
+Na recombinação:
+- banco mínimo de slots é permitido
+- banco lexical completo não é permitido
+
+Respostas:
+- nunca na mesma página do exercício
+- se existirem, vão para o final da unidade ou apêndice
+
+==================================================
+7. POLÍTICA DE ASSETS
+==================================================
+
+Ícones:
+- Lucide primeiro
+- Phosphor segundo
+- Tabler / Heroicons como alternativa
+
+Imagens:
+- só se aumentarem clareza real
+- clean, adultas, legíveis
+- sem cartoon infantil
+- sem texto embutido
+
+Hanzi:
+- preferir SVG / grade vetorial
+- reutilizar recursos do repositório quando possível
+
+Regra:
+se der para resolver com tipografia + ícone + layout, não forçar foto.
+
+==================================================
+8. O QUE ALTERAR NO TEMPLATE
+==================================================
+
+Arquivo-base:
+- `templates/b-family/B-family-workbook.typ`
+- e/ou perfil `b-family-workbook-v2`
+
+Alterações esperadas:
+1. componente de prática de hanzi mais generoso
+2. componente de matching visual reutilizável
+3. produção com hierarquia visual mais forte
+4. fechamento com artefato em destaque e próxima unidade em peso menor
+5. labels de espaços nomeados
+6. preservação da autoavaliação legível
+7. preservação da identidade visual atual
+
+Se criar novos componentes Typst, faça-os reutilizáveis e consistentes entre B02–B11.
+
+==================================================
+9. O QUE ALTERAR NO CONTEÚDO JSON
+==================================================
+
+Em B02–B11:
+1. garantir critérios de autoavaliação curtos e observáveis
+2. garantir instruções no tom ativo
+3. garantir que a produção tenha instruções vivas
+4. garantir campos necessários para matching, se o schema exigir
+5. garantir hanzi_alvo suficientes para o bloco de escrita
+6. não reintroduzir linguagem burocrática
+
+Se o schema atual não suportar matching, faça a menor extensão segura possível.
+Não quebrar o contrato rich v2 desnecessariamente.
+Se estender o schema, atualize validador e documente.
+
+==================================================
+10. CRITÉRIOS DE ACEITE DESTA RODADA
+==================================================
+
+A rodada só está boa se:
+
+### Técnicos
+- [ ] B02–B11 continuam validando no rich v2
+- [ ] compilação em lote passa
+- [ ] portão conteúdo↔PDF passa
+- [ ] autoavaliação continua legível
+- [ ] não há gabarito na página do exercício
+- [ ] não há banco/mapa completo na produção
+
+### Experiência
+- [ ] prática de hanzi está visualmente generosa
+- [ ] existe matching visual simples por unidade
+- [ ] produção parece ponto alto, não formulário seco
+- [ ] fechamento celebra o artefato
+- [ ] espaços generosos principais estão nomeados
+- [ ] linguagem residual burocrática foi reduzida
+- [ ] identidade visual foi preservada
+- [ ] material parece mais desejável do que a refined v2 atual
+
+### Qualitativo
+O usuário final deve sentir:
+- mais vontade de preencher
+- mais sensação de prática real
+- mais prazer visual
+- mais valor pelo que está comprando
+
+==================================================
+11. ORDEM DE EXECUÇÃO OBRIGATÓRIA
+==================================================
+
+1. Ler o estado atual do template v2 e de B02
+2. Implementar prática de hanzi generosa
+3. Implementar matching visual simples
+4. Redesenhar produção
+5. Redesenhar fechamento
+6. Nomear espaços generosos
+7. Limpar voz residual
+8. Propagar para B03–B11
+9. Validar schema / builder / portão
+10. Gerar lote
+11. Fazer inspeção visual de B02, B03, B08 e B11
+12. Registrar o que foi feito e o que ficou de fora
+
+==================================================
+12. ENTREGÁVEIS ESPERADOS
+==================================================
+
+1. Template atualizado
+2. Conteúdo B02–B11 atualizado se necessário
+3. Schema/validador atualizados somente se indispensável
+4. Lote compilado
+5. Nota de implementação clara com:
+   - o que mudou
+   - o que foi preservado
+   - o que ainda ficou de fora
+   - resultados de validação
+6. Se possível, PDF consolidado refined desejável
+
+==================================================
+13. TOM DA IMPLEMENTAÇÃO
+==================================================
+
+Não faça uma “melhoria genérica”.
+Não enfeite por enfeitar.
+Não mude a alma do produto.
+
+Faça o material continuar inteligente e passar a ser também desejável.
+
+A pergunta final de qualidade é:
+“Um aluno adulto, ao abrir isso, sente vontade de preencher e sente que está saindo na vantagem?”
+
+Se a resposta ainda for “mais ou menos”, a rodada não terminou.
+
+==================================================
+14. COMECE AGORA
+==================================================
+
+Comece por B02 como piloto visual.
+Só propague para o lote inteiro depois de B02 ficar claramente melhor do que a refined v2 atual nos pontos:
+- hanzi
+- matching
+- produção
+- fechamento
+- prazer de uso
+
+Trabalhe com precisão.
+Preserve o método.
+Aumente o desejo.

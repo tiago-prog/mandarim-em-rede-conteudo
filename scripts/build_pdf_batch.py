@@ -143,6 +143,9 @@ def build_one(batch: dict, item: dict, registry: dict, output_root: Path) -> dic
     out.mkdir(parents=True)
     assets = out / "assets"
     assets.mkdir()
+    matching_assets = ROOT / "templates" / "b-family" / "matching"
+    if matching_assets.is_dir():
+        shutil.copytree(matching_assets, assets / "matching")
 
     source_template = (ROOT / profile["source"]).resolve()
     theme = source_template.parent / "report-theme.typ"

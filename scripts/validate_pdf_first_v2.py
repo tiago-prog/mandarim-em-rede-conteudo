@@ -149,6 +149,22 @@ def editorial_errors(unit: dict) -> tuple[list[str], list[str]]:
     if scenarios and not any(item.get("apoio") == "com_apoio" for item in scenarios if isinstance(item, dict)):
         warnings.append("producao.cenarios não tem nenhum cenário com apoio")
 
+    matching = unit.get("matching")
+    if matching is None:
+        errors.append("unidade rich v2 deve declarar matching visual")
+    else:
+        items = matching.get("itens", []) if isinstance(matching, dict) else []
+        code = str(unit.get("codigo", ""))
+        if len(items) != 2:
+            errors.append("matching.itens deve conter exatamente dois desafios visuais")
+        for index, item in enumerate(items, 1):
+            if not isinstance(item, dict):
+                continue
+            for key in ("asset_a", "asset_b"):
+                asset = str(item.get(key, ""))
+                if not asset.startswith(code + "-"):
+                    errors.append(f"matching.itens[{index}].{key} não pertence à unidade {code}")
+
     packages = unit.get("pacotes", {}).get("essencial", []) if isinstance(unit.get("pacotes"), dict) else []
     unknown = [code for code in packages if code not in PACKAGE_CODES]
     if unknown:

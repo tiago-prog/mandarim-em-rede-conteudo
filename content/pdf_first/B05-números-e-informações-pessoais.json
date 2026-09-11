@@ -329,6 +329,23 @@
         "consolidacao": false
       }
     },
-    "proxima_unidade_sugerida": "Horários e agenda"
+    "proxima_unidade_sugerida": "Horários e agenda",
+    "matching": {
+      "instrucao": "Ligue cada situação ao ícone que melhor combina com a intenção. Não olhe a resposta; fale sua escolha em voz alta.",
+      "itens": [
+        {
+          "prompt": "Qual ícone combina com uma informação numérica?",
+          "asset_a": "B05-a",
+          "asset_b": "B05-b",
+          "resposta": "a"
+        },
+        {
+          "prompt": "Qual ícone combina com um telefone?",
+          "asset_a": "B05-a",
+          "asset_b": "B05-b",
+          "resposta": "b"
+        }
+      ]
+    }
   }
 }

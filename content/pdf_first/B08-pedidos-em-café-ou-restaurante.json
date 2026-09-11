@@ -330,6 +330,23 @@
         "consolidacao": false
       }
     },
-    "proxima_unidade_sugerida": "Preferências e escolhas"
+    "proxima_unidade_sugerida": "Preferências e escolhas",
+    "matching": {
+      "instrucao": "Ligue cada situação ao ícone que melhor combina com a intenção. Não olhe a resposta; fale sua escolha em voz alta.",
+      "itens": [
+        {
+          "prompt": "Qual ícone combina com um café ou restaurante?",
+          "asset_a": "B08-a",
+          "asset_b": "B08-b",
+          "resposta": "a"
+        },
+        {
+          "prompt": "Qual ícone combina com um pedido?",
+          "asset_a": "B08-a",
+          "asset_b": "B08-b",
+          "resposta": "b"
+        }
+      ]
+    }
   }
 }

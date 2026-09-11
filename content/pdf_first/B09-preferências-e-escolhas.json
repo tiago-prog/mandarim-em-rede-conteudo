@@ -323,6 +323,23 @@
         "consolidacao": false
       }
     },
-    "proxima_unidade_sugerida": "Capacidade e pedidos de ajuda"
+    "proxima_unidade_sugerida": "Capacidade e pedidos de ajuda",
+    "matching": {
+      "instrucao": "Ligue cada situação ao ícone que melhor combina com a intenção. Não olhe a resposta; fale sua escolha em voz alta.",
+      "itens": [
+        {
+          "prompt": "Qual ícone combina com uma preferência?",
+          "asset_a": "B09-a",
+          "asset_b": "B09-b",
+          "resposta": "a"
+        },
+        {
+          "prompt": "Qual ícone combina com uma escolha entre opções?",
+          "asset_a": "B09-a",
+          "asset_b": "B09-b",
+          "resposta": "b"
+        }
+      ]
+    }
   }
 }

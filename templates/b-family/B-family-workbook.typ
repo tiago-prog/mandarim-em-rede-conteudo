@@ -18,6 +18,7 @@
 #let decision = unit.mapa_decisao
 #let hanzi-targets = unit.hanzi_alvo
 #let words = unit.palavras_chave
+#let matching = unit.matching
 #let activities = unit.atividades
 #let recognition = activities.reconhecimento
 #let reorder = activities.reorganizacao
@@ -148,12 +149,24 @@
   #page-title("Reconhecer", sub: "Ligue pergunta, resposta e situação")
   #section("ESCOLHA A FORMA ADEQUADA", color: navy)
   #panel(fill: cream, stroke: navy)[#small[Marque a estrutura que combina com cada situação.]; #v(5pt); #grid(columns: (1.5fr, 1fr, 1fr, 0.7fr), gutter: 5pt, [#label("Situação", color: navy)], [#label("A", color: navy)], [#label("B", color: navy)], [#label("Escolha", color: navy)], ..recognition.map(item => ([#item.situacao], [#cjk(item.opcao_a, size: 15pt)], [#cjk(item.opcao_b, size: 15pt)], [#writebox(height: 7mm, color: navy)])).flatten())]
-  #v(8pt)
-  #section("CONFIRA A RELAÇÃO", color: teal)
-  #panel(fill: mint, stroke: teal)[#grid(columns: (1fr, 1fr), gutter: 6pt, [#check([Reconheci a função de cada forma.])], [#check([Distingui as duas opções.])], [#check([Identifiquei o sentido.])], [#check([Confirei minhas escolhas.])])]
-  #v(8pt)
-  #section("MINHA DÚVIDA", color: ochre)
-  #panel(fill: warm, stroke: ochre)[#writebox(height: 18mm, color: ochre)]
+  #v(6pt)
+  #section("MATCHING VISUAL · FALE SUA ESCOLHA", color: teal)
+  #panel(fill: mint, stroke: teal)[
+    #small[#matching.instrucao]
+    #v(4pt)
+    #for (i, item) in matching.itens.enumerate() {
+      grid(columns: (1.8fr, 18mm, 18mm, 13mm), gutter: 5pt,
+        [#text(size: 8.5pt)[#item.prompt]],
+        [#align(center)[#image("assets/matching/" + item.asset_a + ".svg", width: 15mm)]],
+        [#align(center)[#image("assets/matching/" + item.asset_b + ".svg", width: 15mm)]],
+        [#writebox(height: 7mm, color: teal)]
+      )
+      if i < matching.itens.len() - 1 { v(4pt) }
+    }
+  ]
+  #v(6pt)
+  #section("O QUE AINDA FICOU ESTRANHO?", color: ochre)
+  #panel(fill: warm, stroke: ochre)[#writebox(height: 12mm, color: ochre)]
 ]
 
 #page[
@@ -201,7 +214,7 @@
 ]
 
 #page[
-  #page-title("Produção prática", sub: "Transfira para uma conversa curta")
+  #page-title("Produção prática", sub: "Agora você usa de verdade")
   #oral-cue()
   #v(5pt)
   #for (i, cenario) in scenarios.enumerate() {
@@ -221,8 +234,8 @@
     ]
     v(8pt)
   }
-  #section("NÍVEL DE APOIO", color: ochre)
-  #panel(fill: warm, stroke: ochre)[#grid(columns: (1fr, 1fr, 1fr), gutter: 5pt, [#check([Usei hanzi + pinyin.])], [#check([Usei apoio parcial.])], [#check([Produzi sem o mapa.])])]
+  #section("CHECKLIST DE AUTONOMIA", color: ochre)
+  #panel(fill: warm, stroke: ochre)[#grid(columns: (1fr, 1fr, 1fr), gutter: 5pt, [#check([Falei como na conversa.])], [#check([Troquei o slot.])], [#check([Produzi sem o mapa.])])]
 ]
 
 #page[

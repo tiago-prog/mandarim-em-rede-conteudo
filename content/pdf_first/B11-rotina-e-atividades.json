@@ -329,6 +329,23 @@
         "consolidacao": false
       }
     },
-    "proxima_unidade_sugerida": "Consolidação da entrada na interação"
+    "proxima_unidade_sugerida": "Consolidação da entrada na interação",
+    "matching": {
+      "instrucao": "Ligue cada situação ao ícone que melhor combina com a intenção. Não olhe a resposta; fale sua escolha em voz alta.",
+      "itens": [
+        {
+          "prompt": "Qual ícone combina com uma rotina?",
+          "asset_a": "B11-a",
+          "asset_b": "B11-b",
+          "resposta": "a"
+        },
+        {
+          "prompt": "Qual ícone combina com atividades organizadas?",
+          "asset_a": "B11-a",
+          "asset_b": "B11-b",
+          "resposta": "b"
+        }
+      ]
+    }
   }
 }

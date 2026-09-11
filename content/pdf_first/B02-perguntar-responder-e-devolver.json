@@ -341,6 +341,23 @@
         "consolidacao": false
       }
     },
-    "proxima_unidade_sugerida": "Identificar pessoas e objetos usando 这、那、谁 e 什么"
+    "proxima_unidade_sugerida": "Identificar pessoas e objetos usando 这、那、谁 e 什么",
+    "matching": {
+      "instrucao": "Ligue cada situação ao ícone que melhor combina com a intenção. Não olhe a resposta; fale sua escolha em voz alta.",
+      "itens": [
+        {
+          "prompt": "Qual ícone combina com uma troca de pergunta e resposta?",
+          "asset_a": "B02-a",
+          "asset_b": "B02-b",
+          "resposta": "a"
+        },
+        {
+          "prompt": "Qual ícone combina com uma pergunta que devolve a conversa?",
+          "asset_a": "B02-a",
+          "asset_b": "B02-b",
+          "resposta": "b"
+        }
+      ]
+    }
   }
 }

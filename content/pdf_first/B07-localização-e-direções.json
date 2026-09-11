@@ -329,6 +329,23 @@
         "consolidacao": false
       }
     },
-    "proxima_unidade_sugerida": "Pedidos em café ou restaurante"
+    "proxima_unidade_sugerida": "Pedidos em café ou restaurante",
+    "matching": {
+      "instrucao": "Ligue cada situação ao ícone que melhor combina com a intenção. Não olhe a resposta; fale sua escolha em voz alta.",
+      "itens": [
+        {
+          "prompt": "Qual ícone combina com localização?",
+          "asset_a": "B07-a",
+          "asset_b": "B07-b",
+          "resposta": "a"
+        },
+        {
+          "prompt": "Qual ícone combina com uma direção?",
+          "asset_a": "B07-a",
+          "asset_b": "B07-b",
+          "resposta": "b"
+        }
+      ]
+    }
   }
 }

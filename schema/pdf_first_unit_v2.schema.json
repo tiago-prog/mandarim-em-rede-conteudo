@@ -117,6 +117,31 @@
             }
           }
         },
+        "matching": {
+          "description": "Componente visual de reconhecimento sem gabarito renderizado na mesma página.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["instrucao", "itens"],
+          "properties": {
+            "instrucao": {"type": "string", "minLength": 1},
+            "itens": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["prompt", "asset_a", "asset_b", "resposta"],
+                "properties": {
+                  "prompt": {"type": "string", "minLength": 1},
+                  "asset_a": {"type": "string", "pattern": "^B[0-9]{2}-[ab]$"},
+                  "asset_b": {"type": "string", "pattern": "^B[0-9]{2}-[ab]$"},
+                  "resposta": {"enum": ["a", "b"]}
+                }
+              }
+            }
+          }
+        },
         "atividades": {
           "type": "object",
           "additionalProperties": false,

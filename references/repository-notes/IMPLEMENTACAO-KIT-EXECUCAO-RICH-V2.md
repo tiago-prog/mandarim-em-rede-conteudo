@@ -32,7 +32,7 @@ Esta rodada aplicou as correções de prioridade P0 e P1 previstas no kit mestre
 
 ## Limites desta rodada
 
-- Matching imagem↔texto e mini-cenas ainda não foram ativados em lote. O kit recomenda esses componentes, mas eles exigem curadoria de assets e licenciamento.
+- Matching imagem↔texto e mini-cenas ainda não estavam ativados na rodada refined v2 original. O matching vetorial foi implementado na rodada posterior pós-refined v2.
 - O PDF permanece com 11 páginas por unidade. A prática de hanzi foi integrada à página lexical para não sacrificar a página de produção.
 - O modo consolidado com capa global e divisórias compactas ainda é uma etapa posterior.
 - A revisão linguística humana completa continua pendente antes da publicação comercial definitiva.

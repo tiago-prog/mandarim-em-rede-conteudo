@@ -323,6 +323,23 @@
         "consolidacao": false
       }
     },
-    "proxima_unidade_sugerida": "Localização e direções"
+    "proxima_unidade_sugerida": "Localização e direções",
+    "matching": {
+      "instrucao": "Ligue cada situação ao ícone que melhor combina com a intenção. Não olhe a resposta; fale sua escolha em voz alta.",
+      "itens": [
+        {
+          "prompt": "Qual ícone combina com um horário?",
+          "asset_a": "B06-a",
+          "asset_b": "B06-b",
+          "resposta": "a"
+        },
+        {
+          "prompt": "Qual ícone combina com uma agenda?",
+          "asset_a": "B06-a",
+          "asset_b": "B06-b",
+          "resposta": "b"
+        }
+      ]
+    }
   }
 }

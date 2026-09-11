@@ -343,6 +343,23 @@
         "consolidacao": false
       }
     },
-    "proxima_unidade_sugerida": "Posse e especificação usando 的"
+    "proxima_unidade_sugerida": "Posse e especificação usando 的",
+    "matching": {
+      "instrucao": "Ligue cada situação ao ícone que melhor combina com a intenção. Não olhe a resposta; fale sua escolha em voz alta.",
+      "itens": [
+        {
+          "prompt": "Qual ícone combina com uma pessoa?",
+          "asset_a": "B03-a",
+          "asset_b": "B03-b",
+          "resposta": "a"
+        },
+        {
+          "prompt": "Qual ícone combina com um objeto identificado?",
+          "asset_a": "B03-a",
+          "asset_b": "B03-b",
+          "resposta": "b"
+        }
+      ]
+    }
   }
 }
