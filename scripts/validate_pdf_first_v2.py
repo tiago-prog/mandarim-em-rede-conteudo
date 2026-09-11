@@ -23,7 +23,7 @@ SEQUENCE = [
     "situar", "observar", "reconhecer", "ler", "recuperar",
     "escrever", "reorganizar", "recombinar", "produzir", "revisar",
 ]
-PACKAGE_CODES = {"W1", "W2", "V1", "X1", "R1", "Q1", "R5"}
+PACKAGE_CODES = {"W1", "W2", "V1", "X1", "R1", "R2", "R3", "R4", "Q1", "R5"}
 TONE_MARKS = {"\u0304", "\u0301", "\u030c", "\u0300"}
 NEUTRAL_SYLLABLES = {"ma", "ne", "ba", "de", "le", "ge", "me", "zi", "a"}
 HANZI = re.compile(r"[\u4e00-\u9fff]")
@@ -60,6 +60,7 @@ def editorial_errors(unit: dict) -> tuple[list[str], list[str]]:
 
     structures = unit.get("estruturas", [])
     forms = {strip_punctuation(item.get("mandarim", "")) for item in structures if isinstance(item, dict)}
+    unit_forms = {form for form in forms if form}
     unit_hanzi = {char for form in forms for char in HANZI.findall(form)}
 
     for index, item in enumerate(structures, 1):
@@ -68,14 +69,14 @@ def editorial_errors(unit: dict) -> tuple[list[str], list[str]]:
 
     for index, item in enumerate(unit.get("hanzi_alvo", []), 1):
         hanzi = item.get("hanzi", "") if isinstance(item, dict) else ""
-        if hanzi and not any(char in unit_hanzi for char in hanzi):
-            errors.append(f"hanzi_alvo[{index}] ({hanzi}) não aparece em nenhuma estrutura da unidade")
+        if hanzi and hanzi not in unit_forms and hanzi not in {item.get("hanzi", "") for item in unit.get("palavras_chave", [])}:
+            errors.append(f"hanzi_alvo[{index}] ({hanzi}) não aparece integralmente em nenhuma estrutura ou palavra-chave da unidade")
 
     for index, item in enumerate(unit.get("palavras_chave", []), 1):
         if not isinstance(item, dict):
             continue
         hanzi = item.get("hanzi", "")
-        if hanzi and not any(char in unit_hanzi for char in hanzi):
+        if hanzi and not any(hanzi in form for form in unit_forms):
             warnings.append(f"palavras_chave[{index}] ({hanzi}) não aparece em nenhuma estrutura da unidade")
         if not has_tone_mark(str(item.get("pinyin", ""))):
             warnings.append(f"palavras_chave[{index}].pinyin não tem marca tonal")
@@ -117,7 +118,7 @@ def editorial_errors(unit: dict) -> tuple[list[str], list[str]]:
             warnings.append(f"atividades.recombinacao.moldes[{index}] não marca o slot com …")
     for index, item in enumerate(recombination.get("banco", []), 1):
         hanzi = item.get("hanzi", "") if isinstance(item, dict) else ""
-        if hanzi and not any(char in unit_hanzi for char in hanzi):
+        if hanzi and not any(hanzi in form for form in unit_forms):
             warnings.append(f"atividades.recombinacao.banco[{index}] ({hanzi}) não aparece em nenhuma estrutura")
 
     scenarios = unit.get("producao", {}).get("cenarios", []) if isinstance(unit.get("producao"), dict) else []

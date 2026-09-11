@@ -93,7 +93,7 @@
       {"hanzi": "谁", "pinyin": "shéi", "sentido": "quem", "prioridade": "alta"},
       {"hanzi": "是", "pinyin": "shì", "sentido": "ser", "prioridade": "media"},
       {"hanzi": "书", "pinyin": "shū", "sentido": "livro", "prioridade": "media"},
-      {"hanzi": "友", "pinyin": "yǒu", "sentido": "amigo, amiga", "prioridade": "media"}
+      {"hanzi": "朋友", "pinyin": "péngyou", "sentido": "amigo, amiga", "prioridade": "media"}
     ],
     "palavras_chave": [
       {"hanzi": "这", "pinyin": "zhè", "sentido": "este, isto", "categoria": "informacao", "uso": "referente perto"},

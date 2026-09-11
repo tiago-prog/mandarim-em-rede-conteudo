@@ -1,0 +1,29 @@
+{
+  "schema_version": "pdf-first-rich-batch-v2",
+  "produto": "Mandarim em Rede",
+  "content_profile": "pdf-first-rich-v2",
+  "template_registry": "templates/registry.json",
+  "output_label": "b-family-rich-v2",
+  "colecao": "Coleção 01 · Primeiras interações",
+  "modulo": "Entrada na interação",
+  "expected_pages_policy": "fixed",
+  "expected_pages": 11,
+  "units": [
+    {
+      "id": "B02",
+      "source": "content/pdf_first/B02-perguntar-responder-e-devolver.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B03",
+      "source": "content/pdf_first/B03-identificar-pessoas-e-objetos.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    }
+  ]
+}

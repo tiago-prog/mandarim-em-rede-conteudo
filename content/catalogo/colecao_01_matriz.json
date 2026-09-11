@@ -1,0 +1,68 @@
+{
+  "schema_version": "collection-map-v1",
+  "produto": "Mandarim em Rede",
+  "colecao": "Coleção 01 · Primeiras interações",
+  "nivel": "iniciante",
+  "unidades": [
+    {
+      "codigo": "B01",
+      "ordem": 1,
+      "modulo": "Entrada na interação",
+      "funcao": "cumprimentar em contexto",
+      "status": "piloto",
+      "pre_requisitos": [],
+      "recicla": [],
+      "introduz": ["你好", "我", "你"],
+      "prepara": ["B02"],
+      "vocabulario_novo_maximo": 8
+    },
+    {
+      "codigo": "B02",
+      "ordem": 2,
+      "modulo": "Entrada na interação",
+      "funcao": "perguntar, responder e devolver",
+      "status": "draft",
+      "pre_requisitos": ["B01"],
+      "recicla": ["你好", "我", "你"],
+      "introduz": ["吗", "呢", "学生", "老师", "很好", "忙"],
+      "prepara": ["B03"],
+      "vocabulario_novo_maximo": 8
+    },
+    {
+      "codigo": "B03",
+      "ordem": 3,
+      "modulo": "Entrada na interação",
+      "funcao": "identificar pessoas e objetos",
+      "status": "draft",
+      "pre_requisitos": ["B02"],
+      "recicla": ["你", "我", "吗", "呢"],
+      "introduz": ["这", "那", "谁", "什么"],
+      "prepara": ["B04"],
+      "vocabulario_novo_maximo": 8
+    },
+    {
+      "codigo": "B04",
+      "ordem": 4,
+      "modulo": "Entrada na interação",
+      "funcao": "pedir algo de forma simples",
+      "status": "planejada",
+      "pre_requisitos": ["B03"],
+      "recicla": ["什么", "吗", "呢"],
+      "introduz": [],
+      "prepara": ["B05"],
+      "vocabulario_novo_maximo": 6
+    },
+    {
+      "codigo": "B05",
+      "ordem": 5,
+      "modulo": "Situações práticas",
+      "funcao": "localizar pessoas e objetos",
+      "status": "planejada",
+      "pre_requisitos": ["B04"],
+      "recicla": ["这", "那", "谁", "什么"],
+      "introduz": [],
+      "prepara": [],
+      "vocabulario_novo_maximo": 6
+    }
+  ]
+}

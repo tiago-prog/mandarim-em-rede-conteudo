@@ -1,0 +1,17 @@
+{
+  "schema_version": "cumulative-vocabulary-v1",
+  "produto": "Mandarim em Rede",
+  "colecao": "Coleção 01 · Primeiras interações",
+  "entradas": [
+    {"hanzi":"你","pinyin":"nǐ","sentido":"você","primeira_unidade":"B01","reciclar_em":["B02","B03"],"prioridade":"alta","status":"ativo"},
+    {"hanzi":"我","pinyin":"wǒ","sentido":"eu","primeira_unidade":"B01","reciclar_em":["B02","B03"],"prioridade":"alta","status":"ativo"},
+    {"hanzi":"吗","pinyin":"ma","sentido":"partícula de pergunta","primeira_unidade":"B02","reciclar_em":["B03"],"prioridade":"alta","status":"ativo"},
+    {"hanzi":"呢","pinyin":"ne","sentido":"e você? / partícula de devolução","primeira_unidade":"B02","reciclar_em":["B03"],"prioridade":"alta","status":"ativo"},
+    {"hanzi":"学生","pinyin":"xuésheng","sentido":"estudante","primeira_unidade":"B02","reciclar_em":["B03"],"prioridade":"media","status":"ativo"},
+    {"hanzi":"老师","pinyin":"lǎoshī","sentido":"professor ou professora","primeira_unidade":"B02","reciclar_em":["B03"],"prioridade":"media","status":"ativo"},
+    {"hanzi":"这","pinyin":"zhè","sentido":"isto / este / esta","primeira_unidade":"B03","reciclar_em":["B04"],"prioridade":"alta","status":"ativo"},
+    {"hanzi":"那","pinyin":"nà","sentido":"aquilo / aquele / aquela","primeira_unidade":"B03","reciclar_em":["B04"],"prioridade":"alta","status":"ativo"},
+    {"hanzi":"谁","pinyin":"shéi","sentido":"quem","primeira_unidade":"B03","reciclar_em":["B04"],"prioridade":"alta","status":"ativo"},
+    {"hanzi":"什么","pinyin":"shénme","sentido":"o que / qual","primeira_unidade":"B03","reciclar_em":["B04"],"prioridade":"alta","status":"ativo"}
+  ]
+}

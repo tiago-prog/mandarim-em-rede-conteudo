@@ -69,8 +69,23 @@ def package_unit(out: Path, unit_id: str) -> Path:
 
 def validate_batch_config(batch: dict, registry: dict) -> list[str]:
     errors: list[str] = []
-    if batch.get("schema_version") != "pdf-first-batch-v1":
-        errors.append("schema_version deve ser pdf-first-batch-v1")
+    batch_version = batch.get("schema_version")
+    if batch_version not in {"pdf-first-batch-v1", "pdf-first-rich-batch-v2"}:
+        errors.append("schema_version deve ser pdf-first-batch-v1 ou pdf-first-rich-batch-v2")
+    if batch_version == "pdf-first-rich-batch-v2":
+        if batch.get("content_profile") != "pdf-first-rich-v2":
+            errors.append("lote rich v2 deve declarar content_profile=pdf-first-rich-v2")
+        if not isinstance(batch.get("colecao"), str) or not batch["colecao"].strip():
+            errors.append("lote rich v2 deve declarar colecao")
+        if not isinstance(batch.get("modulo"), str) or not batch["modulo"].strip():
+            errors.append("lote rich v2 deve declarar modulo")
+        policy = batch.get("expected_pages_policy")
+        if policy not in {"fixed", "range", "adaptive"}:
+            errors.append("lote rich v2 deve declarar expected_pages_policy")
+        if policy == "fixed" and not isinstance(batch.get("expected_pages"), int):
+            errors.append("lote rich v2 fixed deve declarar expected_pages")
+        if policy == "range" and (not isinstance(batch.get("min_pages"), int) or not isinstance(batch.get("max_pages"), int)):
+            errors.append("lote rich v2 range deve declarar min_pages e max_pages")
     if not isinstance(batch.get("produto"), str) or not batch["produto"].strip():
         errors.append("produto deve ser texto não vazio")
     if not isinstance(batch.get("output_label"), str) or not batch["output_label"].strip():
@@ -103,6 +118,8 @@ def validate_batch_config(batch: dict, registry: dict) -> list[str]:
         profile_name = item.get("template_profile")
         if profile_name not in templates:
             errors.append(f"perfil inexistente: {profile_name}")
+        if batch_version == "pdf-first-rich-batch-v2" and item.get("content_profile") != "pdf-first-rich-v2":
+            errors.append(f"units[{index}].content_profile incompatível com lote rich v2")
     return errors
 
 
@@ -160,8 +177,16 @@ def build_one(batch: dict, item: dict, registry: dict, output_root: Path) -> dic
     if warnings:
         (out / f"{pdf_path.stem}.typst-diagnostics.log").write_text(warnings + "\n", encoding="utf-8")
 
-    expected = profile["expected_pages_with_cover"]
-    pdf_report = typst_pdf.verify_pdf(pdf_path, expected)
+    if batch.get("schema_version") == "pdf-first-rich-batch-v2":
+        policy = batch.get("expected_pages_policy")
+        expected = batch.get("expected_pages") if policy == "fixed" else None
+        pdf_report = typst_pdf.verify_pdf(pdf_path, expected)
+        if policy == "range" and pdf_report["pages"] not in range(batch["min_pages"], batch["max_pages"] + 1):
+            pdf_report["valid"] = False
+            pdf_report["errors"].append(f"paginação fora do intervalo: {pdf_report['pages']}; esperado {batch['min_pages']}–{batch['max_pages']}")
+    else:
+        expected = profile["expected_pages_with_cover"]
+        pdf_report = typst_pdf.verify_pdf(pdf_path, expected)
     if not pdf_report["valid"]:
         raise RuntimeError(f"verificação do PDF falhou: {pdf_report['errors']}")
     pages = pdf_report["pages"]

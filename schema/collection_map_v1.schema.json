@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mandarim-em-rede/collection-map-v1",
+  "title": "Mandarim em Rede — Mapa de coleção v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "produto", "colecao", "nivel", "unidades"],
+  "properties": {
+    "schema_version": {"const": "collection-map-v1"},
+    "produto": {"const": "Mandarim em Rede"},
+    "colecao": {"type": "string", "minLength": 1},
+    "nivel": {"type": "string", "minLength": 1},
+    "unidades": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["codigo", "ordem", "modulo", "funcao", "status", "pre_requisitos", "recicla", "introduz", "prepara"],
+        "properties": {
+          "codigo": {"type": "string", "pattern": "^[A-Z][0-9]{2}$"},
+          "ordem": {"type": "integer", "minimum": 1},
+          "modulo": {"type": "string", "minLength": 1},
+          "funcao": {"type": "string", "minLength": 1},
+          "status": {"enum": ["planejada", "draft", "revisao_linguistica", "revisao_pedagogica", "revisao_visual", "piloto", "aprovada", "publicada"]},
+          "pre_requisitos": {"type": "array", "items": {"type": "string", "pattern": "^[A-Z][0-9]{2}$"}},
+          "recicla": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "introduz": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "prepara": {"type": "array", "items": {"type": "string", "pattern": "^[A-Z][0-9]{2}$"}},
+          "vocabulario_novo_maximo": {"type": "integer", "minimum": 0}
+        }
+      }
+    }
+  }
+}

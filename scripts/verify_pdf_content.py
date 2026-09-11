@@ -79,6 +79,23 @@ def unit_tokens(unit: dict) -> set[str]:
     return {normalize(token) for token in tokens if normalize(token)}
 
 
+def rich_fragments(unit: dict) -> set[str]:
+    """Fragmentos editoriais ricos que devem aparecer no workbook."""
+    fragments: set[str] = set()
+    for key in ("contexto_emocional", "dificuldade_principal", "artefato_pratico"):
+        value = unit.get(key)
+        if isinstance(value, str) and value.strip():
+            compact = normalize(value)
+            fragments.add(compact if len(compact) <= 90 else compact[:45])
+    criteria = unit.get("criterios_autoavaliacao", [])
+    if isinstance(criteria, list):
+        for value in criteria:
+            if isinstance(value, str) and value.strip():
+                compact = normalize(value)
+                fragments.add(compact if len(compact) <= 90 else compact[:45])
+    return {item for item in fragments if item}
+
+
 def other_units(source: Path, library: Path, codigo: str) -> list[tuple[str, dict]]:
     units: list[tuple[str, dict]] = []
     for path in sorted(library.glob("*.json")):
@@ -96,7 +113,7 @@ def verify(pdf: Path, source: Path, library: Path) -> dict:
     unit = load_unit(source)
     text = normalize("".join(page_texts(pdf)))
 
-    required = sorted(printed_forms(unit) | unit_tokens(unit))
+    required = sorted(printed_forms(unit) | unit_tokens(unit) | rich_fragments(unit))
     missing = [item for item in required if item not in text]
 
     own = unit_corpus(unit)

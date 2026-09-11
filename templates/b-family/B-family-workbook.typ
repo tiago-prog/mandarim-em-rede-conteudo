@@ -209,5 +209,5 @@
   #panel(fill: mint, stroke: teal)[#grid(columns: (1fr, 1fr), gutter: 6pt, [#label("EM 24 HORAS", color: teal); #v(3pt); #writebox(height: 10mm, color: teal)], [#label("EM 7 DIAS", color: teal); #v(3pt); #writebox(height: 10mm, color: teal)])]
   #v(8pt)
   #section("PRÓXIMO TÓPICO", color: ochre)
-  #panel(fill: warm, stroke: ochre)[#small[#unit.proxima_unidade_sugerida]; #v(4pt); #grid(columns: (1fr, 1fr), gutter: 6pt, [#label("AINDA PRECISO PRATICAR", color: red); #v(3pt); #writebox(height: 13mm, color: red)], [#label("MINHA OBSERVAÇÃO", color: teal); #v(3pt); #writebox(height: 13mm, color: teal)])]
+  #panel(fill: warm, stroke: ochre)[#label("ARTEFATO PRÁTICO", color: ochre); #v(2pt); #small[#unit.artefato_pratico]; #v(4pt); #small[#unit.proxima_unidade_sugerida]; #v(4pt); #grid(columns: (1fr, 1fr), gutter: 6pt, [#label("AINDA PRECISO PRATICAR", color: red); #v(3pt); #writebox(height: 13mm, color: red)], [#label("MINHA OBSERVAÇÃO", color: teal); #v(3pt); #writebox(height: 13mm, color: teal)])]
 ]

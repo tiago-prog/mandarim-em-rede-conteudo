@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mandarim-em-rede/pdf-first-rich-batch-v2",
+  "title": "Mandarim em Rede — Lote PDF-first rico v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "produto", "content_profile", "template_registry", "output_label", "colecao", "modulo", "expected_pages_policy", "units"],
+  "properties": {
+    "schema_version": {"const": "pdf-first-rich-batch-v2"},
+    "produto": {"const": "Mandarim em Rede"},
+    "content_profile": {"const": "pdf-first-rich-v2"},
+    "template_registry": {"type": "string", "minLength": 1},
+    "output_label": {"type": "string", "minLength": 1},
+    "colecao": {"type": "string", "minLength": 1},
+    "modulo": {"type": "string", "minLength": 1},
+    "expected_pages_policy": {"enum": ["fixed", "range", "adaptive"]},
+    "expected_pages": {"type": "integer", "minimum": 1},
+    "min_pages": {"type": "integer", "minimum": 1},
+    "max_pages": {"type": "integer", "minimum": 1},
+    "units": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "source", "content_profile", "template_profile", "material", "edicao"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Z][0-9]{2}$"},
+          "source": {"type": "string", "minLength": 1},
+          "content_profile": {"const": "pdf-first-rich-v2"},
+          "template_profile": {"type": "string", "minLength": 1},
+          "material": {"type": "string", "minLength": 1},
+          "edicao": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  },
+  "allOf": [
+    {"if": {"properties": {"expected_pages_policy": {"const": "fixed"}}}, "then": {"required": ["expected_pages"]}},
+    {"if": {"properties": {"expected_pages_policy": {"const": "range"}}}, "then": {"required": ["min_pages", "max_pages"]}}
+  ]
+}

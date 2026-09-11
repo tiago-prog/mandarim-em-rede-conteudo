@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mandarim-em-rede/cumulative-vocabulary-v1",
+  "title": "Mandarim em Rede — Vocabulário cumulativo v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "produto", "colecao", "entradas"],
+  "properties": {
+    "schema_version": {"const": "cumulative-vocabulary-v1"},
+    "produto": {"const": "Mandarim em Rede"},
+    "colecao": {"type": "string", "minLength": 1},
+    "entradas": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["hanzi", "pinyin", "sentido", "primeira_unidade", "reciclar_em", "prioridade", "status"],
+        "properties": {
+          "hanzi": {"type": "string", "minLength": 1},
+          "pinyin": {"type": "string", "minLength": 1},
+          "sentido": {"type": "string", "minLength": 1},
+          "primeira_unidade": {"type": "string", "pattern": "^[A-Z][0-9]{2}$"},
+          "reciclar_em": {"type": "array", "items": {"type": "string", "pattern": "^[A-Z][0-9]{2}$"}},
+          "prioridade": {"enum": ["alta", "media", "baixa"]},
+          "status": {"enum": ["planejado", "ativo", "revisar", "consolidado"]}
+        }
+      }
+    }
+  }
+}
