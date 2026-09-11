@@ -1,0 +1,15 @@
+{
+  "schema_version": "pdf-first-batch-v1",
+  "produto": "Mandarim em Rede",
+  "template_registry": "templates/registry.json",
+  "output_label": "teste-b02-capa-e-lote",
+  "units": [
+    {
+      "id": "B02",
+      "source": "content/pdf_first/B02-perguntar-responder-e-devolver.json",
+      "template_profile": "b01-cumprimentos-v2",
+      "material": "WORKBOOK DO ALUNO · TESTE TÉCNICO",
+      "edicao": "EDIÇÃO DE TESTE · 2026"
+    }
+  ]
+}
