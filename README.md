@@ -11,6 +11,7 @@ mvp_pipeline/
 ├── audio_scripts/           # roteiros de áudio por tópico
 ├── schema/                  # contrato de dados
 ├── templates/               # futuras extensões de templates
+├── prototypes/              # workbooks Typst e PDFs de validação
 ├── build/                   # pacotes gerados
 ├── validate_unit.py         # validação antes da compilação
 └── generate_unit.py         # geração e empacotamento
@@ -50,6 +51,10 @@ A v1 valida o JSON, registra o estado editorial, gera o guia, o manifesto e reco
 
 O catálogo e a arquitetura vigentes estão documentados em `docs/roteiro_mestre_produto_visual_mandarim_em_rede.md`. O plano completo prevê 24 tópicos em quatro coleções. A primeira coleção comercial terá oito tópicos, começando por fundamentos, aeroporto, hotel, transporte e restaurante.
 
+## Estado atual do protótipo B01
+
+O workbook B01 de 12 páginas está implementado em `prototypes/B01-pdf-first/`. O PDF passou por compilação estrita, verificação de estrutura, inspeção visual completa e teste de conteúdo denso. O relatório `auditoria_estresse_B01.md` registra cinco correções funcionais recomendadas antes de transformar o padrão em template.
+
 ## Próxima evolução
 
-A próxima implementação deve criar o workbook de 12 páginas do B01 e parametrizar título, cena, banco de palavras, hanzi-alvo, pinyin, mapa, lacunas, reorganização, recombinação, artefato prático e revisão. Depois do teste de uso do B01, a arquitetura será replicada na primeira coleção de oito tópicos.
+A próxima implementação deve corrigir o mecanismo de resposta das atividades, explicitar os campos de hanzi, adicionar a legenda de tons e tornar a leitura em voz alta opcional. Depois do teste de uso do B01, a arquitetura poderá ser parametrizada e replicada na primeira coleção de oito tópicos.

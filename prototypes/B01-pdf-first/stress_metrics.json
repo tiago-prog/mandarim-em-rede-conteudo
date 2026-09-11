@@ -1,0 +1,574 @@
+{
+  "pdf": {
+    "path": "/home/ubuntu/mvp_pipeline/prototypes/B01-pdf-first/B01-workbook-visual-escrito.pdf",
+    "pages": 12,
+    "width_pt": 595.276,
+    "height_pt": 841.89
+  },
+  "source": {
+    "path": "/home/ubuntu/mvp_pipeline/prototypes/B01-pdf-first/B01-workbook.typ",
+    "page_markers": 12,
+    "total_writeboxes": 37,
+    "total_checkboxes": 41,
+    "total_tables": 4,
+    "total_cards": 26,
+    "minimum_writebox_height_mm": 5.0
+  },
+  "source_pages": [
+    {
+      "page": 1,
+      "titles": [
+        "Cumprimentos em contexto"
+      ],
+      "sections": [
+        "O QUE VOCÊ VAI CONSEGUIR FAZER",
+        "A SITUAÇÃO",
+        "RESULTADO MÍNIMO"
+      ],
+      "writebox_count": 0,
+      "checkbox_count": 0,
+      "table_count": 0,
+      "card_count": 2,
+      "action_term_count": 4,
+      "action_terms": [
+        "Escolha",
+        "escreva",
+        "leia",
+        "use"
+      ],
+      "writebox_heights_mm": [],
+      "minimum_writebox_height_mm": null,
+      "maximum_writebox_height_mm": null
+    },
+    {
+      "page": 2,
+      "titles": [
+        "A situação"
+      ],
+      "sections": [
+        "CENA PRINCIPAL",
+        "ANTES DE ESCREVER",
+        "MINHA DECISÃO"
+      ],
+      "writebox_count": 2,
+      "checkbox_count": 4,
+      "table_count": 0,
+      "card_count": 4,
+      "action_term_count": 3,
+      "action_terms": [
+        "Observe",
+        "Escolha",
+        "escreva"
+      ],
+      "writebox_heights_mm": [
+        9.0,
+        9.0
+      ],
+      "minimum_writebox_height_mm": 9.0,
+      "maximum_writebox_height_mm": 9.0
+    },
+    {
+      "page": 3,
+      "titles": [
+        "Banco de palavras"
+      ],
+      "sections": [
+        "PALAVRAS DO TÓPICO",
+        "LIGUE PALAVRA E SITUAÇÃO",
+        "UMA PALAVRA QUE EU QUERO LEMBRAR"
+      ],
+      "writebox_count": 2,
+      "checkbox_count": 6,
+      "table_count": 1,
+      "card_count": 0,
+      "action_term_count": 5,
+      "action_terms": [
+        "leia",
+        "use",
+        "Leia",
+        "ligue",
+        "Use"
+      ],
+      "writebox_heights_mm": [
+        9.0,
+        9.0
+      ],
+      "minimum_writebox_height_mm": 9.0,
+      "maximum_writebox_height_mm": 9.0
+    },
+    {
+      "page": 4,
+      "titles": [
+        "Mapa de linguagem"
+      ],
+      "sections": [
+        "QUATRO FORMAS CENTRAIS",
+        "MAPA DE DECISÃO",
+        "MAPA LACUNADO"
+      ],
+      "writebox_count": 0,
+      "checkbox_count": 0,
+      "table_count": 0,
+      "card_count": 4,
+      "action_term_count": 1,
+      "action_terms": [
+        "Tente"
+      ],
+      "writebox_heights_mm": [
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "minimum_writebox_height_mm": 5.0,
+      "maximum_writebox_height_mm": 5.0
+    },
+    {
+      "page": 5,
+      "titles": [
+        "Hanzi-alvo"
+      ],
+      "sections": [
+        "SEIS CARACTERES PARA ESTE TÓPICO",
+        "RECUPERAÇÃO",
+        "USE UM HANZI EM UMA PALAVRA"
+      ],
+      "writebox_count": 8,
+      "checkbox_count": 6,
+      "table_count": 0,
+      "card_count": 6,
+      "action_term_count": 0,
+      "action_terms": [],
+      "writebox_heights_mm": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0
+      ],
+      "minimum_writebox_height_mm": 9.0,
+      "maximum_writebox_height_mm": 9.0
+    },
+    {
+      "page": 6,
+      "titles": [
+        "Pinyin e tons"
+      ],
+      "sections": [
+        "QUATRO FORMAS DE LEITURA",
+        "LEITURA EM TRÊS PASSOS",
+        "MINHA OBSERVAÇÃO"
+      ],
+      "writebox_count": 1,
+      "checkbox_count": 4,
+      "table_count": 1,
+      "card_count": 3,
+      "action_term_count": 5,
+      "action_terms": [
+        "Leia",
+        "Leia",
+        "Leia",
+        "Leia",
+        "Escreva"
+      ],
+      "writebox_heights_mm": [
+        8.0,
+        18.0
+      ],
+      "minimum_writebox_height_mm": 8.0,
+      "maximum_writebox_height_mm": 18.0
+    },
+    {
+      "page": 7,
+      "titles": [
+        "Reconhecer"
+      ],
+      "sections": [
+        "ATIVIDADE 1 · ESCOLHA A FORMA",
+        "ATIVIDADE 2 · LIGUE HANZI E SENTIDO",
+        "ATIVIDADE 3 · CONFIRA SUA DECISÃO"
+      ],
+      "writebox_count": 0,
+      "checkbox_count": 4,
+      "table_count": 0,
+      "card_count": 0,
+      "action_term_count": 1,
+      "action_terms": [
+        "Ligue"
+      ],
+      "writebox_heights_mm": [],
+      "minimum_writebox_height_mm": null,
+      "maximum_writebox_height_mm": null
+    },
+    {
+      "page": 8,
+      "titles": [
+        "Recuperação escrita"
+      ],
+      "sections": [
+        "COMPLETE A FORMA",
+        "ESCREVA A FORMA COMPLETA",
+        "MINHA CONFERÊNCIA"
+      ],
+      "writebox_count": 4,
+      "checkbox_count": 8,
+      "table_count": 0,
+      "card_count": 0,
+      "action_term_count": 4,
+      "action_terms": [
+        "Tente",
+        "Escreva",
+        "compare",
+        "Marque"
+      ],
+      "writebox_heights_mm": [
+        5.0,
+        5.0,
+        5.0,
+        6.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0
+      ],
+      "minimum_writebox_height_mm": 5.0,
+      "maximum_writebox_height_mm": 11.0
+    },
+    {
+      "page": 9,
+      "titles": [
+        "Reorganizar"
+      ],
+      "sections": [
+        "COLOQUE OS BLOCOS EM ORDEM",
+        "RECONSTRUA SEM MODELO",
+        "O QUE A ORDEM MOSTRA?"
+      ],
+      "writebox_count": 3,
+      "checkbox_count": 2,
+      "table_count": 0,
+      "card_count": 0,
+      "action_term_count": 1,
+      "action_terms": [
+        "Escreva"
+      ],
+      "writebox_heights_mm": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "minimum_writebox_height_mm": 10.0,
+      "maximum_writebox_height_mm": 10.0
+    },
+    {
+      "page": 10,
+      "titles": [
+        "Recombinar"
+      ],
+      "sections": [
+        "ESTRUTURA + SITUAÇÃO",
+        "BANCO PARA TROCAR",
+        "MINHA VARIAÇÃO"
+      ],
+      "writebox_count": 5,
+      "checkbox_count": 4,
+      "table_count": 1,
+      "card_count": 3,
+      "action_term_count": 4,
+      "action_terms": [
+        "troque",
+        "Escolha",
+        "troque",
+        "Escreva"
+      ],
+      "writebox_heights_mm": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        18.0
+      ],
+      "minimum_writebox_height_mm": 7.0,
+      "maximum_writebox_height_mm": 18.0
+    },
+    {
+      "page": 11,
+      "titles": [
+        "Produção prática"
+      ],
+      "sections": [
+        "ARTEFATO · CARTÃO DE ENTRADA",
+        "NÍVEL DE APOIO",
+        "MINHA NOTA DE PRODUÇÃO"
+      ],
+      "writebox_count": 8,
+      "checkbox_count": 3,
+      "table_count": 0,
+      "card_count": 2,
+      "action_term_count": 3,
+      "action_terms": [
+        "Use",
+        "Escreva",
+        "leia"
+      ],
+      "writebox_heights_mm": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        18.0,
+        18.0
+      ],
+      "minimum_writebox_height_mm": 8.0,
+      "maximum_writebox_height_mm": 18.0
+    },
+    {
+      "page": 12,
+      "titles": [
+        "Revisar e continuar"
+      ],
+      "sections": [
+        "AUTOAVALIAÇÃO",
+        "MINHAS ANOTAÇÕES",
+        "CALENDÁRIO DE REVISÃO"
+      ],
+      "writebox_count": 4,
+      "checkbox_count": 0,
+      "table_count": 1,
+      "card_count": 2,
+      "action_term_count": 0,
+      "action_terms": [],
+      "writebox_heights_mm": [
+        15.0,
+        15.0,
+        10.0,
+        10.0
+      ],
+      "minimum_writebox_height_mm": 10.0,
+      "maximum_writebox_height_mm": 15.0
+    }
+  ],
+  "pdf_pages": [
+    {
+      "page": 1,
+      "characters": 685,
+      "words": 112,
+      "text_spans": 30,
+      "min_font_pt": 7.5,
+      "max_font_pt": 20.0,
+      "text_bbox": [
+        45.69,
+        37.02,
+        551.01,
+        403.57
+      ],
+      "text_area_ratio": 0.3696,
+      "text_vertical_ratio": 0.4354,
+      "drawing_count": 11,
+      "image_count": 1
+    },
+    {
+      "page": 2,
+      "characters": 463,
+      "words": 93,
+      "text_spans": 33,
+      "min_font_pt": 7.5,
+      "max_font_pt": 23.0,
+      "text_bbox": [
+        46.69,
+        34.71,
+        484.6,
+        486.63
+      ],
+      "text_area_ratio": 0.3949,
+      "text_vertical_ratio": 0.5368,
+      "drawing_count": 25,
+      "image_count": 1
+    },
+    {
+      "page": 3,
+      "characters": 500,
+      "words": 92,
+      "text_spans": 54,
+      "min_font_pt": 7.5,
+      "max_font_pt": 20.0,
+      "text_bbox": [
+        39.69,
+        34.71,
+        523.92,
+        414.01
+      ],
+      "text_area_ratio": 0.3665,
+      "text_vertical_ratio": 0.4505,
+      "drawing_count": 58,
+      "image_count": 1
+    },
+    {
+      "page": 4,
+      "characters": 411,
+      "words": 84,
+      "text_spans": 42,
+      "min_font_pt": 7.5,
+      "max_font_pt": 22.0,
+      "text_bbox": [
+        45.69,
+        34.71,
+        462.26,
+        505.99
+      ],
+      "text_area_ratio": 0.3917,
+      "text_vertical_ratio": 0.5598,
+      "drawing_count": 31,
+      "image_count": 1
+    },
+    {
+      "page": 5,
+      "characters": 369,
+      "words": 71,
+      "text_spans": 36,
+      "min_font_pt": 7.5,
+      "max_font_pt": 28.0,
+      "text_bbox": [
+        46.69,
+        34.71,
+        509.03,
+        415.32
+      ],
+      "text_area_ratio": 0.3511,
+      "text_vertical_ratio": 0.4521,
+      "drawing_count": 41,
+      "image_count": 1
+    },
+    {
+      "page": 6,
+      "characters": 384,
+      "words": 80,
+      "text_spans": 34,
+      "min_font_pt": 7.5,
+      "max_font_pt": 21.0,
+      "text_bbox": [
+        45.69,
+        34.71,
+        502.17,
+        355.74
+      ],
+      "text_area_ratio": 0.2924,
+      "text_vertical_ratio": 0.3813,
+      "drawing_count": 50,
+      "image_count": 1
+    },
+    {
+      "page": 7,
+      "characters": 374,
+      "words": 70,
+      "text_spans": 36,
+      "min_font_pt": 7.5,
+      "max_font_pt": 20.0,
+      "text_bbox": [
+        46.69,
+        34.71,
+        463.24,
+        373.47
+      ],
+      "text_area_ratio": 0.2816,
+      "text_vertical_ratio": 0.4024,
+      "drawing_count": 13,
+      "image_count": 1
+    },
+    {
+      "page": 8,
+      "characters": 360,
+      "words": 55,
+      "text_spans": 24,
+      "min_font_pt": 7.5,
+      "max_font_pt": 20.0,
+      "text_bbox": [
+        46.69,
+        34.71,
+        493.03,
+        479.61
+      ],
+      "text_area_ratio": 0.3962,
+      "text_vertical_ratio": 0.5285,
+      "drawing_count": 33,
+      "image_count": 1
+    },
+    {
+      "page": 9,
+      "characters": 335,
+      "words": 67,
+      "text_spans": 28,
+      "min_font_pt": 7.5,
+      "max_font_pt": 20.0,
+      "text_bbox": [
+        46.69,
+        34.71,
+        446.86,
+        467.63
+      ],
+      "text_area_ratio": 0.3457,
+      "text_vertical_ratio": 0.5142,
+      "drawing_count": 31,
+      "image_count": 1
+    },
+    {
+      "page": 10,
+      "characters": 351,
+      "words": 59,
+      "text_spans": 28,
+      "min_font_pt": 7.5,
+      "max_font_pt": 22.0,
+      "text_bbox": [
+        45.69,
+        34.71,
+        514.92,
+        405.21
+      ],
+      "text_area_ratio": 0.3469,
+      "text_vertical_ratio": 0.4401,
+      "drawing_count": 58,
+      "image_count": 1
+    },
+    {
+      "page": 11,
+      "characters": 411,
+      "words": 70,
+      "text_spans": 19,
+      "min_font_pt": 7.5,
+      "max_font_pt": 20.0,
+      "text_bbox": [
+        46.69,
+        34.71,
+        529.02,
+        370.38
+      ],
+      "text_area_ratio": 0.3231,
+      "text_vertical_ratio": 0.3987,
+      "drawing_count": 32,
+      "image_count": 1
+    },
+    {
+      "page": 12,
+      "characters": 407,
+      "words": 75,
+      "text_spans": 34,
+      "min_font_pt": 7.5,
+      "max_font_pt": 20.0,
+      "text_bbox": [
+        45.69,
+        34.71,
+        513.65,
+        419.46
+      ],
+      "text_area_ratio": 0.3593,
+      "text_vertical_ratio": 0.457,
+      "drawing_count": 55,
+      "image_count": 1
+    }
+  ]
+}
