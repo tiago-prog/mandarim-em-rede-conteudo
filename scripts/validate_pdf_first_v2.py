@@ -27,6 +27,8 @@ PACKAGE_CODES = {"W1", "W2", "V1", "X1", "R1", "R2", "R3", "R4", "Q1", "R5"}
 TONE_MARKS = {"\u0304", "\u0301", "\u030c", "\u0300"}
 NEUTRAL_SYLLABLES = {"ma", "ne", "ba", "de", "le", "ge", "me", "zi", "a"}
 HANZI = re.compile(r"[\u4e00-\u9fff]")
+BUREAUCRATIC = re.compile(r"\b(observe|identifique|tente|registre|complete|ordene|reconheça|releia|repita)\w*\b", re.IGNORECASE)
+SUBJECTIVE_CRITERIA = ("mantenho o sentido", "reconheço a função", "entendo a estrutura")
 
 
 def strip_punctuation(value: str) -> str:
@@ -71,6 +73,28 @@ def editorial_errors(unit: dict) -> tuple[list[str], list[str]]:
         hanzi = item.get("hanzi", "") if isinstance(item, dict) else ""
         if hanzi and hanzi not in unit_forms and hanzi not in {item.get("hanzi", "") for item in unit.get("palavras_chave", [])}:
             errors.append(f"hanzi_alvo[{index}] ({hanzi}) não aparece integralmente em nenhuma estrutura ou palavra-chave da unidade")
+
+    criteria = unit.get("criterios_autoavaliacao", [])
+    if isinstance(criteria, list):
+        for index, criterion in enumerate(criteria, 1):
+            text = str(criterion).strip()
+            if len(text) > 52:
+                errors.append(f"criterios_autoavaliacao[{index}] excede 52 caracteres; reescreva para uma linha observável")
+            lowered = text.casefold()
+            if any(phrase in lowered for phrase in SUBJECTIVE_CRITERIA):
+                errors.append(f"criterios_autoavaliacao[{index}] usa formulação subjetiva: {text}")
+            if text.count(" e ") > 1 or text.count("/") > 1:
+                warnings.append(f"criterios_autoavaliacao[{index}] pode conter mais de uma ação: {text}")
+
+    priority_text = " ".join(
+        [str(item) for item in unit.get("preparacao", [])]
+        + [str(unit.get("atividades", {}).get("reorganizacao", {}).get("instrucao", ""))]
+        + [str(unit.get("atividades", {}).get("recombinacao", {}).get("instrucao", ""))]
+        + [str(item.get("instrucao", "")) for item in unit.get("producao", {}).get("cenarios", []) if isinstance(item, dict)]
+    )
+    bureaucratic = sorted(set(BUREAUCRATIC.findall(priority_text)))
+    if len(bureaucratic) >= 3:
+        warnings.append("linguagem prioritária ainda contém muitos comandos burocráticos: " + ", ".join(bureaucratic))
 
     for index, item in enumerate(unit.get("palavras_chave", []), 1):
         if not isinstance(item, dict):

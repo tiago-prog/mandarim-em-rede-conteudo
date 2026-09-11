@@ -7,17 +7,17 @@
     "titulo": "Identificar pessoas e objetos",
     "colecao": "Coleção 01 · Primeiras interações",
     "nivel": "iniciante",
-    "status": "draft",
+    "status": "revisao_visual",
     "objetivo_comunicativo": "Perguntar o que é um objeto e quem é uma pessoa, perto ou longe, e responder identificando o referente.",
     "resultado_minimo": "Produzir quatro perguntas e respostas curtas sobre pessoas e objetos usando 这、那、谁 e 什么.",
     "situacao_principal": "Chegar a uma sala nova, observar pessoas e objetos e descobrir quem está presente e o que está sobre a mesa.",
     "contexto_emocional": "O aluno reconhece os objetos, mas não sabe como pedir o nome deles sem apontar em silêncio.",
     "dificuldade_principal": "Trocar 这 por 那 ao indicar distância e usar 什么 para pessoas em vez de 谁.",
     "preparacao": [
-      "Observe o que está perto e o que está longe.",
-      "Decida se o referente é pessoa ou objeto.",
-      "Tente a pergunta antes de consultar o mapa.",
-      "Registre o referente que você não soube nomear."
+      "Quem está perto? Quem está longe?",
+      "É pessoa ou objeto?",
+      "Feche o mapa. Tente a pergunta.",
+      "O que ainda ficou estranho?"
     ],
     "estruturas": [
       {
@@ -82,29 +82,129 @@
       }
     ],
     "mapa_decisao": [
-      {"intencao": "Perguntar sobre objeto", "mandarim": "这是什么？", "pinyin": "Zhè shì shénme?"},
-      {"intencao": "Perguntar sobre pessoa", "mandarim": "那是谁？", "pinyin": "Nà shì shéi?"},
-      {"intencao": "Identificar objeto", "mandarim": "这是书。", "pinyin": "Zhè shì shū."},
-      {"intencao": "Identificar pessoa", "mandarim": "那是朋友。", "pinyin": "Nà shì péngyou."}
+      {
+        "intencao": "Perguntar sobre objeto",
+        "mandarim": "这是什么？",
+        "pinyin": "Zhè shì shénme?"
+      },
+      {
+        "intencao": "Perguntar sobre pessoa",
+        "mandarim": "那是谁？",
+        "pinyin": "Nà shì shéi?"
+      },
+      {
+        "intencao": "Identificar objeto",
+        "mandarim": "这是书。",
+        "pinyin": "Zhè shì shū."
+      },
+      {
+        "intencao": "Identificar pessoa",
+        "mandarim": "那是朋友。",
+        "pinyin": "Nà shì péngyou."
+      }
     ],
     "hanzi_alvo": [
-      {"hanzi": "这", "pinyin": "zhè", "sentido": "este, isto", "prioridade": "alta"},
-      {"hanzi": "那", "pinyin": "nà", "sentido": "aquele, aquilo", "prioridade": "alta"},
-      {"hanzi": "谁", "pinyin": "shéi", "sentido": "quem", "prioridade": "alta"},
-      {"hanzi": "是", "pinyin": "shì", "sentido": "ser", "prioridade": "media"},
-      {"hanzi": "书", "pinyin": "shū", "sentido": "livro", "prioridade": "media"},
-      {"hanzi": "朋友", "pinyin": "péngyou", "sentido": "amigo, amiga", "prioridade": "media"}
+      {
+        "hanzi": "这",
+        "pinyin": "zhè",
+        "sentido": "este, isto",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "那",
+        "pinyin": "nà",
+        "sentido": "aquele, aquilo",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "谁",
+        "pinyin": "shéi",
+        "sentido": "quem",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "sentido": "ser",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "书",
+        "pinyin": "shū",
+        "sentido": "livro",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "朋友",
+        "pinyin": "péngyou",
+        "sentido": "amigo, amiga",
+        "prioridade": "media"
+      }
     ],
     "palavras_chave": [
-      {"hanzi": "这", "pinyin": "zhè", "sentido": "este, isto", "categoria": "informacao", "uso": "referente perto"},
-      {"hanzi": "那", "pinyin": "nà", "sentido": "aquele, aquilo", "categoria": "informacao", "uso": "referente longe"},
-      {"hanzi": "是", "pinyin": "shì", "sentido": "ser", "categoria": "acao", "uso": "identidade"},
-      {"hanzi": "什么", "pinyin": "shénme", "sentido": "o que", "categoria": "informacao", "uso": "pergunta sobre objeto"},
-      {"hanzi": "谁", "pinyin": "shéi", "sentido": "quem", "categoria": "informacao", "uso": "pergunta sobre pessoa"},
-      {"hanzi": "书", "pinyin": "shū", "sentido": "livro", "categoria": "objeto", "uso": "resposta"},
-      {"hanzi": "电话", "pinyin": "diànhuà", "sentido": "telefone", "categoria": "objeto", "uso": "resposta"},
-      {"hanzi": "老师", "pinyin": "lǎoshī", "sentido": "professor ou professora", "categoria": "pessoa", "uso": "resposta"},
-      {"hanzi": "朋友", "pinyin": "péngyou", "sentido": "amigo ou amiga", "categoria": "pessoa", "uso": "resposta"}
+      {
+        "hanzi": "这",
+        "pinyin": "zhè",
+        "sentido": "este, isto",
+        "categoria": "informacao",
+        "uso": "referente perto"
+      },
+      {
+        "hanzi": "那",
+        "pinyin": "nà",
+        "sentido": "aquele, aquilo",
+        "categoria": "informacao",
+        "uso": "referente longe"
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "sentido": "ser",
+        "categoria": "acao",
+        "uso": "identidade"
+      },
+      {
+        "hanzi": "什么",
+        "pinyin": "shénme",
+        "sentido": "o que",
+        "categoria": "informacao",
+        "uso": "pergunta sobre objeto"
+      },
+      {
+        "hanzi": "谁",
+        "pinyin": "shéi",
+        "sentido": "quem",
+        "categoria": "informacao",
+        "uso": "pergunta sobre pessoa"
+      },
+      {
+        "hanzi": "书",
+        "pinyin": "shū",
+        "sentido": "livro",
+        "categoria": "objeto",
+        "uso": "resposta"
+      },
+      {
+        "hanzi": "电话",
+        "pinyin": "diànhuà",
+        "sentido": "telefone",
+        "categoria": "objeto",
+        "uso": "resposta"
+      },
+      {
+        "hanzi": "老师",
+        "pinyin": "lǎoshī",
+        "sentido": "professor ou professora",
+        "categoria": "pessoa",
+        "uso": "resposta"
+      },
+      {
+        "hanzi": "朋友",
+        "pinyin": "péngyou",
+        "sentido": "amigo ou amiga",
+        "categoria": "pessoa",
+        "uso": "resposta"
+      }
     ],
     "atividades": {
       "reconhecimento": [
@@ -134,48 +234,84 @@
         }
       ],
       "reorganizacao": {
-        "instrucao": "Escreva a ordem dos blocos para formar a pergunta sobre uma pessoa distante.",
-        "blocos": ["谁", "那", "是", "？"],
+        "instrucao": "Monte a pergunta na ordem certa.",
+        "blocos": [
+          "谁",
+          "那",
+          "是",
+          "？"
+        ],
         "resultado_esperado": "那是谁？",
         "reconstrucoes": [
-          {"pedido": "O que é isto?", "mandarim": "这是什么？"},
-          {"pedido": "Isto é um livro.", "mandarim": "这是书。"}
+          {
+            "pedido": "O que é isto?",
+            "mandarim": "这是什么？"
+          },
+          {
+            "pedido": "Isto é um livro.",
+            "mandarim": "这是书。"
+          }
         ]
       },
       "recombinacao": {
-        "instrucao": "Mantenha o demonstrativo e troque somente o referente identificado.",
+        "instrucao": "Troque só o referente. Mantenha o demonstrativo.",
         "banco": [
-          {"rotulo": "objeto", "hanzi": "书", "pinyin": "shū"},
-          {"rotulo": "objeto", "hanzi": "电话", "pinyin": "diànhuà"},
-          {"rotulo": "pessoa", "hanzi": "老师", "pinyin": "lǎoshī"},
-          {"rotulo": "pessoa", "hanzi": "朋友", "pinyin": "péngyou"}
+          {
+            "rotulo": "objeto",
+            "hanzi": "书",
+            "pinyin": "shū"
+          },
+          {
+            "rotulo": "objeto",
+            "hanzi": "电话",
+            "pinyin": "diànhuà"
+          },
+          {
+            "rotulo": "pessoa",
+            "hanzi": "老师",
+            "pinyin": "lǎoshī"
+          },
+          {
+            "rotulo": "pessoa",
+            "hanzi": "朋友",
+            "pinyin": "péngyou"
+          }
         ],
-        "moldes": ["这是…。", "那是…。", "这是…？"]
+        "moldes": [
+          "这是…。",
+          "那是…。",
+          "这是…？"
+        ]
       }
     },
     "producao": {
       "cenarios": [
         {
           "titulo": "Inventário da sala",
-          "instrucao": "Escolha dois objetos e duas pessoas da sala em que você está. Escreva a pergunta e a resposta de cada um, marcando se está perto ou longe.",
+          "instrucao": "Escolha dois objetos e duas pessoas. Fale cada pergunta antes de escrever.",
           "apoio": "com_apoio",
-          "campos": ["Perto", "Longe"]
+          "campos": [
+            "Perto",
+            "Longe"
+          ]
         },
         {
           "titulo": "Apresentar sem o mapa",
-          "instrucao": "Escreva quatro trocas novas apresentando pessoas e objetos, sem consultar o mapa de decisão.",
+          "instrucao": "Crie 4 trocas suas sem consultar o mapa de decisão.",
           "apoio": "menos_apoio",
-          "campos": ["Minhas trocas"]
+          "campos": [
+            "Minhas trocas"
+          ]
         }
       ]
     },
     "artefato_pratico": "Inventário visual de quatro referentes da sala, cada um com pergunta, resposta e marca de distância.",
     "criterios_autoavaliacao": [
-      "Escolho 这 ou 那 conforme a distância",
-      "Uso 什么 para objetos e 谁 para pessoas",
-      "Respondo identificando o referente",
-      "Escrevo uma variação trocando apenas o referente",
-      "Leio minha produção em voz alta"
+      "Escolho 这 ou 那 certo",
+      "Uso 什么 para objetos",
+      "Uso 谁 para pessoas",
+      "Troco só o referente",
+      "Falo sem consultar o mapa"
     ],
     "sequencia": [
       "situar",
@@ -190,7 +326,12 @@
       "revisar"
     ],
     "pacotes": {
-      "essencial": ["W1", "W2", "V1", "R1"],
+      "essencial": [
+        "W1",
+        "W2",
+        "V1",
+        "R1"
+      ],
       "extensoes": {
         "pronuncia": true,
         "escrita": true,

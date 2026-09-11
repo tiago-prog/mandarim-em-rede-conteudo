@@ -7,7 +7,7 @@
     "titulo": "Pedidos em café ou restaurante",
     "colecao": "Coleção 01 · Primeiras interações",
     "nivel": "iniciante",
-    "status": "draft",
+    "status": "revisao_visual",
     "objetivo_comunicativo": "Fazer um pedido simples e responder confirmando item ou quantidade.",
     "resultado_minimo": "Realizar três pedidos curtos usando 请, 要 e uma forma de confirmação.",
     "situacao_principal": "Em um café ou restaurante, pedir uma bebida ou item e confirmar o pedido.",
@@ -16,7 +16,8 @@
     "preparacao": [
       "Visualize o cardápio.",
       "Escolha item e quantidade.",
-      "Faça o pedido em voz alta."
+      "Faça o pedido em voz alta.",
+      "O que ainda ficou estranho?"
     ],
     "estruturas": [
       {
@@ -221,7 +222,7 @@
         }
       ],
       "reorganizacao": {
-        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "instrucao": "Monte o pedido na ordem certa.",
         "blocos": [
           "我",
           "要",
@@ -241,7 +242,7 @@
         ]
       },
       "recombinacao": {
-        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "instrucao": "Troque só o item ou a quantidade.",
         "banco": [
           {
             "rotulo": "bebida",
@@ -270,7 +271,7 @@
       "cenarios": [
         {
           "titulo": "Cardápio",
-          "instrucao": "Escolha dois itens e faça pedidos.",
+          "instrucao": "Escolha dois itens. Fale cada pedido antes de escrever.",
           "apoio": "com_apoio",
           "campos": [
             "item",
@@ -279,7 +280,7 @@
         },
         {
           "titulo": "Pedido sem apoio",
-          "instrucao": "Faça um pedido e confirme a escolha.",
+          "instrucao": "Faça um pedido e confirme a escolha sem consultar o mapa.",
           "apoio": "menos_apoio",
           "campos": [
             "pedido",
@@ -290,10 +291,11 @@
     },
     "artefato_pratico": "Cardápio preenchido com três pedidos e quantidades.",
     "criterios_autoavaliacao": [
-      "Uso 要 para pedir.",
-      "Uso 请 para cortesia.",
-      "Confirmo a escolha com este item.",
-      "Produzo o fechamento social."
+      "Uso 要 para pedir",
+      "Uso 请 para ser cortês",
+      "Confirmo a escolha com este item",
+      "Faço o fechamento social",
+      "Falo sem consultar o mapa"
     ],
     "sequencia": [
       "situar",

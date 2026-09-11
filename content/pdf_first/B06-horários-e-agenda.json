@@ -7,7 +7,7 @@
     "titulo": "Horários e agenda",
     "colecao": "Coleção 01 · Primeiras interações",
     "nivel": "iniciante",
-    "status": "draft",
+    "status": "revisao_visual",
     "objetivo_comunicativo": "Perguntar e informar horário ou momento de uma atividade cotidiana.",
     "resultado_minimo": "Produzir três perguntas e respostas sobre horário usando 现在, 点 e 分.",
     "situacao_principal": "Combinar uma aula ou encontro perguntando quando começa e respondendo com um horário.",
@@ -15,8 +15,9 @@
     "dificuldade_principal": "Distinguir agora, hora e minuto e manter o classificador temporal na sequência.",
     "preparacao": [
       "Imagine o compromisso.",
-      "Ouça o número antes da unidade de tempo.",
-      "Tente perguntar e responder em voz alta."
+      "Ouça o número antes da unidade.",
+      "Pergunte e responda em voz alta.",
+      "O que ainda ficou estranho?"
     ],
     "estruturas": [
       {
@@ -214,7 +215,7 @@
         }
       ],
       "reorganizacao": {
-        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "instrucao": "Monte a expressão de horário na ordem certa.",
         "blocos": [
           "现在",
           "几",
@@ -234,7 +235,7 @@
         ]
       },
       "recombinacao": {
-        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "instrucao": "Troque só o horário.",
         "banco": [
           {
             "rotulo": "hora",
@@ -263,7 +264,7 @@
       "cenarios": [
         {
           "titulo": "Agenda",
-          "instrucao": "Pergunte e registre dois horários.",
+          "instrucao": "Pergunte e informe dois horários. Fale cada horário antes de escrever.",
           "apoio": "com_apoio",
           "campos": [
             "pergunta",
@@ -272,7 +273,7 @@
         },
         {
           "titulo": "Marcação",
-          "instrucao": "Combine um encontro usando um horário novo.",
+          "instrucao": "Combine um encontro usando um horário novo, sem mapa.",
           "apoio": "menos_apoio",
           "campos": [
             "horário",
@@ -283,10 +284,11 @@
     },
     "artefato_pratico": "Cartão de agenda com duas atividades e horários.",
     "criterios_autoavaliacao": [
-      "Uso 点 depois do número.",
-      "Reconheço 半 como meia hora.",
-      "Pergunto quando com 什么时候.",
-      "Respondo com período e horário."
+      "Coloco 点 depois do número",
+      "Reconheço 半 como meia hora",
+      "Pergunto quando com 什么时候",
+      "Respondo com período e horário",
+      "Falo sem consultar o mapa"
     ],
     "sequencia": [
       "situar",

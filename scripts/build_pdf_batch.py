@@ -42,8 +42,9 @@ def run(command: list[str], *, cwd: Path | None = None) -> subprocess.CompletedP
     return subprocess.run(command, cwd=cwd, text=True, capture_output=True, check=False)
 
 
-def validate_source(source: Path) -> dict:
-    result = run([sys.executable, str(ROOT / "scripts" / "validate_pdf_first.py"), str(source), "--json"], cwd=ROOT)
+def validate_source(source: Path, *, rich: bool = False) -> dict:
+    validator = ROOT / "scripts" / ("validate_pdf_first_v2.py" if rich else "validate_pdf_first.py")
+    result = run([sys.executable, str(validator), str(source), "--json"], cwd=ROOT)
     try:
         payload = json.loads(result.stdout)
     except json.JSONDecodeError:
@@ -132,7 +133,7 @@ def build_one(batch: dict, item: dict, registry: dict, output_root: Path) -> dic
     source = (ROOT / item["source"]).resolve()
     if not source.is_file():
         raise FileNotFoundError(f"fonte não encontrada: {source}")
-    validation = validate_source(source)
+    validation = validate_source(source, rich=batch.get("schema_version") == "pdf-first-rich-batch-v2")
     if not validation.get("valid"):
         raise ValueError(f"conteúdo inválido: {validation.get('errors', [])}")
 

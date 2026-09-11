@@ -7,16 +7,17 @@
     "titulo": "Localização e direções",
     "colecao": "Coleção 01 · Primeiras interações",
     "nivel": "iniciante",
-    "status": "draft",
+    "status": "revisao_visual",
     "objetivo_comunicativo": "Perguntar onde está uma pessoa ou objeto e responder com uma localização simples.",
     "resultado_minimo": "Realizar quatro trocas de localização usando 在, 这里, 那里 e um lugar conhecido.",
     "situacao_principal": "Em um prédio novo, descobrir onde estão uma pessoa, uma sala ou um objeto.",
     "contexto_emocional": "O aluno precisa se orientar e sente urgência para obter uma resposta curta.",
     "dificuldade_principal": "Distinguir pergunta de localização e resposta com 在.",
     "preparacao": [
-      "Observe o mapa do lugar.",
-      "Escolha pessoa, objeto ou sala.",
-      "Produza a pergunta antes de olhar a resposta."
+      "O que você quer localizar?",
+      "É pessoa, objeto ou sala?",
+      "Fale a pergunta antes de olhar a resposta.",
+      "O que ainda ficou estranho?"
     ],
     "estruturas": [
       {
@@ -220,7 +221,7 @@
         }
       ],
       "reorganizacao": {
-        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "instrucao": "Monte a pergunta de localização na ordem certa.",
         "blocos": [
           "在",
           "哪",
@@ -240,7 +241,7 @@
         ]
       },
       "recombinacao": {
-        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "instrucao": "Troque só o lugar ou o referente.",
         "banco": [
           {
             "rotulo": "perto",
@@ -269,7 +270,7 @@
       "cenarios": [
         {
           "titulo": "Mapa da sala",
-          "instrucao": "Pergunte onde estão dois itens.",
+          "instrucao": "Pergunte onde estão dois itens. Fale primeiro; escreva depois.",
           "apoio": "com_apoio",
           "campos": [
             "item",
@@ -278,7 +279,7 @@
         },
         {
           "titulo": "Busca",
-          "instrucao": "Dê duas localizações sem consultar.",
+          "instrucao": "Dê duas localizações sem consultar o mapa.",
           "apoio": "sem_apoio",
           "campos": [
             "pergunta",
@@ -289,10 +290,11 @@
     },
     "artefato_pratico": "Mapa simples com quatro referentes e suas localizações.",
     "criterios_autoavaliacao": [
-      "Uso 在 para localizar.",
-      "Distingo 这里 e 那里.",
-      "Pergunto onde sem traduzir palavra por palavra.",
-      "Respondo com lugar compreensível."
+      "Uso 在 para localizar",
+      "Distingo 这里 de 那里",
+      "Pergunto onde sem traduzir",
+      "Respondo com lugar claro",
+      "Falo sem consultar o mapa"
     ],
     "sequencia": [
       "situar",

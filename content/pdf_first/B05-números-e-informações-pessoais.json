@@ -7,16 +7,17 @@
     "titulo": "Números e informações pessoais",
     "colecao": "Coleção 01 · Primeiras interações",
     "nivel": "iniciante",
-    "status": "draft",
+    "status": "revisao_visual",
     "objetivo_comunicativo": "Perguntar e informar idade, telefone ou número em uma interação inicial.",
     "resultado_minimo": "Produzir três trocas com números, usando 几 ou 多少 conforme a informação solicitada.",
     "situacao_principal": "Em uma apresentação ou cadastro simples, pedir e fornecer uma informação numérica.",
     "contexto_emocional": "O aluno quer informar seus dados sem travar ao ouvir uma pergunta curta.",
     "dificuldade_principal": "Distinguir 几 de 多少 e manter o número na posição correta.",
     "preparacao": [
-      "Observe qual informação é numérica.",
-      "Escolha pergunta curta ou específica.",
-      "Fale o número antes de conferir."
+      "Qual informação é numérica?",
+      "A pergunta pede dado curto ou aberto?",
+      "Fale o número antes de conferir.",
+      "O que ainda ficou estranho?"
     ],
     "estruturas": [
       {
@@ -220,7 +221,7 @@
         }
       ],
       "reorganizacao": {
-        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "instrucao": "Monte a expressão numérica na ordem certa.",
         "blocos": [
           "你",
           "几",
@@ -240,7 +241,7 @@
         ]
       },
       "recombinacao": {
-        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "instrucao": "Troque só o número ou a informação.",
         "banco": [
           {
             "rotulo": "idade",
@@ -269,7 +270,7 @@
       "cenarios": [
         {
           "titulo": "Cadastro",
-          "instrucao": "Pergunte e registre idade e telefone de uma pessoa.",
+          "instrucao": "Pergunte e informe idade e telefone. Fale antes de escrever.",
           "apoio": "com_apoio",
           "campos": [
             "idade",
@@ -278,7 +279,7 @@
         },
         {
           "titulo": "Apresentação",
-          "instrucao": "Dê duas informações numéricas sem olhar.",
+          "instrucao": "Dê duas informações numéricas sem olhar o mapa.",
           "apoio": "sem_apoio",
           "campos": [
             "idade",
@@ -289,10 +290,11 @@
     },
     "artefato_pratico": "Ficha curta de informações pessoais numéricas.",
     "criterios_autoavaliacao": [
-      "Escolho 几 para idade.",
-      "Uso 多少 para quantidade aberta.",
-      "Produzo números com ritmo estável.",
-      "Respondo sem inverter a ordem."
+      "Escolho 几 para idade",
+      "Uso 多少 para quantidade aberta",
+      "Produzo números com ritmo estável",
+      "Respondo sem inverter a ordem",
+      "Falo sem consultar o mapa"
     ],
     "sequencia": [
       "situar",

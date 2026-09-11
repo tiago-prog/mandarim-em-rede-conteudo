@@ -16,6 +16,7 @@
 #let unit = data.unidade
 #let structures = unit.estruturas
 #let decision = unit.mapa_decisao
+#let hanzi-targets = unit.hanzi_alvo
 #let words = unit.palavras_chave
 #let activities = unit.atividades
 #let recognition = activities.reconhecimento
@@ -44,6 +45,14 @@
 #let card(body, fill: cream, stroke: navy) = box(width: 100%, inset: 6pt, fill: fill, stroke: 0.75pt + stroke, radius: 5pt)[#body]
 #let check(txt, color: navy) = grid(columns: (10pt, 1fr), column-gutter: 4pt, [#box(width: 8pt, height: 8pt, stroke: 0.8pt + color, fill: cream)], [#txt])
 #let writebox(height: 8mm, color: teal) = box(width: 100%, height: height, fill: cream, stroke: 0.8pt + color, radius: 3pt)
+#let oral-cue(txt: "Fale primeiro. Escreva depois. Consulte o mapa só depois da tentativa.") = box(width: 100%, inset: (x: 6pt, y: 4pt), fill: pink, stroke: 0.7pt + red, radius: 4pt)[#text(size: 8.5pt, weight: "bold", fill: red)[#txt]]
+#let named-space(title, instruction: none, height: 15mm, color: teal) = {
+  section(title, color: color)
+  panel(fill: cream, stroke: color)[
+    #if instruction != none { small[#instruction]; v(3pt) }
+    #writebox(height: height, color: color)
+  ]
+}
 #let small(body) = text(size: 8.5pt, fill: gray)[#body]
 #let tcell(body, fill: cream) = table.cell(fill: fill, inset: (x: 4pt, y: 3.5pt))[#body]
 #let palette = ((cream, navy), (warm, ochre), (mint, teal), (pink, red))
@@ -106,8 +115,20 @@
     }).flatten()
   )
   #v(8pt)
-  #section("MINHA PALAVRA MAIS IMPORTANTE", color: ochre)
-  #panel(fill: warm, stroke: ochre)[#grid(columns: (30mm, 1fr), gutter: 6pt, [#label("HANZI", color: ochre)], [#writebox(height: 9mm, color: ochre)], [#label("FRASE OU USO", color: ochre)], [#writebox(height: 9mm, color: ochre)])]
+  #section("ESCRITA DE HANZI · FALE PRIMEIRO, ESCREVA DEPOIS", color: ochre)
+  #panel(fill: warm, stroke: ochre)[
+    #small[Copie quatro caracteres do tópico. Depois, cubra o modelo e escreva de memória.]
+    #v(5pt)
+    #grid(columns: (1fr, 1fr, 1fr, 1fr), gutter: 5pt, ..hanzi-targets.slice(0, calc.min(hanzi-targets.len(), 4)).enumerate().map(((i, item)) => {
+      card([
+        #align(center)[#cjk(item.hanzi, size: 22pt)]
+        #v(2pt)
+        #align(center)[#text(size: 8pt, fill: red)[#item.pinyin]]
+        #v(3pt)
+        #writebox(height: 9mm, color: ochre)
+      ], fill: cream, stroke: ochre)
+    }))
+  ]
 ]
 
 #page[
@@ -137,6 +158,8 @@
 
 #page[
   #page-title("Recuperação", sub: "Tente primeiro; confira depois")
+  #oral-cue()
+  #v(5pt)
   #section("COMPLETE A FORMA", color: navy)
   #panel(fill: cream, stroke: navy)[#grid(columns: (42mm, 1fr, 25mm), gutter: 6pt, [#label("Função", color: navy)], [#label("Minha resposta", color: navy)], [#label("Conferi", color: navy)], ..decision.map(row => ([#row.intencao], [#writebox(height: 9mm, color: teal)], [#check([ ])])).flatten())]
   #v(8pt)
@@ -144,7 +167,7 @@
   #panel(fill: mint, stroke: teal)[#small[Escreva um caractere que aparece em pelo menos duas formas do tópico.]; #v(4pt); #grid(columns: (35mm, 1fr), gutter: 6pt, [#label("HANZI", color: teal)], [#writebox(height: 12mm, color: teal)], [#label("PALAVRA", color: teal)], [#writebox(height: 12mm, color: teal)])]
   #v(8pt)
   #section("O QUE ACONTECEU?", color: ochre)
-  #panel(fill: warm, stroke: ochre)[#grid(columns: (1fr, 1fr), gutter: 6pt, [#check([Lembrei sem copiar.])], [#check([Consultei depois da tentativa.])], [#check([Corrigi uma forma.])], [#check([Li em voz alta.])])]
+  #panel(fill: warm, stroke: ochre)[#grid(columns: (1fr, 1fr), gutter: 6pt, [#check([Lembrei sem copiar.])], [#check([Consultei depois da tentativa.])], [#check([Corrigi uma forma.])], [#check([Falei em voz alta.])])]
 ]
 
 #page[
@@ -179,6 +202,8 @@
 
 #page[
   #page-title("Produção prática", sub: "Transfira para uma conversa curta")
+  #oral-cue()
+  #v(5pt)
   #for (i, cenario) in scenarios.enumerate() {
     let (bg, edge) = tone(i)
     let apoio = if cenario.apoio == "com_apoio" { "COM APOIO" } else if cenario.apoio == "menos_apoio" { "MENOS APOIO" } else { "SEM APOIO" }
@@ -203,11 +228,14 @@
 #page[
   #page-title("Revisar e continuar", sub: "Feche o tópico e prepare a próxima recuperação")
   #section("AUTOAVALIAÇÃO", color: navy)
-  #panel(fill: cream, stroke: navy)[#table(columns: (1.6fr, 1fr, 1fr, 1fr), inset: 0pt, stroke: 0.45pt + line, align: center + horizon, table.cell(fill: navy, inset: (x: 4pt, y: 3pt))[#text(size: 8pt, weight: "bold", fill: cream)[Critério]], table.cell(fill: navy, inset: (x: 4pt, y: 3pt))[#text(size: 8pt, weight: "bold", fill: cream)[Ainda não]], table.cell(fill: navy, inset: (x: 4pt, y: 3pt))[#text(size: 8pt, weight: "bold", fill: cream)[Com apoio]], table.cell(fill: navy, inset: (x: 4pt, y: 3pt))[#text(size: 8pt, weight: "bold", fill: cream)[Sem mapa]], ..criteria.map(item => ([#item], [☐], [☐], [☐])).flatten())]
+  #panel(fill: cream, stroke: navy)[#table(columns: (1.65fr, 1fr, 1fr, 1fr), inset: 0pt, stroke: 0.45pt + line, align: center + horizon, table.cell(fill: navy, inset: (x: 4pt, y: 3pt))[#text(size: 8pt, weight: "bold", fill: cream)[Critério]], table.cell(fill: navy, inset: (x: 4pt, y: 3pt))[#text(size: 8pt, weight: "bold", fill: cream)[Ainda não]], table.cell(fill: navy, inset: (x: 4pt, y: 3pt))[#text(size: 8pt, weight: "bold", fill: cream)[Com apoio]], table.cell(fill: navy, inset: (x: 4pt, y: 3pt))[#text(size: 8pt, weight: "bold", fill: cream)[Sem mapa]], ..criteria.map(item => (table.cell(inset: (x: 4pt, y: 4pt))[#text(size: 8.5pt)[#item]], table.cell(inset: (x: 4pt, y: 4pt))[☐], table.cell(inset: (x: 4pt, y: 4pt))[☐], table.cell(inset: (x: 4pt, y: 4pt))[☐])).flatten())]
   #v(8pt)
   #section("REVISÃO PROGRAMADA", color: teal)
   #panel(fill: mint, stroke: teal)[#grid(columns: (1fr, 1fr), gutter: 6pt, [#label("EM 24 HORAS", color: teal); #v(3pt); #writebox(height: 10mm, color: teal)], [#label("EM 7 DIAS", color: teal); #v(3pt); #writebox(height: 10mm, color: teal)])]
   #v(8pt)
-  #section("PRÓXIMO TÓPICO", color: ochre)
-  #panel(fill: warm, stroke: ochre)[#label("ARTEFATO PRÁTICO", color: ochre); #v(2pt); #small[#unit.artefato_pratico]; #v(4pt); #small[#unit.proxima_unidade_sugerida]; #v(4pt); #grid(columns: (1fr, 1fr), gutter: 6pt, [#label("AINDA PRECISO PRATICAR", color: red); #v(3pt); #writebox(height: 13mm, color: red)], [#label("MINHA OBSERVAÇÃO", color: teal); #v(3pt); #writebox(height: 13mm, color: teal)])]
+  #section("ARTEFATO PRÁTICO · O QUE VOCÊ PRODUZIU", color: ochre)
+  #panel(fill: warm, stroke: ochre)[#small[#unit.artefato_pratico]; #v(5pt); #grid(columns: (1fr, 1fr), gutter: 6pt, [#label("AINDA PRECISO PRATICAR", color: red); #v(3pt); #writebox(height: 13mm, color: red)], [#label("MINHA OBSERVAÇÃO", color: teal); #v(3pt); #writebox(height: 13mm, color: teal)])]
+  #v(7pt)
+  #section("PRÓXIMA RECUPERAÇÃO · O QUE VEM DEPOIS", color: teal)
+  #panel(fill: mint, stroke: teal)[#small[#unit.proxima_unidade_sugerida]]
 ]

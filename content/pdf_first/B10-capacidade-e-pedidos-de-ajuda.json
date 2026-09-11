@@ -7,16 +7,17 @@
     "titulo": "Capacidade e pedidos de ajuda",
     "colecao": "Coleção 01 · Primeiras interações",
     "nivel": "iniciante",
-    "status": "draft",
+    "status": "revisao_visual",
     "objetivo_comunicativo": "Dizer que consegue ou não consegue fazer algo e pedir ajuda de forma simples.",
     "resultado_minimo": "Produzir três trocas usando 会 ou 能 e uma solicitação curta de ajuda.",
     "situacao_principal": "Em uma aula ou tarefa nova, informar capacidade e pedir ajuda quando necessário.",
     "contexto_emocional": "O aluno quer participar mesmo quando não tem certeza de que consegue realizar a tarefa.",
     "dificuldade_principal": "Distinguir 会 como habilidade aprendida e 能 como possibilidade na situação.",
     "preparacao": [
-      "Identifique a tarefa.",
-      "Decida habilidade ou possibilidade.",
-      "Peça ajuda sem abandonar a interação."
+      "Qual é a tarefa?",
+      "É habilidade ou possibilidade?",
+      "Peça ajuda sem abandonar a conversa.",
+      "O que ainda ficou estranho?"
     ],
     "estruturas": [
       {
@@ -221,7 +222,7 @@
         }
       ],
       "reorganizacao": {
-        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "instrucao": "Monte o pedido de ajuda na ordem certa.",
         "blocos": [
           "我",
           "会",
@@ -242,7 +243,7 @@
         ]
       },
       "recombinacao": {
-        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "instrucao": "Troque só a tarefa.",
         "banco": [
           {
             "rotulo": "habilidade",
@@ -271,7 +272,7 @@
       "cenarios": [
         {
           "titulo": "Sala de aula",
-          "instrucao": "Diga o que consegue fazer e peça ajuda.",
+          "instrucao": "Diga o que consegue fazer e peça ajuda. Fale primeiro.",
           "apoio": "com_apoio",
           "campos": [
             "habilidade",
@@ -280,7 +281,7 @@
         },
         {
           "titulo": "Tarefa nova",
-          "instrucao": "Use 能 para dizer que pode tentar.",
+          "instrucao": "Use 能 para dizer que pode tentar, sem consultar o mapa.",
           "apoio": "menos_apoio",
           "campos": [
             "possibilidade",
@@ -291,10 +292,11 @@
     },
     "artefato_pratico": "Cartão de habilidades e pedidos de ajuda.",
     "criterios_autoavaliacao": [
-      "Distingo 会 e 能 no contexto.",
-      "Formo a negativa com 不会.",
-      "Peço ajuda com clareza.",
-      "Continuo a interação após uma dificuldade."
+      "Distingo 会 de 能 no contexto",
+      "Formo a negativa com 不会",
+      "Peço ajuda com clareza",
+      "Continuo após uma dificuldade",
+      "Falo sem consultar o mapa"
     ],
     "sequencia": [
       "situar",

@@ -7,7 +7,7 @@
     "titulo": "Preferências e escolhas",
     "colecao": "Coleção 01 · Primeiras interações",
     "nivel": "iniciante",
-    "status": "draft",
+    "status": "revisao_visual",
     "objetivo_comunicativo": "Dizer do que gosta, do que não gosta e escolher entre duas opções.",
     "resultado_minimo": "Expressar duas preferências e uma recusa usando 喜欢, 不喜欢 e 还是.",
     "situacao_principal": "Em uma conversa sobre comida, bebida ou atividades, comparar opções e escolher.",
@@ -15,8 +15,9 @@
     "dificuldade_principal": "Distinguir 喜欢 de 不喜欢 e manter a escolha clara.",
     "preparacao": [
       "Escolha duas opções.",
-      "Decida preferência ou recusa.",
-      "Diga a escolha em voz alta."
+      "É preferência ou recusa?",
+      "Diga a escolha em voz alta.",
+      "O que ainda ficou estranho?"
     ],
     "estruturas": [
       {
@@ -214,7 +215,7 @@
         }
       ],
       "reorganizacao": {
-        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "instrucao": "Monte a escolha na ordem certa.",
         "blocos": [
           "茶",
           "还是",
@@ -234,7 +235,7 @@
         ]
       },
       "recombinacao": {
-        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "instrucao": "Troque só a opção.",
         "banco": [
           {
             "rotulo": "opção",
@@ -263,7 +264,7 @@
       "cenarios": [
         {
           "titulo": "Preferências",
-          "instrucao": "Diga do que gosta e não gosta.",
+          "instrucao": "Diga do que gosta e não gosta. Fale antes de escrever.",
           "apoio": "com_apoio",
           "campos": [
             "gosto",
@@ -272,7 +273,7 @@
         },
         {
           "titulo": "Escolha",
-          "instrucao": "Escolha entre duas opções sem o mapa.",
+          "instrucao": "Escolha entre duas opções sem consultar o mapa.",
           "apoio": "sem_apoio",
           "campos": [
             "opção",
@@ -283,10 +284,11 @@
     },
     "artefato_pratico": "Cartão de preferências com três escolhas e justificativa curta.",
     "criterios_autoavaliacao": [
-      "Digo gosto com 喜欢.",
-      "Formo a recusa com 不喜欢.",
-      "Entendo a escolha com 还是.",
-      "Mantenho a opção explícita."
+      "Digo gosto com 喜欢",
+      "Formo a recusa com 不喜欢",
+      "Entendo a escolha com 还是",
+      "Mantenho a opção explícita",
+      "Falo sem consultar o mapa"
     ],
     "sequencia": [
       "situar",

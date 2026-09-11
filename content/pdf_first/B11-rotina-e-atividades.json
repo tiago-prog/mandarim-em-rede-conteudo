@@ -7,7 +7,7 @@
     "titulo": "Rotina e atividades",
     "colecao": "Coleção 01 · Primeiras interações",
     "nivel": "iniciante",
-    "status": "draft",
+    "status": "revisao_visual",
     "objetivo_comunicativo": "Dizer uma atividade cotidiana e perguntar o que alguém faz.",
     "resultado_minimo": "Produzir quatro frases sobre rotina usando 去, 看, 学 e uma atividade escolhida.",
     "situacao_principal": "Em uma conversa curta sobre o dia, perguntar e responder sobre atividades comuns.",
@@ -15,8 +15,9 @@
     "dificuldade_principal": "Manter o verbo antes do objeto e distinguir atividade de lugar.",
     "preparacao": [
       "Escolha uma atividade do banco.",
-      "Organize pessoa + verbo + objeto.",
-      "Fale uma frase sem consultar."
+      "Organize pessoa, verbo e objeto.",
+      "Fale uma frase sem consultar.",
+      "O que ainda ficou estranho?"
     ],
     "estruturas": [
       {
@@ -220,7 +221,7 @@
         }
       ],
       "reorganizacao": {
-        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "instrucao": "Monte a frase na ordem certa.",
         "blocos": [
           "我",
           "去",
@@ -240,7 +241,7 @@
         ]
       },
       "recombinacao": {
-        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "instrucao": "Troque só a atividade.",
         "banco": [
           {
             "rotulo": "estudo",
@@ -269,7 +270,7 @@
       "cenarios": [
         {
           "titulo": "Rotina",
-          "instrucao": "Monte três frases sobre seu dia.",
+          "instrucao": "Monte três frases sobre seu dia. Fale antes de escrever.",
           "apoio": "com_apoio",
           "campos": [
             "atividade",
@@ -278,7 +279,7 @@
         },
         {
           "titulo": "Conversa",
-          "instrucao": "Pergunte e responda sobre duas atividades.",
+          "instrucao": "Pergunte e responda sobre duas atividades sem consultar o mapa.",
           "apoio": "sem_apoio",
           "campos": [
             "pergunta",
@@ -289,10 +290,11 @@
     },
     "artefato_pratico": "Miniagenda diária com três atividades em mandarim.",
     "criterios_autoavaliacao": [
-      "Coloco o verbo antes do objeto.",
-      "Pergunto atividade com 做什么.",
-      "Produzo frases de rotina.",
-      "Recombino pelo menos três atividades."
+      "Coloco o verbo antes do objeto",
+      "Pergunto atividade com 做什么",
+      "Produzo frases de rotina",
+      "Recombino três atividades",
+      "Falo sem consultar o mapa"
     ],
     "sequencia": [
       "situar",

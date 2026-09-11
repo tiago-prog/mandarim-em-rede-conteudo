@@ -7,16 +7,17 @@
     "titulo": "Posse e especificação",
     "colecao": "Coleção 01 · Primeiras interações",
     "nivel": "iniciante",
-    "status": "draft",
+    "status": "revisao_visual",
     "objetivo_comunicativo": "Perguntar e responder de quem é um objeto usando 我的、你的 e 的.",
     "resultado_minimo": "Produzir quatro trocas curtas sobre posse, substituindo o possuidor e o objeto sem consultar o mapa completo.",
     "situacao_principal": "Em uma sala ou reunião, distinguir objetos e pessoas e dizer a quem cada item pertence.",
     "contexto_emocional": "O aluno quer identificar o dono de um objeto sem parecer invasivo ou hesitante.",
     "dificuldade_principal": "Manter a ordem possuidor + 的 + objeto e distinguir 我的 de 你的.",
     "preparacao": [
-      "Observe o objeto.",
-      "Decida quem é o possuidor.",
-      "Tente perguntar antes de consultar."
+      "Olhe o objeto. De quem ele é?",
+      "Escolha o possuidor.",
+      "Feche o mapa. Monte a pergunta.",
+      "O que ainda ficou estranho?"
     ],
     "estruturas": [
       {
@@ -222,7 +223,7 @@
         }
       ],
       "reorganizacao": {
-        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "instrucao": "Monte a expressão na ordem certa.",
         "blocos": [
           "谁",
           "的",
@@ -242,7 +243,7 @@
         ]
       },
       "recombinacao": {
-        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "instrucao": "Troque só o elemento indicado.",
         "banco": [
           {
             "rotulo": "objeto",
@@ -271,7 +272,7 @@
       "cenarios": [
         {
           "titulo": "Mesa compartilhada",
-          "instrucao": "Identifique três objetos e diga de quem são.",
+          "instrucao": "Escolha três objetos. Fale de quem são antes de escrever.",
           "apoio": "com_apoio",
           "campos": [
             "objeto",
@@ -280,7 +281,7 @@
         },
         {
           "titulo": "Pergunta de posse",
-          "instrucao": "Pergunte e responda sobre dois objetos sem o mapa.",
+          "instrucao": "Faça duas perguntas e responda sem consultar o mapa.",
           "apoio": "menos_apoio",
           "campos": [
             "pergunta",
@@ -291,10 +292,11 @@
     },
     "artefato_pratico": "Inventário de três objetos com dono, pergunta e resposta.",
     "criterios_autoavaliacao": [
-      "Uso 我的 para mim.",
-      "Uso 你的 para o interlocutor.",
-      "Coloco 的 entre possuidor e objeto.",
-      "Troco o objeto mantendo a estrutura."
+      "Uso 我的 para mim",
+      "Uso 你的 para você",
+      "Coloco 的 no lugar certo",
+      "Troco só o objeto",
+      "Falo sem consultar o mapa"
     ],
     "sequencia": [
       "situar",
