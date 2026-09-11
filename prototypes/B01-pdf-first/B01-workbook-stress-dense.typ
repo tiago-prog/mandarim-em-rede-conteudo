@@ -30,7 +30,7 @@
 #set par(justify: false, leading: 0.98em, spacing: 0.45em, first-line-indent: 0pt)
 
 #let cjk(body, size: 20pt, color: navy) = text(font: "Noto Sans CJK SC", size: size, weight: "bold", fill: color)[#body]
-#let label(txt, color: navy) = text(size: 7.5pt, weight: "bold", fill: color, tracking: 0.35pt)[#txt]
+#let label(txt, color: navy) = text(size: 8pt, weight: "bold", fill: color, tracking: 0.35pt)[#txt]
 #let page-title(txt, sub: none) = {
   align(center)[
     #text(size: 20pt, weight: "bold", fill: navy, font: ("Libertinus Serif", "Noto Serif CJK SC"))[#txt]
@@ -187,11 +187,13 @@
     tcell([#cjk("好", size: 18pt)], fill: warm), tcell([#text(size: 9pt, fill: red)[hǎo]], fill: warm), tcell([bem / bom], fill: warm), tcell([todas as saudações], fill: warm),
   )
   #v(8pt)
-  #section("LIGUE PALAVRA E SITUAÇÃO", color: teal)
+  #section("MARQUE AS COMBINAÇÕES CORRETAS", color: teal)
   #panel(fill: mint, stroke: teal)[
+    #small[Marque apenas as combinações corretas.]
+    #v(4pt)
     #grid(columns: (1fr, 1fr), gutter: 6pt,
-      [#check([人 → pessoa nova])], [#check([老师 → respeito])],
-      [#check([大家 → grupo])], [#check([电话 → chamada])],
+      [#check([人 → pessoa nova])], [#check([老师 → chamada])],
+      [#check([大家 → grupo])], [#check([电话 → respeito])],
       [#check([朋友 → relação conhecida])], [#check([好 → saudação])],
     )
   ]
@@ -250,6 +252,8 @@
   #v(8pt)
   #section("MAPA DE DECISÃO", color: ochre)
   #panel(fill: warm, stroke: ochre)[
+    #small[Leia cada linha da esquerda para a direita.]
+    #v(4pt)
     #grid(columns: (1fr, 12mm, 1fr), gutter: 4pt, align: center + horizon,
       [#label("QUEM?", color: navy)], [#text(size: 16pt, weight: "bold", fill: ochre)[→]], [#label("QUAL FORMA?", color: navy)],
       [Pessoa nova], [#text(size: 13pt)[→]], [#cjk("你好", size: 17pt)],
@@ -284,6 +288,8 @@
 #page[
   #page-title("Hanzi-alvo", sub: "Reconhecer, observar, recuperar")
   #section("SEIS CARACTERES PARA ESTE TÓPICO", color: navy)
+  #small[Observe o hanzi, cubra o modelo e escreva-o uma vez no campo.]
+  #v(5pt)
   #grid(columns: (1fr, 1fr, 1fr), gutter: 6pt,
     [#card([
       #align(center)[#cjk("你", size: 28pt)]
@@ -334,8 +340,9 @@
   #v(8pt)
   #section("USE UM HANZI EM UMA PALAVRA", color: ochre)
   #panel(fill: warm, stroke: ochre)[
-    #grid(columns: (20mm, 1fr, 1fr), gutter: 6pt,
-      [#label("HANZI", color: ochre)], [#writebox(height: 9mm, color: ochre)], [#writebox(height: 9mm, color: ochre)],
+    #grid(columns: (36mm, 1fr), gutter: 6pt,
+      [#label("HANZI ESCOLHIDO", color: ochre)], [#writebox(height: 9mm, color: ochre)],
+      [#label("PALAVRA / COMBINAÇÃO", color: ochre)], [#writebox(height: 9mm, color: ochre)],
     )
   ]
 ]
@@ -344,6 +351,8 @@
 #page[
   #page-title("Pinyin e tons", sub: "Leia com apoio; depois reduza o apoio")
   #section("QUATRO FORMAS DE LEITURA", color: navy)
+  #small[Os símbolos são um apoio visual do contorno; os acentos do pinyin são a referência principal. Leia e marque a caixa depois.]
+  #v(4pt)
   #table(
     columns: (1.1fr, 1fr, 1.4fr, 1.1fr),
     inset: 0pt,
@@ -397,27 +406,33 @@
   #page-title("Reconhecer", sub: "Ligue forma, sentido e situação")
   #section("ATIVIDADE 1 · ESCOLHA A FORMA", color: navy)
   #panel(fill: cream, stroke: navy)[
-    #grid(columns: (1.6fr, 1fr, 1fr), gutter: 5pt,
-      [#label("Situação", color: navy)], [#label("Opção A", color: navy)], [#label("Opção B", color: navy)],
-      [Pessoa nova], [#cjk("你好", size: 17pt)], [#cjk("喂", size: 17pt)],
-      [Professora], [#cjk("您好", size: 17pt)], [#cjk("大家好", size: 17pt)],
-      [Grupo], [#cjk("大家好", size: 17pt)], [#cjk("您好", size: 17pt)],
-      [Telefone], [#cjk("喂", size: 17pt)], [#cjk("你好", size: 17pt)],
+    #small[Marque A ou B em cada linha, conforme a situação.]
+    #v(4pt)
+    #grid(columns: (1.45fr, 1fr, 1fr, 0.7fr), gutter: 5pt,
+      [#label("Situação", color: navy)], [#label("Opção A", color: navy)], [#label("Opção B", color: navy)], [#label("Minha escolha", color: navy)],
+      [Pessoa nova], [#cjk("你好", size: 17pt)], [#cjk("喂", size: 17pt)], [#box(width: 12mm, height: 7mm, stroke: 0.8pt + navy, fill: cream, radius: 2pt)],
+      [Professora], [#cjk("您好", size: 17pt)], [#cjk("大家好", size: 17pt)], [#box(width: 12mm, height: 7mm, stroke: 0.8pt + navy, fill: cream, radius: 2pt)],
+      [Grupo], [#cjk("大家好", size: 17pt)], [#cjk("您好", size: 17pt)], [#box(width: 12mm, height: 7mm, stroke: 0.8pt + navy, fill: cream, radius: 2pt)],
+      [Telefone], [#cjk("喂", size: 17pt)], [#cjk("你好", size: 17pt)], [#box(width: 12mm, height: 7mm, stroke: 0.8pt + navy, fill: cream, radius: 2pt)],
     )
   ]
   #v(8pt)
-  #section("ATIVIDADE 2 · LIGUE HANZI E SENTIDO", color: teal)
+  #section("ATIVIDADE 2 · LIGUE FORMA E SENTIDO", color: teal)
   #panel(fill: mint, stroke: teal)[
-    #grid(columns: (1fr, 12mm, 1fr), gutter: 5pt, align: center + horizon,
-      [#cjk("你好", size: 17pt)], [#text(size: 15pt, fill: ochre)[→]], [Pessoa nova],
-      [#cjk("您好", size: 17pt)], [#text(size: 15pt, fill: ochre)[→]], [Respeito],
-      [#cjk("大家好", size: 17pt)], [#text(size: 15pt, fill: ochre)[→]], [Grupo],
-      [#cjk("喂", size: 17pt)], [#text(size: 15pt, fill: ochre)[→]], [Telefone],
+    #small[Trace uma linha de cada forma até o sentido correto.]
+    #v(4pt)
+    #grid(columns: (1fr, 24mm, 1fr), gutter: 5pt, align: center + horizon,
+      [#cjk("你好", size: 17pt)], [#box(width: 20mm, height: 5mm, stroke: 0.8pt + ochre, fill: cream, radius: 2pt)], [Grupo],
+      [#cjk("您好", size: 17pt)], [#box(width: 20mm, height: 5mm, stroke: 0.8pt + ochre, fill: cream, radius: 2pt)], [Telefone],
+      [#cjk("大家好", size: 17pt)], [#box(width: 20mm, height: 5mm, stroke: 0.8pt + ochre, fill: cream, radius: 2pt)], [Pessoa nova],
+      [#cjk("喂", size: 17pt)], [#box(width: 20mm, height: 5mm, stroke: 0.8pt + ochre, fill: cream, radius: 2pt)], [Respeito],
     )
   ]
   #v(8pt)
   #section("ATIVIDADE 3 · CONFIRA SUA DECISÃO", color: ochre)
   #panel(fill: warm, stroke: ochre)[
+    #small[Depois das atividades 1 e 2, marque o que você conseguiu fazer.]
+    #v(4pt)
     #grid(columns: (1fr, 1fr), gutter: 6pt,
       [#check([Escolhi antes de consultar])], [#check([Consegui explicar a situação])],
       [#check([Reconheci o hanzi])], [#check([Li com pinyin])],
@@ -429,13 +444,15 @@
 #page[
   #page-title("Recuperação escrita", sub: "Tente primeiro, registre sua resposta e confira depois com o mapa de linguagem.")
   #section("COMPLETE A FORMA", color: navy)
+  #small[Complete a forma de memória. Marque “Conferi” somente depois de comparar.]
+  #v(4pt)
   #panel(fill: cream, stroke: navy)[
     #grid(columns: (28mm, 1fr, 30mm), gutter: 6pt,
       [#label("Situação", color: navy)], [#label("Escreva", color: navy)], [#label("Conferi", color: navy)],
-      [Pessoa nova], [#text(size: 17pt, font: "Noto Sans CJK SC", weight: "bold")[你#box(width: 10mm, height: 5mm, stroke: 0.8pt + teal, fill: cream, radius: 2pt)]], [#check([ ])],
-      [Respeito], [#text(size: 17pt, font: "Noto Sans CJK SC", weight: "bold")[您#box(width: 10mm, height: 5mm, stroke: 0.8pt + teal, fill: cream, radius: 2pt)]], [#check([ ])],
-      [Grupo], [#text(size: 17pt, font: "Noto Sans CJK SC", weight: "bold")[大家#box(width: 10mm, height: 5mm, stroke: 0.8pt + teal, fill: cream, radius: 2pt)]], [#check([ ])],
-      [Telefone], [#box(width: 18mm, height: 6mm, stroke: 0.8pt + teal, fill: cream, radius: 2pt)], [#check([ ])],
+      [Pessoa nova], [#text(size: 17pt, font: "Noto Sans CJK SC", weight: "bold")[你#box(width: 10mm, height: 7mm, stroke: 0.8pt + teal, fill: cream, radius: 2pt)]], [#check([ ])],
+      [Respeito], [#text(size: 17pt, font: "Noto Sans CJK SC", weight: "bold")[您#box(width: 10mm, height: 7mm, stroke: 0.8pt + teal, fill: cream, radius: 2pt)]], [#check([ ])],
+      [Grupo], [#text(size: 17pt, font: "Noto Sans CJK SC", weight: "bold")[大家#box(width: 10mm, height: 7mm, stroke: 0.8pt + teal, fill: cream, radius: 2pt)]], [#check([ ])],
+      [Telefone], [#box(width: 18mm, height: 7mm, stroke: 0.8pt + teal, fill: cream, radius: 2pt)], [#check([ ])],
     )
   ]
   #v(8pt)
@@ -463,9 +480,11 @@
 // Página 9 — reorganização.
 #page[
   #page-title("Reorganizar", sub: "Entenda a sequência antes de produzir")
-  #section("COLOQUE OS BLOCOS EM ORDEM", color: navy)
+  #section("DESCUBRA A ORDEM DOS BLOCOS", color: navy)
   #panel(fill: cream, stroke: navy)[
     #label("Frase 1 · saudação para uma pessoa", color: navy)
+    #v(3pt)
+    #small[Observe os blocos embaralhados e escreva os números na ordem correta, por exemplo: 2 → 1 → 3.]
     #v(5pt)
     #grid(columns: (1fr, 1fr, 1fr), gutter: 5pt,
       [#box(width: 100%, inset: 7pt, fill: warm, stroke: 0.7pt + ochre, radius: 3pt)[#cjk("好", size: 18pt)]],
@@ -473,11 +492,13 @@
       [#box(width: 100%, inset: 7pt, fill: cream, stroke: 0.7pt + navy, radius: 3pt)[#cjk("。", size: 13pt)]],
     )
     #v(4pt)
-    #grid(columns: (1fr, 1fr, 1fr), gutter: 5pt,
-      [#label("1", color: gray)], [#label("2", color: gray)], [#label("3", color: gray)],
+    #grid(columns: (18mm, 1fr), gutter: 5pt,
+      [#label("ORDEM", color: navy)], [#writebox(height: 8mm, color: navy)],
     )
     #v(8pt)
     #label("Frase 2 · saudação para um grupo", color: navy)
+    #v(3pt)
+    #small[Escreva os números dos quatro blocos na ordem correta na linha abaixo.]
     #v(5pt)
     #grid(columns: (1fr, 1fr, 1fr, 1fr), gutter: 5pt,
       [#box(width: 100%, inset: 7pt, fill: warm, stroke: 0.7pt + ochre, radius: 3pt)[#cjk("好", size: 18pt)]],
@@ -486,13 +507,15 @@
       [#box(width: 100%, inset: 7pt, fill: cream, stroke: 0.7pt + navy, radius: 3pt)[#cjk("。", size: 13pt)]],
     )
     #v(4pt)
-    #grid(columns: (1fr, 1fr, 1fr, 1fr), gutter: 5pt,
-      [#label("1", color: gray)], [#label("2", color: gray)], [#label("3", color: gray)], [#label("4", color: gray)],
+    #grid(columns: (18mm, 1fr), gutter: 5pt,
+      [#label("ORDEM", color: navy)], [#writebox(height: 8mm, color: navy)],
     )
   ]
   #v(8pt)
   #section("RECONSTRUA SEM MODELO", color: teal)
   #panel(fill: mint, stroke: teal)[
+    #small[Escreva cada forma completa de memória, sem consultar a página 4.]
+    #v(4pt)
     #grid(columns: (1fr, 1fr), gutter: 6pt,
       [#label("Forma", color: teal)], [#label("Escreva a sequência", color: teal)],
       [Pessoa nova], [#writebox(height: 10mm, color: teal)],
@@ -503,6 +526,8 @@
   #v(8pt)
   #section("O QUE A ORDEM MOSTRA?", color: ochre)
   #panel(fill: warm, stroke: ochre)[
+    #small[Depois de tentar as três linhas, marque o que aconteceu.]
+    #v(4pt)
     #check([Reconheci que a forma é um bloco])
     #v(3pt)
     #check([Consegui reconstruir sem copiar])
@@ -515,6 +540,8 @@
   #section("ESTRUTURA + SITUAÇÃO", color: navy)
   #panel(fill: cream, stroke: navy)[
     #label("Escolha uma forma e troque apenas o elemento indicado.", color: navy)
+    #v(3pt)
+    #small[Escreva na coluna “Minha troca” o elemento que você substituiu e marque “Usei” ao concluir cada linha.]
     #v(6pt)
     #table(
       columns: (1.25fr, 1.2fr, 1.5fr, 0.8fr),
@@ -585,7 +612,7 @@
       [#card([
         #label("SUA PRODUÇÃO", color: red)
         #v(4pt)
-        Escreva as três formas que você usaria, explique qual muda conforme a situação e depois leia tudo em voz alta.
+        Escreva as três formas que você usaria, explique qual muda conforme a situação e depois releia tudo comparando com o mapa.
         #v(6pt)
         #writebox(height: 8mm, color: red)
         #v(4pt)
@@ -617,6 +644,8 @@
   #page-title("Revisar e continuar", sub: "Seu registro fecha o tópico")
   #section("AUTOAVALIAÇÃO", color: navy)
   #panel(fill: cream, stroke: navy)[
+    #small[Depois de concluir o tópico, marque uma coluna em cada linha.]
+    #v(4pt)
     #table(
       columns: (1.5fr, 1fr, 1fr, 1fr),
       inset: 0pt,

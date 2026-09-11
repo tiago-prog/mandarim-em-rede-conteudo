@@ -148,3 +148,20 @@ Depois dessas correções, o B01 pode ser usado como padrão para os demais tóp
 [1]: https://github.com/tiago-prog/mandarim-em-rede-conteudo "Repositório do conteúdo do Mandarim em Rede"
 
 [2]: https://github.com/tiago-prog/mandarim-em-rede-conteudo/tree/main/prototypes/B01-pdf-first "Protótipo B01 visual e escrito"
+
+## Atualização após a implementação das correções
+
+As correções recomendadas foram aplicadas na fonte `B01-workbook.typ` e recompiladas em um PDF canônico de 12 páginas. A versão corrigida passou na compilação estrita e na verificação estrutural do PDF.
+
+| Correção | Resultado |
+|---|---|
+| Página 3 com seleção coerente | A instrução agora pede marcação de combinações e inclui uma formulação correta e distratores |
+| Campos de hanzi | Instrução observe → cubra → escreva adicionada; campos inferiores rotulados |
+| Página de tons | Legenda adicionada; acentos do pinyin declarados como referência principal |
+| Página 7 | Colunas de escolha, caixas de resposta e área central para ligação adicionadas |
+| Página 9 | Ordem numérica e exemplo de resposta adicionados; linhas de resposta criadas |
+| Página 11 | Leitura em voz alta deixou de ser requisito implícito; o aluno releia e compare com o mapa |
+| Microtipografia | Rótulos aumentados de 7,5 pt para 8 pt |
+| Campos curtos | Lacunas principais aumentadas de 5–6 mm para 7 mm |
+
+A inspeção final confirmou que a versão corrigida continua em 12 páginas, sem compressão prejudicial, sem overflow e sem perda da identidade visual. O workbook está agora **aprovado como base estrutural e pedagógica para um piloto de uso**. A replicação para os demais tópicos deve aguardar apenas o teste com um aluno real, não uma nova revisão estrutural do arquivo.

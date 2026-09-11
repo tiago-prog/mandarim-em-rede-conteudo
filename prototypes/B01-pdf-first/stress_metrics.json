@@ -8,7 +8,7 @@
   "source": {
     "path": "/home/ubuntu/mvp_pipeline/prototypes/B01-pdf-first/B01-workbook.typ",
     "page_markers": 12,
-    "total_writeboxes": 37,
+    "total_writeboxes": 39,
     "total_checkboxes": 41,
     "total_tables": 4,
     "total_cards": 26,
@@ -74,20 +74,21 @@
       ],
       "sections": [
         "PALAVRAS DO TÓPICO",
-        "LIGUE PALAVRA E SITUAÇÃO",
+        "MARQUE AS COMBINAÇÕES CORRETAS",
         "UMA PALAVRA QUE EU QUERO LEMBRAR"
       ],
       "writebox_count": 2,
       "checkbox_count": 6,
       "table_count": 1,
       "card_count": 0,
-      "action_term_count": 5,
+      "action_term_count": 6,
       "action_terms": [
         "leia",
         "use",
         "Leia",
         "ligue",
-        "Use"
+        "Use",
+        "Marque"
       ],
       "writebox_heights_mm": [
         9.0,
@@ -110,8 +111,9 @@
       "checkbox_count": 0,
       "table_count": 0,
       "card_count": 4,
-      "action_term_count": 1,
+      "action_term_count": 2,
       "action_terms": [
+        "Leia",
         "Tente"
       ],
       "writebox_heights_mm": [
@@ -137,8 +139,11 @@
       "checkbox_count": 6,
       "table_count": 0,
       "card_count": 6,
-      "action_term_count": 0,
-      "action_terms": [],
+      "action_term_count": 2,
+      "action_terms": [
+        "Observe",
+        "escreva"
+      ],
       "writebox_heights_mm": [
         9.0,
         9.0,
@@ -166,9 +171,11 @@
       "checkbox_count": 4,
       "table_count": 1,
       "card_count": 3,
-      "action_term_count": 5,
+      "action_term_count": 7,
       "action_terms": [
         "Leia",
+        "Leia",
+        "marque",
         "Leia",
         "Leia",
         "Leia",
@@ -188,20 +195,32 @@
       ],
       "sections": [
         "ATIVIDADE 1 · ESCOLHA A FORMA",
-        "ATIVIDADE 2 · LIGUE HANZI E SENTIDO",
+        "ATIVIDADE 2 · LIGUE FORMA E SENTIDO",
         "ATIVIDADE 3 · CONFIRA SUA DECISÃO"
       ],
       "writebox_count": 0,
       "checkbox_count": 4,
       "table_count": 0,
       "card_count": 0,
-      "action_term_count": 1,
+      "action_term_count": 4,
       "action_terms": [
-        "Ligue"
+        "Ligue",
+        "Marque",
+        "escolha",
+        "marque"
       ],
-      "writebox_heights_mm": [],
-      "minimum_writebox_height_mm": null,
-      "maximum_writebox_height_mm": null
+      "writebox_heights_mm": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "minimum_writebox_height_mm": 5.0,
+      "maximum_writebox_height_mm": 7.0
     },
     {
       "page": 8,
@@ -217,24 +236,26 @@
       "checkbox_count": 8,
       "table_count": 0,
       "card_count": 0,
-      "action_term_count": 4,
+      "action_term_count": 6,
       "action_terms": [
         "Tente",
+        "Complete",
+        "Marque",
         "Escreva",
         "compare",
         "Marque"
       ],
       "writebox_heights_mm": [
-        5.0,
-        5.0,
-        5.0,
-        6.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
         11.0,
         11.0,
         11.0,
         11.0
       ],
-      "minimum_writebox_height_mm": 5.0,
+      "minimum_writebox_height_mm": 7.0,
       "maximum_writebox_height_mm": 11.0
     },
     {
@@ -243,24 +264,31 @@
         "Reorganizar"
       ],
       "sections": [
-        "COLOQUE OS BLOCOS EM ORDEM",
+        "DESCUBRA A ORDEM DOS BLOCOS",
         "RECONSTRUA SEM MODELO",
         "O QUE A ORDEM MOSTRA?"
       ],
-      "writebox_count": 3,
+      "writebox_count": 5,
       "checkbox_count": 2,
       "table_count": 0,
       "card_count": 0,
-      "action_term_count": 1,
+      "action_term_count": 6,
       "action_terms": [
-        "Escreva"
+        "Observe",
+        "escreva",
+        "Escreva",
+        "Escreva",
+        "Escreva",
+        "marque"
       ],
       "writebox_heights_mm": [
+        8.0,
+        8.0,
         10.0,
         10.0,
         10.0
       ],
-      "minimum_writebox_height_mm": 10.0,
+      "minimum_writebox_height_mm": 8.0,
       "maximum_writebox_height_mm": 10.0
     },
     {
@@ -277,11 +305,13 @@
       "checkbox_count": 4,
       "table_count": 1,
       "card_count": 3,
-      "action_term_count": 4,
+      "action_term_count": 6,
       "action_terms": [
         "troque",
         "Escolha",
         "troque",
+        "Escreva",
+        "marque",
         "Escreva"
       ],
       "writebox_heights_mm": [
@@ -312,7 +342,7 @@
       "action_terms": [
         "Use",
         "Escreva",
-        "leia"
+        "compare"
       ],
       "writebox_heights_mm": [
         8.0,
@@ -341,8 +371,10 @@
       "checkbox_count": 0,
       "table_count": 1,
       "card_count": 2,
-      "action_term_count": 0,
-      "action_terms": [],
+      "action_term_count": 1,
+      "action_terms": [
+        "marque"
+      ],
       "writebox_heights_mm": [
         15.0,
         15.0,
@@ -359,16 +391,16 @@
       "characters": 685,
       "words": 112,
       "text_spans": 30,
-      "min_font_pt": 7.5,
+      "min_font_pt": 8.0,
       "max_font_pt": 20.0,
       "text_bbox": [
         45.69,
-        37.02,
+        36.85,
         551.01,
-        403.57
+        404.29
       ],
-      "text_area_ratio": 0.3696,
-      "text_vertical_ratio": 0.4354,
+      "text_area_ratio": 0.3705,
+      "text_vertical_ratio": 0.4364,
       "drawing_count": 11,
       "image_count": 1
     },
@@ -377,196 +409,196 @@
       "characters": 463,
       "words": 93,
       "text_spans": 33,
-      "min_font_pt": 7.5,
+      "min_font_pt": 8.0,
       "max_font_pt": 23.0,
       "text_bbox": [
         46.69,
         34.71,
         484.6,
-        486.63
+        487.84
       ],
-      "text_area_ratio": 0.3949,
-      "text_vertical_ratio": 0.5368,
+      "text_area_ratio": 0.396,
+      "text_vertical_ratio": 0.5382,
       "drawing_count": 25,
       "image_count": 1
     },
     {
       "page": 3,
-      "characters": 500,
-      "words": 92,
-      "text_spans": 54,
-      "min_font_pt": 7.5,
+      "characters": 545,
+      "words": 97,
+      "text_spans": 55,
+      "min_font_pt": 8.0,
       "max_font_pt": 20.0,
       "text_bbox": [
         39.69,
         34.71,
         523.92,
-        414.01
+        429.08
       ],
-      "text_area_ratio": 0.3665,
-      "text_vertical_ratio": 0.4505,
+      "text_area_ratio": 0.3811,
+      "text_vertical_ratio": 0.4684,
       "drawing_count": 58,
       "image_count": 1
     },
     {
       "page": 4,
-      "characters": 411,
-      "words": 84,
-      "text_spans": 42,
-      "min_font_pt": 7.5,
+      "characters": 455,
+      "words": 92,
+      "text_spans": 43,
+      "min_font_pt": 8.0,
       "max_font_pt": 22.0,
       "text_bbox": [
         45.69,
         34.71,
-        462.26,
-        505.99
+        464.06,
+        521.27
       ],
-      "text_area_ratio": 0.3917,
-      "text_vertical_ratio": 0.5598,
+      "text_area_ratio": 0.4062,
+      "text_vertical_ratio": 0.5779,
       "drawing_count": 31,
       "image_count": 1
     },
     {
       "page": 5,
-      "characters": 369,
-      "words": 71,
-      "text_spans": 36,
-      "min_font_pt": 7.5,
+      "characters": 463,
+      "words": 87,
+      "text_spans": 39,
+      "min_font_pt": 8.0,
       "max_font_pt": 28.0,
       "text_bbox": [
-        46.69,
+        39.69,
         34.71,
         509.03,
-        415.32
+        476.46
       ],
-      "text_area_ratio": 0.3511,
-      "text_vertical_ratio": 0.4521,
+      "text_area_ratio": 0.4137,
+      "text_vertical_ratio": 0.5247,
       "drawing_count": 41,
       "image_count": 1
     },
     {
       "page": 6,
-      "characters": 384,
-      "words": 80,
-      "text_spans": 34,
-      "min_font_pt": 7.5,
+      "characters": 508,
+      "words": 102,
+      "text_spans": 35,
+      "min_font_pt": 8.0,
       "max_font_pt": 21.0,
       "text_bbox": [
-        45.69,
+        39.69,
         34.71,
-        502.17,
-        355.74
+        532.0,
+        370.66
       ],
-      "text_area_ratio": 0.2924,
-      "text_vertical_ratio": 0.3813,
+      "text_area_ratio": 0.33,
+      "text_vertical_ratio": 0.3991,
       "drawing_count": 50,
       "image_count": 1
     },
     {
       "page": 7,
-      "characters": 374,
-      "words": 70,
+      "characters": 547,
+      "words": 100,
       "text_spans": 36,
-      "min_font_pt": 7.5,
+      "min_font_pt": 8.0,
       "max_font_pt": 20.0,
       "text_bbox": [
         46.69,
         34.71,
-        463.24,
-        373.47
+        528.37,
+        453.91
       ],
-      "text_area_ratio": 0.2816,
-      "text_vertical_ratio": 0.4024,
-      "drawing_count": 13,
+      "text_area_ratio": 0.4029,
+      "text_vertical_ratio": 0.4979,
+      "drawing_count": 29,
       "image_count": 1
     },
     {
       "page": 8,
-      "characters": 360,
-      "words": 55,
-      "text_spans": 24,
-      "min_font_pt": 7.5,
+      "characters": 434,
+      "words": 66,
+      "text_spans": 25,
+      "min_font_pt": 8.0,
       "max_font_pt": 20.0,
       "text_bbox": [
-        46.69,
+        39.69,
         34.71,
-        493.03,
-        479.61
+        494.85,
+        514.37
       ],
-      "text_area_ratio": 0.3962,
-      "text_vertical_ratio": 0.5285,
+      "text_area_ratio": 0.4357,
+      "text_vertical_ratio": 0.5698,
       "drawing_count": 33,
       "image_count": 1
     },
     {
       "page": 9,
-      "characters": 335,
-      "words": 67,
-      "text_spans": 28,
-      "min_font_pt": 7.5,
+      "characters": 622,
+      "words": 113,
+      "text_spans": 31,
+      "min_font_pt": 8.0,
       "max_font_pt": 20.0,
       "text_bbox": [
         46.69,
         34.71,
         446.86,
-        467.63
+        558.44
       ],
-      "text_area_ratio": 0.3457,
-      "text_vertical_ratio": 0.5142,
-      "drawing_count": 31,
+      "text_area_ratio": 0.4182,
+      "text_vertical_ratio": 0.6221,
+      "drawing_count": 35,
       "image_count": 1
     },
     {
       "page": 10,
-      "characters": 351,
-      "words": 59,
-      "text_spans": 28,
-      "min_font_pt": 7.5,
+      "characters": 454,
+      "words": 76,
+      "text_spans": 29,
+      "min_font_pt": 8.0,
       "max_font_pt": 22.0,
       "text_bbox": [
         45.69,
         34.71,
         514.92,
-        405.21
+        418.81
       ],
-      "text_area_ratio": 0.3469,
-      "text_vertical_ratio": 0.4401,
+      "text_area_ratio": 0.3596,
+      "text_vertical_ratio": 0.4562,
       "drawing_count": 58,
       "image_count": 1
     },
     {
       "page": 11,
-      "characters": 411,
-      "words": 70,
+      "characters": 422,
+      "words": 72,
       "text_spans": 19,
-      "min_font_pt": 7.5,
+      "min_font_pt": 8.0,
       "max_font_pt": 20.0,
       "text_bbox": [
         46.69,
         34.71,
         529.02,
-        370.38
+        371.24
       ],
-      "text_area_ratio": 0.3231,
-      "text_vertical_ratio": 0.3987,
+      "text_area_ratio": 0.3239,
+      "text_vertical_ratio": 0.3997,
       "drawing_count": 32,
       "image_count": 1
     },
     {
       "page": 12,
-      "characters": 407,
-      "words": 75,
-      "text_spans": 34,
-      "min_font_pt": 7.5,
+      "characters": 469,
+      "words": 86,
+      "text_spans": 35,
+      "min_font_pt": 8.0,
       "max_font_pt": 20.0,
       "text_bbox": [
         45.69,
         34.71,
         513.65,
-        419.46
+        434.74
       ],
-      "text_area_ratio": 0.3593,
-      "text_vertical_ratio": 0.457,
+      "text_area_ratio": 0.3735,
+      "text_vertical_ratio": 0.4752,
       "drawing_count": 55,
       "image_count": 1
     }

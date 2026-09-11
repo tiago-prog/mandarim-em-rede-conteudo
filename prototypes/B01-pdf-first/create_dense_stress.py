@@ -15,7 +15,7 @@ replacements = {
     "Qual forma foi mais fácil de ler? Qual forma precisa de mais prática?": "Qual forma foi mais fácil de ler? Qual forma precisa de mais prática? Explique o motivo usando uma observação curta.",
     "Escreva uma situação nova e a forma que combina com ela.": "Escreva uma situação nova, indique quem está presente e registre a forma que combina com esse contexto.",
     "Você chega a uma reunião e precisa cumprimentar três pessoas diferentes.": "Você chega a uma reunião de trabalho e precisa cumprimentar três pessoas diferentes, escolhendo uma forma adequada para cada relação.",
-    "Escreva as três formas que você usaria. Depois leia em voz alta.": "Escreva as três formas que você usaria, explique qual muda conforme a situação e depois leia tudo em voz alta.",
+    "Escreva as três formas que você usaria. Depois releia e compare com o mapa.": "Escreva as três formas que você usaria, explique qual muda conforme a situação e depois releia tudo comparando com o mapa.",
     "Depois de tentar, compare com a página 4. Marque o que aconteceu.": "Depois de tentar sem consultar, compare suas respostas com a página 4 e marque o que aconteceu durante a revisão.",
     "Tente primeiro; confira depois": "Tente primeiro, registre sua resposta e confira depois com o mapa de linguagem.",
 }

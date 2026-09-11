@@ -53,8 +53,8 @@ O catálogo e a arquitetura vigentes estão documentados em `docs/roteiro_mestre
 
 ## Estado atual do protótipo B01
 
-O workbook B01 de 12 páginas está implementado em `prototypes/B01-pdf-first/`. O PDF passou por compilação estrita, verificação de estrutura, inspeção visual completa e teste de conteúdo denso. O relatório `auditoria_estresse_B01.md` registra cinco correções funcionais recomendadas antes de transformar o padrão em template.
+O workbook B01 de 12 páginas está implementado em `prototypes/B01-pdf-first/`. O PDF passou por compilação estrita, verificação de estrutura, inspeção visual completa e teste de conteúdo denso. As correções funcionais encontradas na auditoria foram aplicadas e registradas em `auditoria_estresse_B01.md`.
 
 ## Próxima evolução
 
-A próxima implementação deve corrigir o mecanismo de resposta das atividades, explicitar os campos de hanzi, adicionar a legenda de tons e tornar a leitura em voz alta opcional. Depois do teste de uso do B01, a arquitetura poderá ser parametrizada e replicada na primeira coleção de oito tópicos.
+A próxima etapa é testar o B01 com um aluno real. Se o piloto confirmar a compreensão das instruções, a arquitetura poderá ser parametrizada e replicada na primeira coleção de oito tópicos.
