@@ -7,6 +7,7 @@ Este diretório transforma uma unidade JSON aprovada em um pacote distribuível.
 ```text
 mvp_pipeline/
 ├── content/                 # unidades JSON
+├── audio_scripts/           # roteiros de áudio por tópico
 ├── schema/                  # contrato de dados
 ├── templates/               # futuras extensões de templates
 ├── build/                   # pacotes gerados
@@ -21,6 +22,10 @@ python3 generate_unit.py content/B01-iniciar-interacao.json
 ```
 
 O resultado aparece em `build/B01/` e inclui o PDF do workbook, os roteiros, o guia, uma cópia do JSON e um ZIP da unidade.
+
+## Roteiros de áudio
+
+Os roteiros essenciais B01–B04 ficam em `audio_scripts/`. Cada tópico possui oito aulas: exposição, contraste, tentativa, reconstrução, recombinação, recuperação independente, transferência e revisão espaçada. As marcas de voz e pausa estão documentadas em `audio_scripts/README.md`.
 
 ## Validar sem gerar
 
