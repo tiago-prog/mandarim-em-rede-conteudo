@@ -1,14 +1,14 @@
-# Roadmap executável — Mandarim em Rede visual e escrito v2
+# Roadmap executável — Mandarim em Rede visual e escrito v3
 
 ## Objetivo
 
-Transformar B01 em uma unidade vendável que ensina por meio de elementos visuais, hanzi, pinyin, palavras funcionais, escrita, leitura guiada, reorganização, recombinação, produção e revisão. A oferta não inclui áudio.
+Construir uma biblioteca visual de mandarim prático, organizada por tópicos do cotidiano e centrada em hanzi, palavras, pinyin, escrita, leitura guiada, situações e produção funcional. A oferta não inclui áudio.
 
-## Decisão estratégica
+## Produto vendido
 
-O produto será 100% visual e escrito. Os roteiros em `audio_scripts/` ficam arquivados para uma eventual edição futura e não fazem parte da promessa, do preço ou dos critérios de aprovação atuais.
+O Mandarim em Rede será uma coleção de workbooks visuais para adultos iniciantes que desejam aprender mandarim por situações práticas, como aeroporto, hotel, transporte, restaurante, compras e interações básicas.
 
-O produto deve ser vendido como um **workbook visual premium de mandarim**, não como um curso de áudio reduzido.
+O catálogo completo terá 24 tópicos. A primeira coleção comercial terá oito.
 
 ## Método congelado
 
@@ -16,127 +16,169 @@ O produto deve ser vendido como um **workbook visual premium de mandarim**, não
 situar → observar → reconhecer → ler → recuperar → escrever → reorganizar → recombinar → produzir → revisar
 ```
 
-Cada etapa precisa aparecer como uma ação concreta no PDF. O estudante deve fazer algo em cada página.
+Cada tópico deve produzir um resultado escrito e prático. O estudante não deve apenas ler explicações.
 
-## Arquitetura do tópico
+## Arquitetura de cada tópico
 
-O workbook principal passa a ter dez páginas:
+O workbook principal terá 12 páginas:
 
-1. situação visual, objetivo e resultado mínimo;
-2. mapa de linguagem com hanzi, pinyin e sentido;
-3. hanzi-alvo, componentes e escrita controlada;
-4. pinyin, tons e leitura guiada;
-5. reconhecimento de forma, sentido e situação;
-6. recuperação com lacunas e apoio reduzido;
-7. reorganização de blocos e ordem da frase;
-8. recombinação de slots e banco de palavras;
-9. produção escrita e leitura em voz alta;
-10. autoavaliação, revisão em 24 horas e revisão em 7 dias.
+1. capa funcional, resultado e situação;
+2. cena visual e tarefa;
+3. banco de 8–12 palavras;
+4. mapa de 2–4 estruturas;
+5. hanzi-alvo e escrita controlada;
+6. pinyin, tons e leitura;
+7. reconhecimento;
+8. recuperação escrita;
+9. reorganização de blocos;
+10. recombinação de slots;
+11. produção prática com artefato visual;
+12. revisão e anotações.
+
+## Catálogo completo de 24 tópicos
+
+### Coleção 1 — Primeiras interações
+
+B01 Cumprimentos em contexto  
+B02 Nome e identidade  
+B03 Números e contatos  
+B04 Pessoas e objetos  
+B05 Posse e relações  
+B06 Perguntar e devolver
+
+### Coleção 2 — Deslocamento e viagem
+
+V01 Aeroporto e check-in  
+V02 Imigração e bagagem  
+V03 Hotel e hospedagem  
+V04 Transporte e táxi  
+V05 Direções e localização  
+V06 Horários e itinerários
+
+### Coleção 3 — Comer, comprar e pagar
+
+C01 Restaurante e pedido  
+C02 Preferências e ingredientes  
+C03 Conta e pagamento  
+C04 Mercado e loja de conveniência  
+C05 Compras e preços  
+C06 Serviços do dia a dia
+
+### Coleção 4 — Vida diária e autonomia
+
+D01 Rotina e atividades  
+D02 Família e pessoas  
+D03 Trabalho e estudo  
+D04 Convites e planos  
+D05 Ajuda, saúde e emergência  
+D06 Mensagens e revisão
+
+## Primeira coleção comercial
+
+A primeira entrega terá oito tópicos:
+
+1. B01 — Cumprimentos em contexto;
+2. B02 — Nome e identidade;
+3. B03 — Números e contatos;
+4. B04 — Pessoas e objetos;
+5. V01 — Aeroporto e check-in;
+6. V03 — Hotel e hospedagem;
+7. V04 — Transporte e táxi;
+8. C01 — Restaurante e pedido.
+
+Essa coleção combina fundamentos com situações imediatas de viagem.
 
 ## Complementos
 
-| Complemento | Páginas | Função |
+| Complemento | Escala | Função |
 |---|---:|---|
-| P1 — Pronúncia visual e tons | 4 | leitura de pinyin, tons e articulação consciente |
-| W1 — Escrita funcional | 4 | recuperação escrita e construção de frases |
-| W2 — Hanzi e leitura | 6 | reconhecimento, traços e leitura funcional |
-| X1 — Contraste funcional | 4 | decisão entre formas próximas |
-| S1 — Vocabulário funcional | 4 | banco de palavras, slots e recombinação |
-| Q1 — Quiz de transferência | 8 | fechamento de B01–B04 |
-| N1 — Anotações e revisão | 6 | revisão de 24 horas e 7 dias |
-| R5 — Consolidação B01–B04 | 12 | combinar os quatro tópicos |
+| W1 — Laboratório de escrita | 6 páginas por tópico | recuperar palavras e frases |
+| W2 — Hanzi e leitura | 6 páginas por tópico | reconhecer, escrever e ler caracteres |
+| V1 — Vocabulário visual | 4 páginas por tópico | organizar palavras e combinações |
+| X1 — Contraste funcional | 4 páginas por tópico | escolher entre formas próximas |
+| R1 — Revisão e anotações | 4 páginas por tópico ou coleção | registrar dificuldades e agenda |
+| Q1 — Quiz de transferência | 8 páginas por coleção | verificar uso misturado |
+| R5 — Consolidação | 12 páginas por coleção | integrar os tópicos |
 
-## Primeira coleção
+## Pacotes
 
-1. B01 — Cumprimentos em contexto;
-2. B02 — Perguntar, responder e devolver;
-3. B03 — Identificar pessoas e objetos;
-4. B04 — Posse e especificação.
-
-A expansão B05–B08 fica para depois do teste do novo método.
-
-## Pacotes comerciais
-
-| Oferta | Conteúdo | Meta B01–B04 |
+| Oferta | Conteúdo | Volume estimado para 8 tópicos |
 |---|---|---:|
-| Essencial | Workbooks, guia, gabarito e revisão integrada | 56 páginas |
-| Premium | Essencial + P1, W1, W2, X1 e S1 | 144–156 páginas |
-| Premium Plus | Premium + Q1, N1 e R5 | 170–185 páginas |
+| Essencial | workbooks, guia e gabarito | 110–125 páginas |
+| Premium | Essencial + W1, W2 e V1 | 244–254 páginas |
+| Premium Plus | Premium + X1, R1, Q1 e R5 | 333–343 páginas |
 
-A Premium deve conter aproximadamente 128 páginas diretamente destinadas ao aluno. A Premium Plus deve conter aproximadamente 154 páginas diretamente destinadas ao aluno.
+Os números são metas de arquitetura. Nenhum PDF deve entrar apenas para aumentar volume.
 
-## Progressão linguística
+## Fases de produção
 
-Cada tópico deve separar:
+### Fase 1 — sistema visual
 
-- hanzi-alvo;
-- hanzi de reconhecimento;
-- palavras funcionais;
-- estruturas centrais;
-- slots substituíveis;
-- formas recicladas de tópicos anteriores.
+Congelar capa, tipografia, paleta, cartões, mapas, áreas de escrita, formulários, códigos de seção e tratamento de hanzi.
 
-O pinyin deve ser um apoio graduado. A sequência deve passar de hanzi + pinyin para hanzi + pinyin parcial e, depois, hanzi com consulta posterior.
+### Fase 2 — protótipo B01
 
-## Estados editoriais
+Produzir B01 integralmente com 12 páginas. Incluir cena visual, banco de palavras, hanzi, pinyin, recuperação escrita, reorganização, recombinação e produção.
+
+### Fase 3 — teste de uso
+
+Entregar B01 a leitores externos. Medir onde o estudante para, copia, consulta, confunde hanzi e pinyin ou não entende a instrução.
+
+### Fase 4 — correção do sistema
+
+Corrigir fluxo, densidade, tipografia, espaço de escrita e instruções. Só depois congelar o template.
+
+### Fase 5 — primeira coleção de oito tópicos
+
+Produzir B02, B03, B04, V01, V03, V04 e C01 usando o template validado.
+
+### Fase 6 — complementos
+
+Produzir W1, W2 e V1 para os oito tópicos. Depois criar X1 e R1.
+
+### Fase 7 — fechamento da coleção
+
+Criar Q1 e R5 para misturar os oito tópicos. D06 poderá funcionar como unidade de revisão posterior.
+
+### Fase 8 — expansão do catálogo
+
+Produzir as três coleções restantes em blocos de quatro tópicos, sempre após testar o bloco anterior.
+
+## Portões de aprovação
 
 ```text
-draft → revisão linguística → revisão visual → teste sem áudio → piloto → aprovado → publicado
+draft → revisão linguística → revisão visual → teste de uso → piloto comercial → aprovado → publicado
 ```
 
-A compilação do PDF não substitui a revisão do mandarim nem o teste com estudante.
+A compilação do PDF não equivale à aprovação. Toda unidade precisa de revisão linguística e teste de uso.
 
-## Fases
+## Critérios de qualidade
 
-### Fase 1 — congelar a arquitetura
+Cada tópico deve respeitar:
 
-Registrar a promessa visual e escrita, os pacotes, os nomes dos complementos e a progressão de hanzi.
+- 8–12 palavras novas;
+- 4–8 hanzi-alvo;
+- 2–4 estruturas centrais;
+- 1 ou 2 situações principais;
+- 1 artefato prático;
+- áreas de escrita reais;
+- no máximo cinco critérios na autoavaliação;
+- ocupação visual preferencial entre 45% e 65%;
+- nenhuma informação essencial dependente de cor isolada.
 
-### Fase 2 — redesenhar B01
+## Pipeline futuro
 
-Criar o workbook de dez páginas e os cinco complementos visuais. O P1 deve ser chamado de **Pronúncia visual e tons**. O W2 deve trabalhar reconhecimento, traços, recuperação e leitura funcional.
+O pipeline deverá ser atualizado somente depois do protótipo B01:
 
-### Fase 3 — teste manual
-
-Aplicar B01 sem áudio. Observar se o estudante consegue situar, reconhecer, ler, escrever, reorganizar, recombinar e produzir.
-
-### Fase 4 — revisão de layout
-
-Usar a faixa confortável de 45–65% de ocupação vertical. Expandir para baixo em páginas de produção, sem comprimir hanzi, pinyin ou campos de escrita.
-
-### Fase 5 — replicar B02–B04
-
-Somente após B01 funcionar, migrar os outros três tópicos para dez páginas e os complementos correspondentes.
-
-### Fase 6 — fechamento Premium Plus
-
-Criar Q1, N1 e R5 como materiais de coleção, não como repetições de cada tópico.
-
-### Fase 7 — pipeline v2
-
-Depois de validar o conteúdo manualmente:
-
-- separar `conteudo_pdf` de `roteiro_audio`;
-- criar campos de hanzi-alvo, hanzi de reconhecimento, pinyin, tom visual e slots;
-- tornar áudio totalmente opcional ou removê-lo da geração;
-- criar templates de dez páginas;
-- gerar pacotes Essencial, Premium e Premium Plus.
-
-## Critérios de aprovação B01
-
-B01 estará pronto para piloto quando o estudante conseguir:
-
-- entender a situação pela página;
-- localizar os hanzi principais;
-- ler com pinyin;
-- reconhecer palavras em contexto;
-- completar lacunas;
-- reorganizar uma frase;
-- escrever uma variação;
-- ler a própria produção em voz alta;
-- produzir com apoio visual reduzido;
-- marcar o que precisa revisar.
+- separar conteúdo visual, linguístico e comercial;
+- registrar hanzi-alvo e hanzi de reconhecimento;
+- registrar banco de palavras e categorias;
+- registrar estruturas fixas e slots;
+- registrar artefato prático;
+- gerar workbook de 12 páginas;
+- gerar complementos por pacote;
+- tornar áudio ausente da oferta e opcional no arquivo histórico.
 
 ## Próxima ação concreta
 
-Não produzir mais tópicos ainda. Redesenhar B01 como prova completa do sistema visual e escrito. Depois da validação, replicar a arquitetura em B02, B03 e B04.
+Implementar somente o B01 completo como protótipo visual e escrito. Não gerar os 24 tópicos em massa antes do teste de uso do primeiro tópico.

@@ -7,6 +7,7 @@ Este diretório transforma uma unidade JSON aprovada em um pacote visual e escri
 ```text
 mvp_pipeline/
 ├── content/                 # unidades JSON
+├── docs/                    # estratégia e roteiro-mestre do produto
 ├── audio_scripts/           # roteiros de áudio por tópico
 ├── schema/                  # contrato de dados
 ├── templates/               # futuras extensões de templates
@@ -45,6 +46,10 @@ O pipeline valida campos, tipos, pacotes, sequência e, quando presentes, refer�
 
 A v1 valida o JSON, registra o estado editorial, gera o guia, o manifesto e recompila o workbook aprovado da B01 como caso de regressão. Os roteiros de áudio são arquivos de referência e não bloqueiam o produto PDF-first. O pipeline ainda não substitui automaticamente todos os textos do workbook pelas estruturas de uma nova unidade. Isso é intencional: evita que B02–B04 sejam produzidas com um layout correto, mas conteúdo visual incorreto.
 
+## Roteiro-mestre atual
+
+O catálogo e a arquitetura vigentes estão documentados em `docs/roteiro_mestre_produto_visual_mandarim_em_rede.md`. O plano completo prevê 24 tópicos em quatro coleções. A primeira coleção comercial terá oito tópicos, começando por fundamentos, aeroporto, hotel, transporte e restaurante.
+
 ## Próxima evolução
 
-A próxima implementação deve separar o workbook em templates de página e parametrizar título, objetivo, estruturas, mapa lacunado, situação de transferência e autoavaliação. Depois da validação desse template parametrizado com B02–B04, os complementos P1, W1, W2, X1, S1, Q1, N1 e R5 podem ser ativados no campo `pacotes.extensoes` e passar a gerar páginas adicionais.
+A próxima implementação deve criar o workbook de 12 páginas do B01 e parametrizar título, cena, banco de palavras, hanzi-alvo, pinyin, mapa, lacunas, reorganização, recombinação, artefato prático e revisão. Depois do teste de uso do B01, a arquitetura será replicada na primeira coleção de oito tópicos.
