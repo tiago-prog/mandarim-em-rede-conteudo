@@ -10,6 +10,13 @@
       "template_profile": "b-family-workbook-v1",
       "material": "WORKBOOK DO ALUNO",
       "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B03",
+      "source": "content/pdf_first/B03-identificar-pessoas-e-objetos.json",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
     }
   ]
 }

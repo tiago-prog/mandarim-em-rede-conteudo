@@ -7,12 +7,18 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import validate_pdf_first_v2
+
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "schema" / "pdf_first_unit_v1.schema.json"
 
 
 def validate(path: Path) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("schema_version") == "2.0":
+        return validate_pdf_first_v2.validate(path)
     errors: list[str] = []
     if data.get("schema_version") != "1.0":
         errors.append("schema_version deve ser '1.0'")
@@ -70,7 +76,7 @@ def validate(path: Path) -> dict:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Valida uma unidade para o fluxo PDF-first.")
+    parser = argparse.ArgumentParser(description="Valida uma unidade para o fluxo PDF-first; despacha para o contrato rico quando schema_version é 2.0.")
     parser.add_argument("json_path", type=Path)
     parser.add_argument("--json", action="store_true", dest="as_json")
     args = parser.parse_args()
