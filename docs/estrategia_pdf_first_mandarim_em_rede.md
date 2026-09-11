@@ -1,5 +1,7 @@
 # Estratégia PDF-first — Mandarim em Rede
 
+> **Documento histórico.** Esta estratégia foi supersedida pela [Estratégia visual e escrita v2](estrategia_pdf_visual_escrito_mandarim_em_rede_v2.md), que remove completamente o áudio da oferta e amplia o foco em hanzi, palavras, leitura e prática visual.
+
 ## Decisão executiva
 
 O Mandarim em Rede deve deixar de depender de áudio para entregar valor. A nova versão será um produto **PDF-first**, organizado para ensinar por meio de exposição visual, pinyin, hanzi, recuperação escrita, recombinação, produção oral guiada e revisão espaçada.

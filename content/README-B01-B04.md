@@ -16,7 +16,7 @@ Este diretório reúne a primeira coleção de quatro tópicos do Mandarim em Re
 
 ## Estrutura prevista em cada Markdown
 
-Cada arquivo descreve o objetivo comunicativo, o resultado mínimo, a situação principal, as estruturas linguísticas, o conteúdo das cinco páginas do workbook, os quatro PDFs complementares e as oito faixas de áudio.
+Cada arquivo descreve o objetivo comunicativo, o resultado mínimo, a situação principal, as estruturas linguísticas, o conteúdo da arquitetura anterior e os complementos. Esses conteúdos estão em migração para o novo modelo de dez páginas visuais por tópico, com hanzi, palavras, leitura, escrita, recombinação e produção. Os roteiros de áudio ficam arquivados e não fazem parte da oferta atual.
 
 ## Estado editorial
 

@@ -1,6 +1,6 @@
 # Pipeline v1 — Mandarim em Rede
 
-Este diretório transforma uma unidade JSON aprovada em um pacote PDF-first distribuível. A unidade JSON é a fonte de conteúdo; o tema Typst controla a tipografia e o layout; o gerador cria workbook, complementos, guia, manifesto e ZIP.
+Este diretório transforma uma unidade JSON aprovada em um pacote visual e escrito distribuível. A unidade JSON é a fonte de conteúdo; o tema Typst controla a tipografia e o layout; o gerador cria workbook, complementos, guia, manifesto e ZIP.
 
 ## Estrutura
 
@@ -25,7 +25,7 @@ O resultado aparece em `build/B01/` e inclui o PDF do workbook, o guia, uma cóp
 
 ## Roteiros de áudio
 
-Os roteiros B01–B04 ficam em `audio_scripts/` como arquivo opcional para uma futura edição ou produção externa. Cada tópico possui oito aulas planejadas, mas nenhum áudio próprio é obrigatório na oferta atual. As marcas de voz e pausa estão documentadas em `audio_scripts/README.md`.
+Os roteiros B01–B04 ficam em `audio_scripts/` como arquivo histórico para uma futura edição ou produção externa. O produto atual não inclui áudio. A oferta é totalmente visual e escrita, com hanzi, pinyin, palavras, mapas, recuperação, escrita e produção guiada.
 
 ## Validar sem gerar
 
