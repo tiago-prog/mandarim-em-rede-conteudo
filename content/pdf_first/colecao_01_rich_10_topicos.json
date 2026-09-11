@@ -1,0 +1,94 @@
+{
+  "schema_version": "pdf-first-rich-batch-v2",
+  "produto": "Mandarim em Rede",
+  "content_profile": "pdf-first-rich-v2",
+  "template_registry": "templates/registry.json",
+  "output_label": "colecao-01-rich-10-topicos",
+  "colecao": "Coleção 01 · Primeiras interações",
+  "modulo": "Primeiras interações e situações práticas",
+  "expected_pages_policy": "range",
+  "min_pages": 11,
+  "max_pages": 13,
+  "units": [
+    {
+      "id": "B02",
+      "source": "content/pdf_first/B02-perguntar-responder-e-devolver.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B03",
+      "source": "content/pdf_first/B03-identificar-pessoas-e-objetos.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B04",
+      "source": "content/pdf_first/B04-posse-e-especificação.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B05",
+      "source": "content/pdf_first/B05-números-e-informações-pessoais.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B06",
+      "source": "content/pdf_first/B06-horários-e-agenda.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B07",
+      "source": "content/pdf_first/B07-localização-e-direções.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B08",
+      "source": "content/pdf_first/B08-pedidos-em-café-ou-restaurante.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B09",
+      "source": "content/pdf_first/B09-preferências-e-escolhas.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B10",
+      "source": "content/pdf_first/B10-capacidade-e-pedidos-de-ajuda.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    },
+    {
+      "id": "B11",
+      "source": "content/pdf_first/B11-rotina-e-atividades.json",
+      "content_profile": "pdf-first-rich-v2",
+      "template_profile": "b-family-workbook-v1",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    }
+  ]
+}

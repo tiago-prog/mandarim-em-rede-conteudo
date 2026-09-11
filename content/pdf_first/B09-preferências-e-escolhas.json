@@ -1,0 +1,326 @@
+{
+  "schema_version": "2.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "content_profile": "pdf-first-rich-v2",
+    "codigo": "B09",
+    "titulo": "Preferências e escolhas",
+    "colecao": "Coleção 01 · Primeiras interações",
+    "nivel": "iniciante",
+    "status": "draft",
+    "objetivo_comunicativo": "Dizer do que gosta, do que não gosta e escolher entre duas opções.",
+    "resultado_minimo": "Expressar duas preferências e uma recusa usando 喜欢, 不喜欢 e 还是.",
+    "situacao_principal": "Em uma conversa sobre comida, bebida ou atividades, comparar opções e escolher.",
+    "contexto_emocional": "O aluno quer expressar gosto pessoal sem parecer limitado a respostas decoradas.",
+    "dificuldade_principal": "Distinguir 喜欢 de 不喜欢 e manter a escolha clara.",
+    "preparacao": [
+      "Escolha duas opções.",
+      "Decida preferência ou recusa.",
+      "Diga a escolha em voz alta."
+    ],
+    "estruturas": [
+      {
+        "funcao": "dizer que gosta",
+        "mandarim": "我喜欢茶。",
+        "pinyin": "Wǒ xǐhuan chá.",
+        "sentido_funcional": "Eu gosto de chá.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "dizer que não gosta",
+        "mandarim": "我不喜欢咖啡。",
+        "pinyin": "Wǒ bù xǐhuan kāfēi.",
+        "sentido_funcional": "Eu não gosto de café.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "perguntar preferência",
+        "mandarim": "你喜欢什么？",
+        "pinyin": "Nǐ xǐhuan shénme?",
+        "sentido_funcional": "Do que você gosta?",
+        "tipo": "operador"
+      },
+      {
+        "funcao": "oferecer escolha",
+        "mandarim": "茶还是咖啡？",
+        "pinyin": "Chá háishì kāfēi?",
+        "sentido_funcional": "Chá ou café?",
+        "tipo": "operador"
+      },
+      {
+        "funcao": "escolher item",
+        "mandarim": "我喜欢茶。",
+        "pinyin": "Wǒ xǐhuan chá.",
+        "sentido_funcional": "Eu prefiro chá.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "confirmar escolha",
+        "mandarim": "茶。",
+        "pinyin": "Chá.",
+        "sentido_funcional": "Chá.",
+        "tipo": "fixo"
+      }
+    ],
+    "mapa_decisao": [
+      {
+        "intencao": "Perguntar preferência",
+        "mandarim": "你喜欢什么？",
+        "pinyin": "Nǐ xǐhuan shénme?"
+      },
+      {
+        "intencao": "Dizer gosto",
+        "mandarim": "我喜欢茶。",
+        "pinyin": "Wǒ xǐhuan chá."
+      },
+      {
+        "intencao": "Dizer recusa",
+        "mandarim": "我不喜欢咖啡。",
+        "pinyin": "Wǒ bù xǐhuan kāfēi."
+      },
+      {
+        "intencao": "Oferecer escolha",
+        "mandarim": "茶还是咖啡？",
+        "pinyin": "Chá háishì kāfēi?"
+      }
+    ],
+    "hanzi_alvo": [
+      {
+        "hanzi": "喜欢",
+        "pinyin": "xǐhuan",
+        "sentido": "gostar",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "sentido": "não",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "茶",
+        "pinyin": "chá",
+        "sentido": "chá",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "咖啡",
+        "pinyin": "kāfēi",
+        "sentido": "café",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "什么",
+        "pinyin": "shénme",
+        "sentido": "o que",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "还是",
+        "pinyin": "háishì",
+        "sentido": "ou",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "sentido": "eu",
+        "prioridade": "media"
+      }
+    ],
+    "palavras_chave": [
+      {
+        "hanzi": "喜欢",
+        "pinyin": "xǐhuan",
+        "sentido": "gostar",
+        "categoria": "acao",
+        "uso": "preferência"
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "sentido": "não",
+        "categoria": "informacao",
+        "uso": "negação"
+      },
+      {
+        "hanzi": "茶",
+        "pinyin": "chá",
+        "sentido": "chá",
+        "categoria": "objeto",
+        "uso": "opção"
+      },
+      {
+        "hanzi": "咖啡",
+        "pinyin": "kāfēi",
+        "sentido": "café",
+        "categoria": "objeto",
+        "uso": "opção"
+      },
+      {
+        "hanzi": "什么",
+        "pinyin": "shénme",
+        "sentido": "o que",
+        "categoria": "informacao",
+        "uso": "pergunta"
+      },
+      {
+        "hanzi": "还是",
+        "pinyin": "háishì",
+        "sentido": "ou",
+        "categoria": "informacao",
+        "uso": "escolha"
+      },
+      {
+        "hanzi": "喜欢",
+        "pinyin": "xǐhuan",
+        "sentido": "gostar",
+        "categoria": "acao",
+        "uso": "preferência"
+      },
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "sentido": "eu",
+        "categoria": "pessoa",
+        "uso": "sujeito"
+      }
+    ],
+    "atividades": {
+      "reconhecimento": [
+        {
+          "situacao": "Escolha a forma adequada para: Perguntar preferência",
+          "opcao_a": "你喜欢什么？",
+          "opcao_b": "我喜欢茶。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Dizer gosto",
+          "opcao_a": "我喜欢茶。",
+          "opcao_b": "我不喜欢咖啡。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Dizer recusa",
+          "opcao_a": "我不喜欢咖啡。",
+          "opcao_b": "茶还是咖啡？",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Oferecer escolha",
+          "opcao_a": "茶还是咖啡？",
+          "opcao_b": "你喜欢什么？",
+          "resposta": "a"
+        }
+      ],
+      "reorganizacao": {
+        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "blocos": [
+          "茶",
+          "还是",
+          "咖啡",
+          "？"
+        ],
+        "resultado_esperado": "茶还是咖啡？",
+        "reconstrucoes": [
+          {
+            "pedido": "Eu gosto de chá。",
+            "mandarim": "我喜欢茶。"
+          },
+          {
+            "pedido": "Eu não gosto de café。",
+            "mandarim": "我不喜欢咖啡。"
+          }
+        ]
+      },
+      "recombinacao": {
+        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "banco": [
+          {
+            "rotulo": "opção",
+            "hanzi": "茶",
+            "pinyin": "chá"
+          },
+          {
+            "rotulo": "opção",
+            "hanzi": "咖啡",
+            "pinyin": "kāfēi"
+          },
+          {
+            "rotulo": "opção",
+            "hanzi": "茶",
+            "pinyin": "chá"
+          }
+        ],
+        "moldes": [
+          "我喜欢…。",
+          "我不喜欢…。",
+          "…还是…？"
+        ]
+      }
+    },
+    "producao": {
+      "cenarios": [
+        {
+          "titulo": "Preferências",
+          "instrucao": "Diga do que gosta e não gosta.",
+          "apoio": "com_apoio",
+          "campos": [
+            "gosto",
+            "recusa"
+          ]
+        },
+        {
+          "titulo": "Escolha",
+          "instrucao": "Escolha entre duas opções sem o mapa.",
+          "apoio": "sem_apoio",
+          "campos": [
+            "opção",
+            "preferência"
+          ]
+        }
+      ]
+    },
+    "artefato_pratico": "Cartão de preferências com três escolhas e justificativa curta.",
+    "criterios_autoavaliacao": [
+      "Digo gosto com 喜欢.",
+      "Formo a recusa com 不喜欢.",
+      "Entendo a escolha com 还是.",
+      "Mantenho a opção explícita."
+    ],
+    "sequencia": [
+      "situar",
+      "observar",
+      "reconhecer",
+      "ler",
+      "recuperar",
+      "escrever",
+      "reorganizar",
+      "recombinar",
+      "produzir",
+      "revisar"
+    ],
+    "pacotes": {
+      "essencial": [
+        "W1",
+        "W2",
+        "V1",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "extensoes": {
+        "pronuncia": true,
+        "escrita": true,
+        "caracteres": true,
+        "contraste": true,
+        "vocabulario": true,
+        "quiz": false,
+        "anotacoes": true,
+        "consolidacao": false
+      }
+    },
+    "proxima_unidade_sugerida": "Capacidade e pedidos de ajuda"
+  }
+}

@@ -3,15 +3,727 @@
   "produto": "Mandarim em Rede",
   "colecao": "Coleção 01 · Primeiras interações",
   "entradas": [
-    {"hanzi":"你","pinyin":"nǐ","sentido":"você","primeira_unidade":"B01","reciclar_em":["B02","B03"],"prioridade":"alta","status":"ativo"},
-    {"hanzi":"我","pinyin":"wǒ","sentido":"eu","primeira_unidade":"B01","reciclar_em":["B02","B03"],"prioridade":"alta","status":"ativo"},
-    {"hanzi":"吗","pinyin":"ma","sentido":"partícula de pergunta","primeira_unidade":"B02","reciclar_em":["B03"],"prioridade":"alta","status":"ativo"},
-    {"hanzi":"呢","pinyin":"ne","sentido":"e você? / partícula de devolução","primeira_unidade":"B02","reciclar_em":["B03"],"prioridade":"alta","status":"ativo"},
-    {"hanzi":"学生","pinyin":"xuésheng","sentido":"estudante","primeira_unidade":"B02","reciclar_em":["B03"],"prioridade":"media","status":"ativo"},
-    {"hanzi":"老师","pinyin":"lǎoshī","sentido":"professor ou professora","primeira_unidade":"B02","reciclar_em":["B03"],"prioridade":"media","status":"ativo"},
-    {"hanzi":"这","pinyin":"zhè","sentido":"isto / este / esta","primeira_unidade":"B03","reciclar_em":["B04"],"prioridade":"alta","status":"ativo"},
-    {"hanzi":"那","pinyin":"nà","sentido":"aquilo / aquele / aquela","primeira_unidade":"B03","reciclar_em":["B04"],"prioridade":"alta","status":"ativo"},
-    {"hanzi":"谁","pinyin":"shéi","sentido":"quem","primeira_unidade":"B03","reciclar_em":["B04"],"prioridade":"alta","status":"ativo"},
-    {"hanzi":"什么","pinyin":"shénme","sentido":"o que / qual","primeira_unidade":"B03","reciclar_em":["B04"],"prioridade":"alta","status":"ativo"}
+    {
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "sentido": "olá",
+      "primeira_unidade": "B01",
+      "reciclar_em": [
+        "B02",
+        "B03",
+        "B04"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "sentido": "eu",
+      "primeira_unidade": "B01",
+      "reciclar_em": [
+        "B02",
+        "B03",
+        "B04"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "sentido": "você",
+      "primeira_unidade": "B01",
+      "reciclar_em": [
+        "B02",
+        "B03",
+        "B04"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "sentido": "chamar-se",
+      "primeira_unidade": "B01",
+      "reciclar_em": [],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "什么",
+      "pinyin": "shénme",
+      "sentido": "o que/qual",
+      "primeira_unidade": "B01",
+      "reciclar_em": [
+        "B02",
+        "B03",
+        "B04"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "是",
+      "pinyin": "shì",
+      "sentido": "ser",
+      "primeira_unidade": "B02",
+      "reciclar_em": [
+        "B03",
+        "B04",
+        "B05"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "不",
+      "pinyin": "bù",
+      "sentido": "não",
+      "primeira_unidade": "B02",
+      "reciclar_em": [
+        "B03",
+        "B04",
+        "B05"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xuésheng",
+      "sentido": "estudante",
+      "primeira_unidade": "B02",
+      "reciclar_em": [],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "老师",
+      "pinyin": "lǎoshī",
+      "sentido": "professor ou professora",
+      "primeira_unidade": "B02",
+      "reciclar_em": [],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "吗",
+      "pinyin": "ma",
+      "sentido": "pergunta de sim ou não",
+      "primeira_unidade": "B02",
+      "reciclar_em": [
+        "B03",
+        "B04",
+        "B05"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "sentido": "e você?",
+      "primeira_unidade": "B02",
+      "reciclar_em": [
+        "B03",
+        "B04",
+        "B05"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "sentido": "bem, bom",
+      "primeira_unidade": "B02",
+      "reciclar_em": [],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "忙",
+      "pinyin": "máng",
+      "sentido": "ocupado",
+      "primeira_unidade": "B02",
+      "reciclar_em": [],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "sentido": "muito, bastante",
+      "primeira_unidade": "B02",
+      "reciclar_em": [],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "这",
+      "pinyin": "zhè",
+      "sentido": "este, isto",
+      "primeira_unidade": "B03",
+      "reciclar_em": [
+        "B04",
+        "B05",
+        "B06"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "那",
+      "pinyin": "nà",
+      "sentido": "aquele, aquilo",
+      "primeira_unidade": "B03",
+      "reciclar_em": [
+        "B04",
+        "B05",
+        "B06"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "谁",
+      "pinyin": "shéi",
+      "sentido": "quem",
+      "primeira_unidade": "B03",
+      "reciclar_em": [
+        "B04",
+        "B05",
+        "B06"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "书",
+      "pinyin": "shū",
+      "sentido": "livro",
+      "primeira_unidade": "B03",
+      "reciclar_em": [
+        "B04",
+        "B05",
+        "B06"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "电话",
+      "pinyin": "diànhuà",
+      "sentido": "telefone",
+      "primeira_unidade": "B03",
+      "reciclar_em": [],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "朋友",
+      "pinyin": "péngyou",
+      "sentido": "amigo ou amiga",
+      "primeira_unidade": "B03",
+      "reciclar_em": [
+        "B04",
+        "B05",
+        "B06"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "我的",
+      "pinyin": "wǒ de",
+      "sentido": "meu/minha",
+      "primeira_unidade": "B04",
+      "reciclar_em": [
+        "B05",
+        "B06",
+        "B07"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "你的",
+      "pinyin": "nǐ de",
+      "sentido": "seu/sua",
+      "primeira_unidade": "B04",
+      "reciclar_em": [
+        "B05",
+        "B06",
+        "B07"
+      ],
+      "prioridade": "alta",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "几岁",
+      "pinyin": "jǐ suì",
+      "sentido": "quantos anos",
+      "primeira_unidade": "B05",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "二十",
+      "pinyin": "èrshí",
+      "sentido": "vinte",
+      "primeira_unidade": "B05",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "号码",
+      "pinyin": "hàomǎ",
+      "sentido": "número",
+      "primeira_unidade": "B05",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "多少",
+      "pinyin": "duōshao",
+      "sentido": "quanto/quantos",
+      "primeira_unidade": "B05",
+      "reciclar_em": [
+        "B06",
+        "B07",
+        "B08"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "三",
+      "pinyin": "sān",
+      "sentido": "três",
+      "primeira_unidade": "B05",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "人",
+      "pinyin": "rén",
+      "sentido": "pessoa",
+      "primeira_unidade": "B05",
+      "reciclar_em": [
+        "B06",
+        "B07",
+        "B08"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "sentido": "haver/ter",
+      "primeira_unidade": "B05",
+      "reciclar_em": [
+        "B06",
+        "B07",
+        "B08"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "现在",
+      "pinyin": "xiànzài",
+      "sentido": "agora",
+      "primeira_unidade": "B06",
+      "reciclar_em": [
+        "B07",
+        "B08",
+        "B09"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "sentido": "hora em ponto",
+      "primeira_unidade": "B06",
+      "reciclar_em": [
+        "B07",
+        "B08",
+        "B09"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "sentido": "meia",
+      "primeira_unidade": "B06",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "开始",
+      "pinyin": "kāishǐ",
+      "sentido": "começar",
+      "primeira_unidade": "B06",
+      "reciclar_em": [
+        "B07",
+        "B08",
+        "B09"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "什么时候",
+      "pinyin": "shénme shíhou",
+      "sentido": "quando",
+      "primeira_unidade": "B06",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "下午",
+      "pinyin": "xiàwǔ",
+      "sentido": "tarde",
+      "primeira_unidade": "B06",
+      "reciclar_em": [
+        "B07",
+        "B08",
+        "B09"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎlǐ",
+      "sentido": "onde",
+      "primeira_unidade": "B07",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "这里",
+      "pinyin": "zhèlǐ",
+      "sentido": "aqui",
+      "primeira_unidade": "B07",
+      "reciclar_em": [
+        "B08",
+        "B09",
+        "B10"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "那里",
+      "pinyin": "nàlǐ",
+      "sentido": "ali",
+      "primeira_unidade": "B07",
+      "reciclar_em": [
+        "B08",
+        "B09",
+        "B10"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "教室",
+      "pinyin": "jiàoshì",
+      "sentido": "sala de aula",
+      "primeira_unidade": "B07",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "桌子",
+      "pinyin": "zhuōzi",
+      "sentido": "mesa",
+      "primeira_unidade": "B07",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "sentido": "sobre/em cima",
+      "primeira_unidade": "B07",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "sentido": "estar em",
+      "primeira_unidade": "B07",
+      "reciclar_em": [
+        "B08",
+        "B09",
+        "B10"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "要",
+      "pinyin": "yào",
+      "sentido": "querer/pedir",
+      "primeira_unidade": "B08",
+      "reciclar_em": [
+        "B09",
+        "B10",
+        "B11"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "咖啡",
+      "pinyin": "kāfēi",
+      "sentido": "café",
+      "primeira_unidade": "B08",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "sentido": "chá",
+      "primeira_unidade": "B08",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "sentido": "dar",
+      "primeira_unidade": "B08",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "这个",
+      "pinyin": "zhège",
+      "sentido": "este item",
+      "primeira_unidade": "B08",
+      "reciclar_em": [
+        "B09",
+        "B10",
+        "B11"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "两个",
+      "pinyin": "liǎng ge",
+      "sentido": "dois itens",
+      "primeira_unidade": "B08",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "sentido": "por favor",
+      "primeira_unidade": "B08",
+      "reciclar_em": [
+        "B09",
+        "B10",
+        "B11"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "谢谢",
+      "pinyin": "xièxie",
+      "sentido": "obrigado/obrigada",
+      "primeira_unidade": "B08",
+      "reciclar_em": [
+        "B09",
+        "B10",
+        "B11"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "喜欢",
+      "pinyin": "xǐhuan",
+      "sentido": "gostar",
+      "primeira_unidade": "B09",
+      "reciclar_em": [
+        "B10",
+        "B11"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishì",
+      "sentido": "ou",
+      "primeira_unidade": "B09",
+      "reciclar_em": [
+        "B10",
+        "B11"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "会",
+      "pinyin": "huì",
+      "sentido": "saber fazer",
+      "primeira_unidade": "B10",
+      "reciclar_em": [
+        "B11"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "sentido": "falar",
+      "primeira_unidade": "B10",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
+      "sentido": "chinês",
+      "primeira_unidade": "B10",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "sentido": "escrever",
+      "primeira_unidade": "B10",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "能",
+      "pinyin": "néng",
+      "sentido": "poder/conseguir",
+      "primeira_unidade": "B10",
+      "reciclar_em": [
+        "B11"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "试试",
+      "pinyin": "shìshi",
+      "sentido": "tentar",
+      "primeira_unidade": "B10",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "帮",
+      "pinyin": "bāng",
+      "sentido": "ajudar",
+      "primeira_unidade": "B10",
+      "reciclar_em": [
+        "B11"
+      ],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "去",
+      "pinyin": "qù",
+      "sentido": "ir",
+      "primeira_unidade": "B11",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "sentido": "estudar",
+      "primeira_unidade": "B11",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "工作",
+      "pinyin": "gōngzuò",
+      "sentido": "trabalhar",
+      "primeira_unidade": "B11",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "看书",
+      "pinyin": "kàn shū",
+      "sentido": "ler",
+      "primeira_unidade": "B11",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "学",
+      "pinyin": "xué",
+      "sentido": "estudar/aprender",
+      "primeira_unidade": "B11",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "sentido": "fazer",
+      "primeira_unidade": "B11",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    },
+    {
+      "hanzi": "电影",
+      "pinyin": "diànyǐng",
+      "sentido": "filme",
+      "primeira_unidade": "B11",
+      "reciclar_em": [],
+      "prioridade": "media",
+      "status": "ativo"
+    }
   ]
 }

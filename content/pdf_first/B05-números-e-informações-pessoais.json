@@ -1,0 +1,332 @@
+{
+  "schema_version": "2.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "content_profile": "pdf-first-rich-v2",
+    "codigo": "B05",
+    "titulo": "Números e informações pessoais",
+    "colecao": "Coleção 01 · Primeiras interações",
+    "nivel": "iniciante",
+    "status": "draft",
+    "objetivo_comunicativo": "Perguntar e informar idade, telefone ou número em uma interação inicial.",
+    "resultado_minimo": "Produzir três trocas com números, usando 几 ou 多少 conforme a informação solicitada.",
+    "situacao_principal": "Em uma apresentação ou cadastro simples, pedir e fornecer uma informação numérica.",
+    "contexto_emocional": "O aluno quer informar seus dados sem travar ao ouvir uma pergunta curta.",
+    "dificuldade_principal": "Distinguir 几 de 多少 e manter o número na posição correta.",
+    "preparacao": [
+      "Observe qual informação é numérica.",
+      "Escolha pergunta curta ou específica.",
+      "Fale o número antes de conferir."
+    ],
+    "estruturas": [
+      {
+        "funcao": "perguntar idade",
+        "mandarim": "你几岁？",
+        "pinyin": "Nǐ jǐ suì?",
+        "sentido_funcional": "Quantos anos você tem?",
+        "tipo": "operador"
+      },
+      {
+        "funcao": "informar idade",
+        "mandarim": "我二十岁。",
+        "pinyin": "Wǒ èrshí suì.",
+        "sentido_funcional": "Eu tenho vinte anos.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "perguntar número",
+        "mandarim": "你的电话号码是多少？",
+        "pinyin": "Nǐ de diànhuà hàomǎ shì duōshao?",
+        "sentido_funcional": "Qual é o seu número de telefone?",
+        "tipo": "operador"
+      },
+      {
+        "funcao": "informar número",
+        "mandarim": "我的电话号码是八八八八。",
+        "pinyin": "Wǒ de diànhuà hàomǎ shì bā bā bā bā.",
+        "sentido_funcional": "Meu número é 8888.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "perguntar quantidade aberta",
+        "mandarim": "有多少人？",
+        "pinyin": "Yǒu duōshao rén?",
+        "sentido_funcional": "Quantas pessoas há?",
+        "tipo": "operador"
+      },
+      {
+        "funcao": "responder quantidade",
+        "mandarim": "有三个人。",
+        "pinyin": "Yǒu sān ge rén.",
+        "sentido_funcional": "Há três pessoas.",
+        "tipo": "base"
+      }
+    ],
+    "mapa_decisao": [
+      {
+        "intencao": "Perguntar idade",
+        "mandarim": "你几岁？",
+        "pinyin": "Nǐ jǐ suì?"
+      },
+      {
+        "intencao": "Responder idade",
+        "mandarim": "我二十岁。",
+        "pinyin": "Wǒ èrshí suì."
+      },
+      {
+        "intencao": "Perguntar número",
+        "mandarim": "你的电话号码是多少？",
+        "pinyin": "Nǐ de diànhuà hàomǎ shì duōshao?"
+      },
+      {
+        "intencao": "Responder quantidade",
+        "mandarim": "有三个人。",
+        "pinyin": "Yǒu sān ge rén."
+      }
+    ],
+    "hanzi_alvo": [
+      {
+        "hanzi": "几岁",
+        "pinyin": "jǐ suì",
+        "sentido": "quantos anos",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "二十",
+        "pinyin": "èrshí",
+        "sentido": "vinte",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "电话",
+        "pinyin": "diànhuà",
+        "sentido": "telefone",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "号码",
+        "pinyin": "hàomǎ",
+        "sentido": "número",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "多少",
+        "pinyin": "duōshao",
+        "sentido": "quanto/quantos",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "三",
+        "pinyin": "sān",
+        "sentido": "três",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "人",
+        "pinyin": "rén",
+        "sentido": "pessoa",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "sentido": "haver/ter",
+        "prioridade": "media"
+      }
+    ],
+    "palavras_chave": [
+      {
+        "hanzi": "几岁",
+        "pinyin": "jǐ suì",
+        "sentido": "quantos anos",
+        "categoria": "informacao",
+        "uso": "idade"
+      },
+      {
+        "hanzi": "二十",
+        "pinyin": "èrshí",
+        "sentido": "vinte",
+        "categoria": "quantidade",
+        "uso": "número"
+      },
+      {
+        "hanzi": "电话",
+        "pinyin": "diànhuà",
+        "sentido": "telefone",
+        "categoria": "objeto",
+        "uso": "contato"
+      },
+      {
+        "hanzi": "号码",
+        "pinyin": "hàomǎ",
+        "sentido": "número",
+        "categoria": "informacao",
+        "uso": "dado"
+      },
+      {
+        "hanzi": "多少",
+        "pinyin": "duōshao",
+        "sentido": "quanto/quantos",
+        "categoria": "quantidade",
+        "uso": "quantidade aberta"
+      },
+      {
+        "hanzi": "三",
+        "pinyin": "sān",
+        "sentido": "três",
+        "categoria": "quantidade",
+        "uso": "número"
+      },
+      {
+        "hanzi": "人",
+        "pinyin": "rén",
+        "sentido": "pessoa",
+        "categoria": "pessoa",
+        "uso": "contagem"
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "sentido": "haver/ter",
+        "categoria": "acao",
+        "uso": "existência"
+      }
+    ],
+    "atividades": {
+      "reconhecimento": [
+        {
+          "situacao": "Escolha a forma adequada para: Perguntar idade",
+          "opcao_a": "你几岁？",
+          "opcao_b": "我二十岁。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Responder idade",
+          "opcao_a": "我二十岁。",
+          "opcao_b": "你的电话号码是多少？",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Perguntar número",
+          "opcao_a": "你的电话号码是多少？",
+          "opcao_b": "有三个人。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Responder quantidade",
+          "opcao_a": "有三个人。",
+          "opcao_b": "你几岁？",
+          "resposta": "a"
+        }
+      ],
+      "reorganizacao": {
+        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "blocos": [
+          "你",
+          "几",
+          "岁",
+          "？"
+        ],
+        "resultado_esperado": "你几岁？",
+        "reconstrucoes": [
+          {
+            "pedido": "Tenho vinte anos。",
+            "mandarim": "我二十岁。"
+          },
+          {
+            "pedido": "Há três pessoas。",
+            "mandarim": "有三个人。"
+          }
+        ]
+      },
+      "recombinacao": {
+        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "banco": [
+          {
+            "rotulo": "idade",
+            "hanzi": "二十",
+            "pinyin": "èrshí"
+          },
+          {
+            "rotulo": "quantidade",
+            "hanzi": "三",
+            "pinyin": "sān"
+          },
+          {
+            "rotulo": "dado",
+            "hanzi": "八八八八",
+            "pinyin": "bā bā bā bā"
+          }
+        ],
+        "moldes": [
+          "你…岁？",
+          "我的…是…",
+          "有多少…？"
+        ]
+      }
+    },
+    "producao": {
+      "cenarios": [
+        {
+          "titulo": "Cadastro",
+          "instrucao": "Pergunte e registre idade e telefone de uma pessoa.",
+          "apoio": "com_apoio",
+          "campos": [
+            "idade",
+            "telefone"
+          ]
+        },
+        {
+          "titulo": "Apresentação",
+          "instrucao": "Dê duas informações numéricas sem olhar.",
+          "apoio": "sem_apoio",
+          "campos": [
+            "idade",
+            "número"
+          ]
+        }
+      ]
+    },
+    "artefato_pratico": "Ficha curta de informações pessoais numéricas.",
+    "criterios_autoavaliacao": [
+      "Escolho 几 para idade.",
+      "Uso 多少 para quantidade aberta.",
+      "Produzo números com ritmo estável.",
+      "Respondo sem inverter a ordem."
+    ],
+    "sequencia": [
+      "situar",
+      "observar",
+      "reconhecer",
+      "ler",
+      "recuperar",
+      "escrever",
+      "reorganizar",
+      "recombinar",
+      "produzir",
+      "revisar"
+    ],
+    "pacotes": {
+      "essencial": [
+        "W1",
+        "W2",
+        "V1",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "extensoes": {
+        "pronuncia": true,
+        "escrita": true,
+        "caracteres": true,
+        "contraste": true,
+        "vocabulario": true,
+        "quiz": false,
+        "anotacoes": true,
+        "consolidacao": false
+      }
+    },
+    "proxima_unidade_sugerida": "Horários e agenda"
+  }
+}

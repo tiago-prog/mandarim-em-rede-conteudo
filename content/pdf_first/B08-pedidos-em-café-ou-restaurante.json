@@ -1,0 +1,333 @@
+{
+  "schema_version": "2.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "content_profile": "pdf-first-rich-v2",
+    "codigo": "B08",
+    "titulo": "Pedidos em café ou restaurante",
+    "colecao": "Coleção 01 · Primeiras interações",
+    "nivel": "iniciante",
+    "status": "draft",
+    "objetivo_comunicativo": "Fazer um pedido simples e responder confirmando item ou quantidade.",
+    "resultado_minimo": "Realizar três pedidos curtos usando 请, 要 e uma forma de confirmação.",
+    "situacao_principal": "Em um café ou restaurante, pedir uma bebida ou item e confirmar o pedido.",
+    "contexto_emocional": "O aluno quer ser compreendido sem precisar formular uma frase longa.",
+    "dificuldade_principal": "Distinguir 要 como intenção de pedir e 请 como marcador de cortesia.",
+    "preparacao": [
+      "Visualize o cardápio.",
+      "Escolha item e quantidade.",
+      "Faça o pedido em voz alta."
+    ],
+    "estruturas": [
+      {
+        "funcao": "pedir item",
+        "mandarim": "我要咖啡。",
+        "pinyin": "Wǒ yào kāfēi.",
+        "sentido_funcional": "Eu quero café.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "pedir com cortesia",
+        "mandarim": "请给我茶。",
+        "pinyin": "Qǐng gěi wǒ chá.",
+        "sentido_funcional": "Por favor, me dê chá.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "perguntar confirmação",
+        "mandarim": "要这个吗？",
+        "pinyin": "Yào zhège ma?",
+        "sentido_funcional": "Quer este?",
+        "tipo": "particula",
+        "particula": "吗"
+      },
+      {
+        "funcao": "confirmar escolha",
+        "mandarim": "要这个。",
+        "pinyin": "Yào zhège.",
+        "sentido_funcional": "Quero este.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "pedir quantidade",
+        "mandarim": "我要两个。",
+        "pinyin": "Wǒ yào liǎng ge.",
+        "sentido_funcional": "Quero dois.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "agradecer",
+        "mandarim": "谢谢。",
+        "pinyin": "Xièxie.",
+        "sentido_funcional": "Obrigado ou obrigada.",
+        "tipo": "fixo"
+      }
+    ],
+    "mapa_decisao": [
+      {
+        "intencao": "Pedir item",
+        "mandarim": "我要咖啡。",
+        "pinyin": "Wǒ yào kāfēi."
+      },
+      {
+        "intencao": "Pedir com cortesia",
+        "mandarim": "请给我茶。",
+        "pinyin": "Qǐng gěi wǒ chá."
+      },
+      {
+        "intencao": "Confirmar escolha",
+        "mandarim": "要这个。",
+        "pinyin": "Yào zhège."
+      },
+      {
+        "intencao": "Agradecer",
+        "mandarim": "谢谢。",
+        "pinyin": "Xièxie."
+      }
+    ],
+    "hanzi_alvo": [
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "sentido": "querer/pedir",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "咖啡",
+        "pinyin": "kāfēi",
+        "sentido": "café",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "茶",
+        "pinyin": "chá",
+        "sentido": "chá",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "给",
+        "pinyin": "gěi",
+        "sentido": "dar",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "这个",
+        "pinyin": "zhège",
+        "sentido": "este item",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "两个",
+        "pinyin": "liǎng ge",
+        "sentido": "dois itens",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "请",
+        "pinyin": "qǐng",
+        "sentido": "por favor",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "谢谢",
+        "pinyin": "xièxie",
+        "sentido": "obrigado/obrigada",
+        "prioridade": "media"
+      }
+    ],
+    "palavras_chave": [
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "sentido": "querer/pedir",
+        "categoria": "acao",
+        "uso": "intenção"
+      },
+      {
+        "hanzi": "咖啡",
+        "pinyin": "kāfēi",
+        "sentido": "café",
+        "categoria": "objeto",
+        "uso": "bebida"
+      },
+      {
+        "hanzi": "茶",
+        "pinyin": "chá",
+        "sentido": "chá",
+        "categoria": "objeto",
+        "uso": "bebida"
+      },
+      {
+        "hanzi": "给",
+        "pinyin": "gěi",
+        "sentido": "dar",
+        "categoria": "acao",
+        "uso": "pedido"
+      },
+      {
+        "hanzi": "这个",
+        "pinyin": "zhège",
+        "sentido": "este item",
+        "categoria": "objeto",
+        "uso": "escolha"
+      },
+      {
+        "hanzi": "两个",
+        "pinyin": "liǎng ge",
+        "sentido": "dois itens",
+        "categoria": "quantidade",
+        "uso": "quantidade"
+      },
+      {
+        "hanzi": "请",
+        "pinyin": "qǐng",
+        "sentido": "por favor",
+        "categoria": "acao",
+        "uso": "cortesia"
+      },
+      {
+        "hanzi": "谢谢",
+        "pinyin": "xièxie",
+        "sentido": "obrigado/obrigada",
+        "categoria": "acao",
+        "uso": "fechamento"
+      }
+    ],
+    "atividades": {
+      "reconhecimento": [
+        {
+          "situacao": "Escolha a forma adequada para: Pedir item",
+          "opcao_a": "我要咖啡。",
+          "opcao_b": "请给我茶。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Pedir com cortesia",
+          "opcao_a": "请给我茶。",
+          "opcao_b": "要这个。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Confirmar escolha",
+          "opcao_a": "要这个。",
+          "opcao_b": "谢谢。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Agradecer",
+          "opcao_a": "谢谢。",
+          "opcao_b": "我要咖啡。",
+          "resposta": "a"
+        }
+      ],
+      "reorganizacao": {
+        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "blocos": [
+          "我",
+          "要",
+          "咖啡",
+          "。"
+        ],
+        "resultado_esperado": "我要咖啡。",
+        "reconstrucoes": [
+          {
+            "pedido": "Quero café。",
+            "mandarim": "我要咖啡。"
+          },
+          {
+            "pedido": "Quero dois。",
+            "mandarim": "我要两个。"
+          }
+        ]
+      },
+      "recombinacao": {
+        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "banco": [
+          {
+            "rotulo": "bebida",
+            "hanzi": "咖啡",
+            "pinyin": "kāfēi"
+          },
+          {
+            "rotulo": "bebida",
+            "hanzi": "茶",
+            "pinyin": "chá"
+          },
+          {
+            "rotulo": "item",
+            "hanzi": "这个",
+            "pinyin": "zhège"
+          }
+        ],
+        "moldes": [
+          "我要…。",
+          "请给我…。",
+          "要…吗？"
+        ]
+      }
+    },
+    "producao": {
+      "cenarios": [
+        {
+          "titulo": "Cardápio",
+          "instrucao": "Escolha dois itens e faça pedidos.",
+          "apoio": "com_apoio",
+          "campos": [
+            "item",
+            "quantidade"
+          ]
+        },
+        {
+          "titulo": "Pedido sem apoio",
+          "instrucao": "Faça um pedido e confirme a escolha.",
+          "apoio": "menos_apoio",
+          "campos": [
+            "pedido",
+            "confirmação"
+          ]
+        }
+      ]
+    },
+    "artefato_pratico": "Cardápio preenchido com três pedidos e quantidades.",
+    "criterios_autoavaliacao": [
+      "Uso 要 para pedir.",
+      "Uso 请 para cortesia.",
+      "Confirmo a escolha com este item.",
+      "Produzo o fechamento social."
+    ],
+    "sequencia": [
+      "situar",
+      "observar",
+      "reconhecer",
+      "ler",
+      "recuperar",
+      "escrever",
+      "reorganizar",
+      "recombinar",
+      "produzir",
+      "revisar"
+    ],
+    "pacotes": {
+      "essencial": [
+        "W1",
+        "W2",
+        "V1",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "extensoes": {
+        "pronuncia": true,
+        "escrita": true,
+        "caracteres": true,
+        "contraste": true,
+        "vocabulario": true,
+        "quiz": false,
+        "anotacoes": true,
+        "consolidacao": false
+      }
+    },
+    "proxima_unidade_sugerida": "Preferências e escolhas"
+  }
+}

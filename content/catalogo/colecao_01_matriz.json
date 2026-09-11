@@ -11,9 +11,15 @@
       "funcao": "cumprimentar em contexto",
       "status": "piloto",
       "pre_requisitos": [],
-      "recicla": [],
-      "introduz": ["你好", "我", "你"],
-      "prepara": ["B02"],
+      "recicla": [
+        "你好",
+        "我",
+        "你"
+      ],
+      "introduz": [],
+      "prepara": [
+        "B02"
+      ],
       "vocabulario_novo_maximo": 8
     },
     {
@@ -22,10 +28,18 @@
       "modulo": "Entrada na interação",
       "funcao": "perguntar, responder e devolver",
       "status": "draft",
-      "pre_requisitos": ["B01"],
-      "recicla": ["你好", "我", "你"],
-      "introduz": ["吗", "呢", "学生", "老师", "很好", "忙"],
-      "prepara": ["B03"],
+      "pre_requisitos": [
+        "B01"
+      ],
+      "recicla": [
+        "你好",
+        "我",
+        "你"
+      ],
+      "introduz": [],
+      "prepara": [
+        "B03"
+      ],
       "vocabulario_novo_maximo": 8
     },
     {
@@ -34,35 +48,186 @@
       "modulo": "Entrada na interação",
       "funcao": "identificar pessoas e objetos",
       "status": "draft",
-      "pre_requisitos": ["B02"],
-      "recicla": ["你", "我", "吗", "呢"],
-      "introduz": ["这", "那", "谁", "什么"],
-      "prepara": ["B04"],
+      "pre_requisitos": [
+        "B02"
+      ],
+      "recicla": [
+        "你",
+        "我",
+        "吗",
+        "呢"
+      ],
+      "introduz": [],
+      "prepara": [
+        "B04"
+      ],
       "vocabulario_novo_maximo": 8
     },
     {
       "codigo": "B04",
       "ordem": 4,
       "modulo": "Entrada na interação",
-      "funcao": "pedir algo de forma simples",
-      "status": "planejada",
-      "pre_requisitos": ["B03"],
-      "recicla": ["什么", "吗", "呢"],
+      "funcao": "perguntar e responder posse",
+      "status": "draft",
+      "pre_requisitos": [
+        "B03"
+      ],
+      "recicla": [
+        "这",
+        "那",
+        "谁",
+        "是"
+      ],
       "introduz": [],
-      "prepara": ["B05"],
-      "vocabulario_novo_maximo": 6
+      "prepara": [
+        "B05"
+      ],
+      "vocabulario_novo_maximo": 8
     },
     {
       "codigo": "B05",
       "ordem": 5,
       "modulo": "Situações práticas",
+      "funcao": "informar números e dados pessoais",
+      "status": "draft",
+      "pre_requisitos": [
+        "B04"
+      ],
+      "recicla": [
+        "我的",
+        "你的",
+        "书",
+        "朋友"
+      ],
+      "introduz": [],
+      "prepara": [
+        "B06"
+      ],
+      "vocabulario_novo_maximo": 8
+    },
+    {
+      "codigo": "B06",
+      "ordem": 6,
+      "modulo": "Situações práticas",
+      "funcao": "perguntar e informar horários",
+      "status": "draft",
+      "pre_requisitos": [
+        "B05"
+      ],
+      "recicla": [
+        "几",
+        "多少",
+        "有",
+        "人"
+      ],
+      "introduz": [],
+      "prepara": [
+        "B07"
+      ],
+      "vocabulario_novo_maximo": 8
+    },
+    {
+      "codigo": "B07",
+      "ordem": 7,
+      "modulo": "Situações práticas",
       "funcao": "localizar pessoas e objetos",
-      "status": "planejada",
-      "pre_requisitos": ["B04"],
-      "recicla": ["这", "那", "谁", "什么"],
+      "status": "draft",
+      "pre_requisitos": [
+        "B06"
+      ],
+      "recicla": [
+        "现在",
+        "点",
+        "开始",
+        "下午"
+      ],
+      "introduz": [],
+      "prepara": [
+        "B08"
+      ],
+      "vocabulario_novo_maximo": 8
+    },
+    {
+      "codigo": "B08",
+      "ordem": 8,
+      "modulo": "Situações práticas",
+      "funcao": "fazer pedidos em café ou restaurante",
+      "status": "draft",
+      "pre_requisitos": [
+        "B07"
+      ],
+      "recicla": [
+        "在哪里",
+        "这里",
+        "那里",
+        "在"
+      ],
+      "introduz": [],
+      "prepara": [
+        "B09"
+      ],
+      "vocabulario_novo_maximo": 8
+    },
+    {
+      "codigo": "B09",
+      "ordem": 9,
+      "modulo": "Preferências e escolhas",
+      "funcao": "expressar gostos e escolher",
+      "status": "draft",
+      "pre_requisitos": [
+        "B08"
+      ],
+      "recicla": [
+        "要",
+        "请",
+        "这个",
+        "谢谢"
+      ],
+      "introduz": [],
+      "prepara": [
+        "B10"
+      ],
+      "vocabulario_novo_maximo": 8
+    },
+    {
+      "codigo": "B10",
+      "ordem": 10,
+      "modulo": "Preferências e escolhas",
+      "funcao": "expressar preferências e recusas",
+      "status": "draft",
+      "pre_requisitos": [
+        "B09"
+      ],
+      "recicla": [
+        "喜欢",
+        "不",
+        "还是",
+        "什么"
+      ],
+      "introduz": [],
+      "prepara": [
+        "B11"
+      ],
+      "vocabulario_novo_maximo": 8
+    },
+    {
+      "codigo": "B11",
+      "ordem": 11,
+      "modulo": "Preferências e escolhas",
+      "funcao": "dizer capacidade e pedir ajuda",
+      "status": "draft",
+      "pre_requisitos": [
+        "B10"
+      ],
+      "recicla": [
+        "会",
+        "能",
+        "帮",
+        "谢谢"
+      ],
       "introduz": [],
       "prepara": [],
-      "vocabulario_novo_maximo": 6
+      "vocabulario_novo_maximo": 8
     }
   ]
 }

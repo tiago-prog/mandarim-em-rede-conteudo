@@ -1,0 +1,332 @@
+{
+  "schema_version": "2.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "content_profile": "pdf-first-rich-v2",
+    "codigo": "B07",
+    "titulo": "Localização e direções",
+    "colecao": "Coleção 01 · Primeiras interações",
+    "nivel": "iniciante",
+    "status": "draft",
+    "objetivo_comunicativo": "Perguntar onde está uma pessoa ou objeto e responder com uma localização simples.",
+    "resultado_minimo": "Realizar quatro trocas de localização usando 在, 这里, 那里 e um lugar conhecido.",
+    "situacao_principal": "Em um prédio novo, descobrir onde estão uma pessoa, uma sala ou um objeto.",
+    "contexto_emocional": "O aluno precisa se orientar e sente urgência para obter uma resposta curta.",
+    "dificuldade_principal": "Distinguir pergunta de localização e resposta com 在.",
+    "preparacao": [
+      "Observe o mapa do lugar.",
+      "Escolha pessoa, objeto ou sala.",
+      "Produza a pergunta antes de olhar a resposta."
+    ],
+    "estruturas": [
+      {
+        "funcao": "perguntar onde",
+        "mandarim": "在哪里？",
+        "pinyin": "Zài nǎlǐ?",
+        "sentido_funcional": "Onde está?",
+        "tipo": "operador"
+      },
+      {
+        "funcao": "responder aqui",
+        "mandarim": "在这里。",
+        "pinyin": "Zài zhèlǐ.",
+        "sentido_funcional": "Está aqui.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "responder ali",
+        "mandarim": "在那里。",
+        "pinyin": "Zài nàlǐ.",
+        "sentido_funcional": "Está ali.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "localizar pessoa",
+        "mandarim": "老师在教室。",
+        "pinyin": "Lǎoshī zài jiàoshì.",
+        "sentido_funcional": "A professora está na sala.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "localizar objeto",
+        "mandarim": "书在桌子上。",
+        "pinyin": "Shū zài zhuōzi shàng.",
+        "sentido_funcional": "O livro está sobre a mesa.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "perguntar localização específica",
+        "mandarim": "你在哪儿？",
+        "pinyin": "Nǐ zài nǎr?",
+        "sentido_funcional": "Onde você está?",
+        "tipo": "operador"
+      }
+    ],
+    "mapa_decisao": [
+      {
+        "intencao": "Perguntar localização",
+        "mandarim": "在哪里？",
+        "pinyin": "Zài nǎlǐ?"
+      },
+      {
+        "intencao": "Responder aqui",
+        "mandarim": "在这里。",
+        "pinyin": "Zài zhèlǐ."
+      },
+      {
+        "intencao": "Localizar pessoa",
+        "mandarim": "老师在教室。",
+        "pinyin": "Lǎoshī zài jiàoshì."
+      },
+      {
+        "intencao": "Localizar objeto",
+        "mandarim": "书在桌子上。",
+        "pinyin": "Shū zài zhuōzi shàng."
+      }
+    ],
+    "hanzi_alvo": [
+      {
+        "hanzi": "哪里",
+        "pinyin": "nǎlǐ",
+        "sentido": "onde",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "这里",
+        "pinyin": "zhèlǐ",
+        "sentido": "aqui",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "那里",
+        "pinyin": "nàlǐ",
+        "sentido": "ali",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "教室",
+        "pinyin": "jiàoshì",
+        "sentido": "sala de aula",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "桌子",
+        "pinyin": "zhuōzi",
+        "sentido": "mesa",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "上",
+        "pinyin": "shàng",
+        "sentido": "sobre/em cima",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "老师",
+        "pinyin": "lǎoshī",
+        "sentido": "professor ou professora",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "sentido": "estar em",
+        "prioridade": "media"
+      }
+    ],
+    "palavras_chave": [
+      {
+        "hanzi": "哪里",
+        "pinyin": "nǎlǐ",
+        "sentido": "onde",
+        "categoria": "lugar",
+        "uso": "pergunta"
+      },
+      {
+        "hanzi": "这里",
+        "pinyin": "zhèlǐ",
+        "sentido": "aqui",
+        "categoria": "lugar",
+        "uso": "perto"
+      },
+      {
+        "hanzi": "那里",
+        "pinyin": "nàlǐ",
+        "sentido": "ali",
+        "categoria": "lugar",
+        "uso": "longe"
+      },
+      {
+        "hanzi": "教室",
+        "pinyin": "jiàoshì",
+        "sentido": "sala de aula",
+        "categoria": "lugar",
+        "uso": "lugar"
+      },
+      {
+        "hanzi": "桌子",
+        "pinyin": "zhuōzi",
+        "sentido": "mesa",
+        "categoria": "objeto",
+        "uso": "referente"
+      },
+      {
+        "hanzi": "上",
+        "pinyin": "shàng",
+        "sentido": "sobre/em cima",
+        "categoria": "lugar",
+        "uso": "posição"
+      },
+      {
+        "hanzi": "老师",
+        "pinyin": "lǎoshī",
+        "sentido": "professor ou professora",
+        "categoria": "pessoa",
+        "uso": "pessoa"
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "sentido": "estar em",
+        "categoria": "acao",
+        "uso": "localização"
+      }
+    ],
+    "atividades": {
+      "reconhecimento": [
+        {
+          "situacao": "Escolha a forma adequada para: Perguntar localização",
+          "opcao_a": "在哪里？",
+          "opcao_b": "在这里。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Responder aqui",
+          "opcao_a": "在这里。",
+          "opcao_b": "老师在教室。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Localizar pessoa",
+          "opcao_a": "老师在教室。",
+          "opcao_b": "书在桌子上。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Localizar objeto",
+          "opcao_a": "书在桌子上。",
+          "opcao_b": "在哪里？",
+          "resposta": "a"
+        }
+      ],
+      "reorganizacao": {
+        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "blocos": [
+          "在",
+          "哪",
+          "里",
+          "？"
+        ],
+        "resultado_esperado": "在哪里？",
+        "reconstrucoes": [
+          {
+            "pedido": "O livro está sobre a mesa。",
+            "mandarim": "书在桌子上。"
+          },
+          {
+            "pedido": "A professora está na sala。",
+            "mandarim": "老师在教室。"
+          }
+        ]
+      },
+      "recombinacao": {
+        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "banco": [
+          {
+            "rotulo": "perto",
+            "hanzi": "这里",
+            "pinyin": "zhèlǐ"
+          },
+          {
+            "rotulo": "longe",
+            "hanzi": "那里",
+            "pinyin": "nàlǐ"
+          },
+          {
+            "rotulo": "lugar",
+            "hanzi": "教室",
+            "pinyin": "jiàoshì"
+          }
+        ],
+        "moldes": [
+          "…在哪里？",
+          "…在这里。",
+          "…在…。"
+        ]
+      }
+    },
+    "producao": {
+      "cenarios": [
+        {
+          "titulo": "Mapa da sala",
+          "instrucao": "Pergunte onde estão dois itens.",
+          "apoio": "com_apoio",
+          "campos": [
+            "item",
+            "lugar"
+          ]
+        },
+        {
+          "titulo": "Busca",
+          "instrucao": "Dê duas localizações sem consultar.",
+          "apoio": "sem_apoio",
+          "campos": [
+            "pergunta",
+            "resposta"
+          ]
+        }
+      ]
+    },
+    "artefato_pratico": "Mapa simples com quatro referentes e suas localizações.",
+    "criterios_autoavaliacao": [
+      "Uso 在 para localizar.",
+      "Distingo 这里 e 那里.",
+      "Pergunto onde sem traduzir palavra por palavra.",
+      "Respondo com lugar compreensível."
+    ],
+    "sequencia": [
+      "situar",
+      "observar",
+      "reconhecer",
+      "ler",
+      "recuperar",
+      "escrever",
+      "reorganizar",
+      "recombinar",
+      "produzir",
+      "revisar"
+    ],
+    "pacotes": {
+      "essencial": [
+        "W1",
+        "W2",
+        "V1",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "extensoes": {
+        "pronuncia": true,
+        "escrita": true,
+        "caracteres": true,
+        "contraste": true,
+        "vocabulario": true,
+        "quiz": false,
+        "anotacoes": true,
+        "consolidacao": false
+      }
+    },
+    "proxima_unidade_sugerida": "Pedidos em café ou restaurante"
+  }
+}

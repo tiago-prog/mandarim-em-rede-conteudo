@@ -1,0 +1,326 @@
+{
+  "schema_version": "2.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "content_profile": "pdf-first-rich-v2",
+    "codigo": "B06",
+    "titulo": "Horários e agenda",
+    "colecao": "Coleção 01 · Primeiras interações",
+    "nivel": "iniciante",
+    "status": "draft",
+    "objetivo_comunicativo": "Perguntar e informar horário ou momento de uma atividade cotidiana.",
+    "resultado_minimo": "Produzir três perguntas e respostas sobre horário usando 现在, 点 e 分.",
+    "situacao_principal": "Combinar uma aula ou encontro perguntando quando começa e respondendo com um horário.",
+    "contexto_emocional": "O aluno quer marcar algo sem medo de não entender o horário.",
+    "dificuldade_principal": "Distinguir agora, hora e minuto e manter o classificador temporal na sequência.",
+    "preparacao": [
+      "Imagine o compromisso.",
+      "Ouça o número antes da unidade de tempo.",
+      "Tente perguntar e responder em voz alta."
+    ],
+    "estruturas": [
+      {
+        "funcao": "perguntar a hora",
+        "mandarim": "现在几点？",
+        "pinyin": "Xiànzài jǐ diǎn?",
+        "sentido_funcional": "Que horas são agora?",
+        "tipo": "operador"
+      },
+      {
+        "funcao": "informar hora",
+        "mandarim": "现在三点。",
+        "pinyin": "Xiànzài sān diǎn.",
+        "sentido_funcional": "Agora são três horas.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "perguntar início",
+        "mandarim": "几点开始？",
+        "pinyin": "Jǐ diǎn kāishǐ?",
+        "sentido_funcional": "A que horas começa?",
+        "tipo": "operador"
+      },
+      {
+        "funcao": "informar início",
+        "mandarim": "三点半开始。",
+        "pinyin": "Sān diǎn bàn kāishǐ.",
+        "sentido_funcional": "Começa às três e meia.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "perguntar momento",
+        "mandarim": "什么时候？",
+        "pinyin": "Shénme shíhou?",
+        "sentido_funcional": "Quando?",
+        "tipo": "operador"
+      },
+      {
+        "funcao": "responder momento",
+        "mandarim": "下午三点。",
+        "pinyin": "Xiàwǔ sān diǎn.",
+        "sentido_funcional": "Às três da tarde.",
+        "tipo": "base"
+      }
+    ],
+    "mapa_decisao": [
+      {
+        "intencao": "Perguntar hora",
+        "mandarim": "现在几点？",
+        "pinyin": "Xiànzài jǐ diǎn?"
+      },
+      {
+        "intencao": "Informar hora",
+        "mandarim": "现在三点。",
+        "pinyin": "Xiànzài sān diǎn."
+      },
+      {
+        "intencao": "Perguntar início",
+        "mandarim": "几点开始？",
+        "pinyin": "Jǐ diǎn kāishǐ?"
+      },
+      {
+        "intencao": "Responder momento",
+        "mandarim": "下午三点。",
+        "pinyin": "Xiàwǔ sān diǎn."
+      }
+    ],
+    "hanzi_alvo": [
+      {
+        "hanzi": "现在",
+        "pinyin": "xiànzài",
+        "sentido": "agora",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "sentido": "hora em ponto",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "半",
+        "pinyin": "bàn",
+        "sentido": "meia",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "开始",
+        "pinyin": "kāishǐ",
+        "sentido": "começar",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "什么时候",
+        "pinyin": "shénme shíhou",
+        "sentido": "quando",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "下午",
+        "pinyin": "xiàwǔ",
+        "sentido": "tarde",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "三",
+        "pinyin": "sān",
+        "sentido": "três",
+        "prioridade": "media"
+      }
+    ],
+    "palavras_chave": [
+      {
+        "hanzi": "现在",
+        "pinyin": "xiànzài",
+        "sentido": "agora",
+        "categoria": "informacao",
+        "uso": "tempo atual"
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "sentido": "hora em ponto",
+        "categoria": "quantidade",
+        "uso": "unidade de hora"
+      },
+      {
+        "hanzi": "半",
+        "pinyin": "bàn",
+        "sentido": "meia",
+        "categoria": "quantidade",
+        "uso": "meia hora"
+      },
+      {
+        "hanzi": "开始",
+        "pinyin": "kāishǐ",
+        "sentido": "começar",
+        "categoria": "acao",
+        "uso": "início"
+      },
+      {
+        "hanzi": "什么时候",
+        "pinyin": "shénme shíhou",
+        "sentido": "quando",
+        "categoria": "informacao",
+        "uso": "momento"
+      },
+      {
+        "hanzi": "下午",
+        "pinyin": "xiàwǔ",
+        "sentido": "tarde",
+        "categoria": "informacao",
+        "uso": "período"
+      },
+      {
+        "hanzi": "三",
+        "pinyin": "sān",
+        "sentido": "três",
+        "categoria": "quantidade",
+        "uso": "número"
+      },
+      {
+        "hanzi": "三",
+        "pinyin": "sān",
+        "sentido": "três",
+        "categoria": "quantidade",
+        "uso": "número"
+      }
+    ],
+    "atividades": {
+      "reconhecimento": [
+        {
+          "situacao": "Escolha a forma adequada para: Perguntar hora",
+          "opcao_a": "现在几点？",
+          "opcao_b": "现在三点。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Informar hora",
+          "opcao_a": "现在三点。",
+          "opcao_b": "几点开始？",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Perguntar início",
+          "opcao_a": "几点开始？",
+          "opcao_b": "下午三点。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Responder momento",
+          "opcao_a": "下午三点。",
+          "opcao_b": "现在几点？",
+          "resposta": "a"
+        }
+      ],
+      "reorganizacao": {
+        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "blocos": [
+          "现在",
+          "几",
+          "点",
+          "？"
+        ],
+        "resultado_esperado": "现在几点？",
+        "reconstrucoes": [
+          {
+            "pedido": "Começa às três e meia。",
+            "mandarim": "三点半开始。"
+          },
+          {
+            "pedido": "Às três da tarde。",
+            "mandarim": "下午三点。"
+          }
+        ]
+      },
+      "recombinacao": {
+        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "banco": [
+          {
+            "rotulo": "hora",
+            "hanzi": "三点",
+            "pinyin": "sān diǎn"
+          },
+          {
+            "rotulo": "momento",
+            "hanzi": "下午",
+            "pinyin": "xiàwǔ"
+          },
+          {
+            "rotulo": "meia",
+            "hanzi": "半",
+            "pinyin": "bàn"
+          }
+        ],
+        "moldes": [
+          "现在…点？",
+          "…点开始。",
+          "下午…点。"
+        ]
+      }
+    },
+    "producao": {
+      "cenarios": [
+        {
+          "titulo": "Agenda",
+          "instrucao": "Pergunte e registre dois horários.",
+          "apoio": "com_apoio",
+          "campos": [
+            "pergunta",
+            "resposta"
+          ]
+        },
+        {
+          "titulo": "Marcação",
+          "instrucao": "Combine um encontro usando um horário novo.",
+          "apoio": "menos_apoio",
+          "campos": [
+            "horário",
+            "atividade"
+          ]
+        }
+      ]
+    },
+    "artefato_pratico": "Cartão de agenda com duas atividades e horários.",
+    "criterios_autoavaliacao": [
+      "Uso 点 depois do número.",
+      "Reconheço 半 como meia hora.",
+      "Pergunto quando com 什么时候.",
+      "Respondo com período e horário."
+    ],
+    "sequencia": [
+      "situar",
+      "observar",
+      "reconhecer",
+      "ler",
+      "recuperar",
+      "escrever",
+      "reorganizar",
+      "recombinar",
+      "produzir",
+      "revisar"
+    ],
+    "pacotes": {
+      "essencial": [
+        "W1",
+        "W2",
+        "V1",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "extensoes": {
+        "pronuncia": true,
+        "escrita": true,
+        "caracteres": true,
+        "contraste": true,
+        "vocabulario": true,
+        "quiz": false,
+        "anotacoes": true,
+        "consolidacao": false
+      }
+    },
+    "proxima_unidade_sugerida": "Localização e direções"
+  }
+}

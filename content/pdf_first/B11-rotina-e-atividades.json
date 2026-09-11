@@ -1,0 +1,332 @@
+{
+  "schema_version": "2.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "content_profile": "pdf-first-rich-v2",
+    "codigo": "B11",
+    "titulo": "Rotina e atividades",
+    "colecao": "Coleção 01 · Primeiras interações",
+    "nivel": "iniciante",
+    "status": "draft",
+    "objetivo_comunicativo": "Dizer uma atividade cotidiana e perguntar o que alguém faz.",
+    "resultado_minimo": "Produzir quatro frases sobre rotina usando 去, 看, 学 e uma atividade escolhida.",
+    "situacao_principal": "Em uma conversa curta sobre o dia, perguntar e responder sobre atividades comuns.",
+    "contexto_emocional": "O aluno quer falar de si com frases curtas e reconhecíveis.",
+    "dificuldade_principal": "Manter o verbo antes do objeto e distinguir atividade de lugar.",
+    "preparacao": [
+      "Escolha uma atividade do banco.",
+      "Organize pessoa + verbo + objeto.",
+      "Fale uma frase sem consultar."
+    ],
+    "estruturas": [
+      {
+        "funcao": "dizer que vai estudar",
+        "mandarim": "我去学习。",
+        "pinyin": "Wǒ qù xuéxí.",
+        "sentido_funcional": "Eu vou estudar.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "dizer que vai trabalhar",
+        "mandarim": "我去工作。",
+        "pinyin": "Wǒ qù gōngzuò.",
+        "sentido_funcional": "Eu vou trabalhar.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "dizer que lê",
+        "mandarim": "我看书。",
+        "pinyin": "Wǒ kàn shū.",
+        "sentido_funcional": "Eu leio.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "dizer que estuda chinês",
+        "mandarim": "我学中文。",
+        "pinyin": "Wǒ xué Zhōngwén.",
+        "sentido_funcional": "Eu estudo chinês.",
+        "tipo": "base"
+      },
+      {
+        "funcao": "perguntar atividade",
+        "mandarim": "你做什么？",
+        "pinyin": "Nǐ zuò shénme?",
+        "sentido_funcional": "O que você faz?",
+        "tipo": "operador"
+      },
+      {
+        "funcao": "responder atividade",
+        "mandarim": "我看电影。",
+        "pinyin": "Wǒ kàn diànyǐng.",
+        "sentido_funcional": "Eu assisto a um filme.",
+        "tipo": "base"
+      }
+    ],
+    "mapa_decisao": [
+      {
+        "intencao": "Ir estudar",
+        "mandarim": "我去学习。",
+        "pinyin": "Wǒ qù xuéxí."
+      },
+      {
+        "intencao": "Ir trabalhar",
+        "mandarim": "我去工作。",
+        "pinyin": "Wǒ qù gōngzuò."
+      },
+      {
+        "intencao": "Ler",
+        "mandarim": "我看书。",
+        "pinyin": "Wǒ kàn shū."
+      },
+      {
+        "intencao": "Perguntar atividade",
+        "mandarim": "你做什么？",
+        "pinyin": "Nǐ zuò shénme?"
+      }
+    ],
+    "hanzi_alvo": [
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "sentido": "ir",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "学习",
+        "pinyin": "xuéxí",
+        "sentido": "estudar",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "sentido": "trabalhar",
+        "prioridade": "alta"
+      },
+      {
+        "hanzi": "看书",
+        "pinyin": "kàn shū",
+        "sentido": "ler",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "学",
+        "pinyin": "xué",
+        "sentido": "estudar/aprender",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "中文",
+        "pinyin": "Zhōngwén",
+        "sentido": "chinês",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "做",
+        "pinyin": "zuò",
+        "sentido": "fazer",
+        "prioridade": "media"
+      },
+      {
+        "hanzi": "电影",
+        "pinyin": "diànyǐng",
+        "sentido": "filme",
+        "prioridade": "media"
+      }
+    ],
+    "palavras_chave": [
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "sentido": "ir",
+        "categoria": "acao",
+        "uso": "movimento"
+      },
+      {
+        "hanzi": "学习",
+        "pinyin": "xuéxí",
+        "sentido": "estudar",
+        "categoria": "acao",
+        "uso": "atividade"
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "sentido": "trabalhar",
+        "categoria": "acao",
+        "uso": "atividade"
+      },
+      {
+        "hanzi": "看书",
+        "pinyin": "kàn shū",
+        "sentido": "ler",
+        "categoria": "acao",
+        "uso": "atividade"
+      },
+      {
+        "hanzi": "学",
+        "pinyin": "xué",
+        "sentido": "estudar/aprender",
+        "categoria": "acao",
+        "uso": "atividade"
+      },
+      {
+        "hanzi": "中文",
+        "pinyin": "Zhōngwén",
+        "sentido": "chinês",
+        "categoria": "informacao",
+        "uso": "objeto de estudo"
+      },
+      {
+        "hanzi": "做",
+        "pinyin": "zuò",
+        "sentido": "fazer",
+        "categoria": "acao",
+        "uso": "pergunta"
+      },
+      {
+        "hanzi": "电影",
+        "pinyin": "diànyǐng",
+        "sentido": "filme",
+        "categoria": "objeto",
+        "uso": "atividade"
+      }
+    ],
+    "atividades": {
+      "reconhecimento": [
+        {
+          "situacao": "Escolha a forma adequada para: Ir estudar",
+          "opcao_a": "我去学习。",
+          "opcao_b": "我去工作。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Ir trabalhar",
+          "opcao_a": "我去工作。",
+          "opcao_b": "我看书。",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Ler",
+          "opcao_a": "我看书。",
+          "opcao_b": "你做什么？",
+          "resposta": "a"
+        },
+        {
+          "situacao": "Escolha a forma adequada para: Perguntar atividade",
+          "opcao_a": "你做什么？",
+          "opcao_b": "我去学习。",
+          "resposta": "a"
+        }
+      ],
+      "reorganizacao": {
+        "instrucao": "Ordene os blocos para formar a expressão indicada.",
+        "blocos": [
+          "我",
+          "去",
+          "学习",
+          "。"
+        ],
+        "resultado_esperado": "我去学习。",
+        "reconstrucoes": [
+          {
+            "pedido": "Eu vou trabalhar。",
+            "mandarim": "我去工作。"
+          },
+          {
+            "pedido": "Eu estudo chinês。",
+            "mandarim": "我学中文。"
+          }
+        ]
+      },
+      "recombinacao": {
+        "instrucao": "Mantenha a estrutura e troque somente o elemento indicado.",
+        "banco": [
+          {
+            "rotulo": "estudo",
+            "hanzi": "学习",
+            "pinyin": "xuéxí"
+          },
+          {
+            "rotulo": "trabalho",
+            "hanzi": "工作",
+            "pinyin": "gōngzuò"
+          },
+          {
+            "rotulo": "filme",
+            "hanzi": "电影",
+            "pinyin": "diànyǐng"
+          }
+        ],
+        "moldes": [
+          "我去…。",
+          "我看…。",
+          "你做…？"
+        ]
+      }
+    },
+    "producao": {
+      "cenarios": [
+        {
+          "titulo": "Rotina",
+          "instrucao": "Monte três frases sobre seu dia.",
+          "apoio": "com_apoio",
+          "campos": [
+            "atividade",
+            "frase"
+          ]
+        },
+        {
+          "titulo": "Conversa",
+          "instrucao": "Pergunte e responda sobre duas atividades.",
+          "apoio": "sem_apoio",
+          "campos": [
+            "pergunta",
+            "resposta"
+          ]
+        }
+      ]
+    },
+    "artefato_pratico": "Miniagenda diária com três atividades em mandarim.",
+    "criterios_autoavaliacao": [
+      "Coloco o verbo antes do objeto.",
+      "Pergunto atividade com 做什么.",
+      "Produzo frases de rotina.",
+      "Recombino pelo menos três atividades."
+    ],
+    "sequencia": [
+      "situar",
+      "observar",
+      "reconhecer",
+      "ler",
+      "recuperar",
+      "escrever",
+      "reorganizar",
+      "recombinar",
+      "produzir",
+      "revisar"
+    ],
+    "pacotes": {
+      "essencial": [
+        "W1",
+        "W2",
+        "V1",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "extensoes": {
+        "pronuncia": true,
+        "escrita": true,
+        "caracteres": true,
+        "contraste": true,
+        "vocabulario": true,
+        "quiz": false,
+        "anotacoes": true,
+        "consolidacao": false
+      }
+    },
+    "proxima_unidade_sugerida": "Consolidação da entrada na interação"
+  }
+}
