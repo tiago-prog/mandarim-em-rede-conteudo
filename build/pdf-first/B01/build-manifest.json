@@ -1,0 +1,27 @@
+{
+  "unit_id": "B01",
+  "produto": "Mandarim em Rede",
+  "source": "content/B01-cumprimentos-em-contexto.json",
+  "template_profile": "b01-cumprimentos-v2",
+  "material": "WORKBOOK DO ALUNO",
+  "edicao": "EDIÇÃO 01 · 2026",
+  "pages": 13,
+  "audio_included": false,
+  "content_validation": {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "unidade.audios é histórico e será ignorado no fluxo PDF-first"
+    ],
+    "codigo": "B01",
+    "status": "revisao_linguistica",
+    "schema": "/home/ubuntu/mvp_pipeline/schema/pdf_first_unit_v1.schema.json",
+    "audio_included": false,
+    "returncode": 0
+  },
+  "status": "pilot-ready",
+  "notes": [
+    "O campo audios legado do JSON é preservado apenas para compatibilidade histórica.",
+    "O workbook produzido por este fluxo é visual e escrito; nenhum áudio é gerado ou incluído."
+  ]
+}

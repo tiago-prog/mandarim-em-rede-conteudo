@@ -90,6 +90,11 @@ metrics = {
         "width_pt": round(pdf[0].rect.width, 3),
         "height_pt": round(pdf[0].rect.height, 3),
     },
+    "cover": {
+        "present": "Capa editorial do workbook" in text,
+        "pdf_page": 1 if "Capa editorial do workbook" in text else None,
+        "graphic_only": not pdf_pages[0]["text_spans"] if pdf_pages else False,
+    },
     "source": {
         "path": str(SRC),
         "page_markers": len(page_chunks),
@@ -110,7 +115,8 @@ print(f"PDF pages={len(pdf)} source_page_markers={len(page_chunks)}")
 print(f"writeboxes={metrics['source']['total_writeboxes']} checkboxes={metrics['source']['total_checkboxes']} tables={metrics['source']['total_tables']} cards={metrics['source']['total_cards']}")
 print(f"minimum_writebox_height_mm={metrics['source']['minimum_writebox_height_mm']}")
 for page in pdf_pages:
+    min_font = f"{page['min_font_pt']:.2f}pt" if page["min_font_pt"] is not None else "none"
     print(
-        f"page={page['page']:02d} chars={page['characters']:4d} min_font={page['min_font_pt']:.2f}pt "
+        f"page={page['page']:02d} chars={page['characters']:4d} min_font={min_font} "
         f"vertical={page['text_vertical_ratio']:.3f} drawings={page['drawing_count']} images={page['image_count']}"
     )

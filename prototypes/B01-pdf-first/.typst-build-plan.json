@@ -11,7 +11,7 @@
   "confirmation_candidates": [],
   "enhancements": [],
   "exclusions": [],
-  "fingerprint": "sha256:810eff4b89aa09e0c9e1570359d89b779ceca85a1dc0b1da66bbd45c38a69f80",
+  "fingerprint": "sha256:0144be079157f9612b2fb6f00ca104032bf62802b9cd0876f2eb0f01b80b290c",
   "next_action": "minimal-compile-preflight",
   "optional_idea": null,
   "question": null,
@@ -22,7 +22,8 @@
   "typst_version": "typst 0.15.1 (9dfd3a08)",
   "preflight": {
     "status": "pass",
-    "entry": "main.typ",
-    "output": "preflight.pdf"
+    "entry": "B01-workbook.typ",
+    "output": "preflight.pdf",
+    "pages": 13
   }
 }

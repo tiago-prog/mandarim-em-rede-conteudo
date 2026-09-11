@@ -12,18 +12,34 @@ mvp_pipeline/
 ├── schema/                  # contrato de dados
 ├── templates/               # futuras extensões de templates
 ├── prototypes/              # workbooks Typst e PDFs de validação
+├── scripts/                 # capa parametrizada e geração em lote
+├── content/pdf_first/       # manifestos de lotes PDF-first
 ├── build/                   # pacotes gerados
 ├── validate_unit.py         # validação antes da compilação
 └── generate_unit.py         # geração e empacotamento
 ```
 
-## Gerar uma unidade
+## Gerar uma unidade legada
 
 ```bash
 python3 generate_unit.py content/B01-iniciar-interacao.json
 ```
 
-O resultado aparece em `build/B01/` e inclui o PDF do workbook, o guia, uma cópia do JSON e um ZIP da unidade. Os roteiros de áudio podem ser mantidos separadamente como material opcional.
+O comando antigo continua disponível para regressão e para unidades ainda ligadas ao schema v1. O resultado aparece em `build/B01/`. Ele não é o fluxo recomendado para a nova coleção PDF-first porque ainda preserva a arquitetura histórica de áudio e usa o workbook B01 como base fixa.
+
+## Gerar um lote PDF-first
+
+O fluxo recomendado para produção em massa usa um manifesto de lote e um registro de perfis de template:
+
+```bash
+python3 scripts/build_pdf_batch.py \
+  content/pdf_first/colecao_01_batch.json \
+  --output-root build/pdf-first
+```
+
+Para cada unidade, o script valida o JSON, cria a capa a partir dos campos do conteúdo, copia o perfil Typst correto, compila o workbook, executa a verificação determinística, confirma o número esperado de páginas e gera um ZIP distribuível. O lote atual produz o B01 com **13 páginas físicas: uma capa e doze páginas pedagógicas**.
+
+O comando aceita `--continue-on-error` quando for necessário processar uma coleção inteira e registrar falhas sem interromper os demais itens. O relatório consolidado aparece em `build/pdf-first/batch-report.json` e `build/pdf-first/batch-report.md`.
 
 ## Roteiros de áudio
 
@@ -41,11 +57,11 @@ Uma unidade deve passar por `draft`, `revisao_linguistica`, `revisao_visual`, `p
 
 ## Regra de aprovação
 
-O pipeline valida campos, tipos, pacotes, sequência e, quando presentes, referências de áudio. Ele não substitui a revisão linguística do mandarim nem a decisão pedagógica. Uma unidade só deve ser publicada depois de revisão humana.
+O pipeline valida campos, tipos, pacotes, sequência e, quando presentes, referências históricas de áudio. No fluxo PDF-first, o áudio não é gerado nem incluído. O pipeline não substitui a revisão linguística do mandarim nem a decisão pedagógica. Uma unidade só deve ser publicada depois de revisão humana.
 
 ## Escopo seguro da v1
 
-A v1 valida o JSON, registra o estado editorial, gera o guia, o manifesto e recompila o workbook aprovado da B01 como caso de regressão. Os roteiros de áudio são arquivos de referência e não bloqueiam o produto PDF-first. O pipeline ainda não substitui automaticamente todos os textos do workbook pelas estruturas de uma nova unidade. Isso é intencional: evita que B02–B04 sejam produzidas com um layout correto, mas conteúdo visual incorreto.
+A v1 valida o JSON, registra o estado editorial, gera o guia, o manifesto e recompila o workbook aprovado da B01 como caso de regressão. O fluxo PDF-first v2 adiciona capa parametrizada, registro de templates e geração em lote. B02–B04 ainda precisam de perfis Typst próprios; o sistema não deve aplicar o layout B01 a conteúdos diferentes apenas para produzir arquivos rapidamente.
 
 ## Roteiro-mestre atual
 
@@ -57,4 +73,4 @@ O workbook B01 de 12 páginas está implementado em `prototypes/B01-pdf-first/`.
 
 ## Próxima evolução
 
-A próxima etapa é testar o B01 com um aluno real. Se o piloto confirmar a compreensão das instruções, a arquitetura poderá ser parametrizada e replicada na primeira coleção de oito tópicos.
+A próxima etapa é testar o B01 com um aluno real e, em seguida, criar um perfil de template por família de tópico. A coleção só deve ser liberada em massa quando cada perfil tiver sido compilado, verificado e revisado visualmente pelo menos uma vez.

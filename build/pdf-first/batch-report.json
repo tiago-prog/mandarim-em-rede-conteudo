@@ -1,0 +1,21 @@
+{
+  "schema_version": "pdf-first-batch-report-v1",
+  "created_at": "2026-09-11T03:06:10.782132+00:00",
+  "manifest": "/home/ubuntu/mvp_pipeline/content/pdf_first/colecao_01_batch.json",
+  "output_root": "/home/ubuntu/mvp_pipeline/build/pdf-first",
+  "total": 1,
+  "passed": 1,
+  "failed": 0,
+  "results": [
+    {
+      "id": "B01",
+      "status": "PASS",
+      "output": "/home/ubuntu/mvp_pipeline/build/pdf-first/B01",
+      "pdf": "/home/ubuntu/mvp_pipeline/build/pdf-first/B01/B01-workbook.pdf",
+      "package": "/home/ubuntu/mvp_pipeline/build/pdf-first/B01/B01-workbook-package.zip",
+      "pages": 13,
+      "template_profile": "b01-cumprimentos-v2",
+      "audio_included": false
+    }
+  ]
+}

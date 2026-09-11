@@ -1,0 +1,15 @@
+{
+  "schema_version": "pdf-first-batch-v1",
+  "produto": "Mandarim em Rede",
+  "template_registry": "templates/registry.json",
+  "output_label": "colecao-01-piloto",
+  "units": [
+    {
+      "id": "B01",
+      "source": "content/B01-cumprimentos-em-contexto.json",
+      "template_profile": "b01-cumprimentos-v2",
+      "material": "WORKBOOK DO ALUNO",
+      "edicao": "EDIÇÃO 01 · 2026"
+    }
+  ]
+}

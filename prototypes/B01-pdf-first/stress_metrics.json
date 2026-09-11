@@ -1,9 +1,14 @@
 {
   "pdf": {
     "path": "/home/ubuntu/mvp_pipeline/prototypes/B01-pdf-first/B01-workbook-visual-escrito.pdf",
-    "pages": 12,
+    "pages": 13,
     "width_pt": 595.276,
     "height_pt": 841.89
+  },
+  "cover": {
+    "present": true,
+    "pdf_page": 1,
+    "graphic_only": true
   },
   "source": {
     "path": "/home/ubuntu/mvp_pipeline/prototypes/B01-pdf-first/B01-workbook.typ",
@@ -388,6 +393,24 @@
   "pdf_pages": [
     {
       "page": 1,
+      "characters": 0,
+      "words": 0,
+      "text_spans": 0,
+      "min_font_pt": null,
+      "max_font_pt": null,
+      "text_bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text_area_ratio": 0,
+      "text_vertical_ratio": 0,
+      "drawing_count": 0,
+      "image_count": 1
+    },
+    {
+      "page": 2,
       "characters": 685,
       "words": 112,
       "text_spans": 30,
@@ -405,7 +428,7 @@
       "image_count": 1
     },
     {
-      "page": 2,
+      "page": 3,
       "characters": 463,
       "words": 93,
       "text_spans": 33,
@@ -423,7 +446,7 @@
       "image_count": 1
     },
     {
-      "page": 3,
+      "page": 4,
       "characters": 545,
       "words": 97,
       "text_spans": 55,
@@ -441,7 +464,7 @@
       "image_count": 1
     },
     {
-      "page": 4,
+      "page": 5,
       "characters": 455,
       "words": 92,
       "text_spans": 43,
@@ -459,7 +482,7 @@
       "image_count": 1
     },
     {
-      "page": 5,
+      "page": 6,
       "characters": 463,
       "words": 87,
       "text_spans": 39,
@@ -477,7 +500,7 @@
       "image_count": 1
     },
     {
-      "page": 6,
+      "page": 7,
       "characters": 508,
       "words": 102,
       "text_spans": 35,
@@ -495,7 +518,7 @@
       "image_count": 1
     },
     {
-      "page": 7,
+      "page": 8,
       "characters": 547,
       "words": 100,
       "text_spans": 36,
@@ -513,7 +536,7 @@
       "image_count": 1
     },
     {
-      "page": 8,
+      "page": 9,
       "characters": 434,
       "words": 66,
       "text_spans": 25,
@@ -531,7 +554,7 @@
       "image_count": 1
     },
     {
-      "page": 9,
+      "page": 10,
       "characters": 622,
       "words": 113,
       "text_spans": 31,
@@ -549,7 +572,7 @@
       "image_count": 1
     },
     {
-      "page": 10,
+      "page": 11,
       "characters": 454,
       "words": 76,
       "text_spans": 29,
@@ -567,7 +590,7 @@
       "image_count": 1
     },
     {
-      "page": 11,
+      "page": 12,
       "characters": 422,
       "words": 72,
       "text_spans": 19,
@@ -585,7 +608,7 @@
       "image_count": 1
     },
     {
-      "page": 12,
+      "page": 13,
       "characters": 469,
       "words": 86,
       "text_spans": 35,

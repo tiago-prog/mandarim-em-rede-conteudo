@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mandarim-em-rede/pdf-first-batch-v1",
+  "title": "Mandarim em Rede — Lote PDF-first v1",
+  "type": "object",
+  "required": ["schema_version", "produto", "template_registry", "output_label", "units"],
+  "properties": {
+    "schema_version": {"const": "pdf-first-batch-v1"},
+    "produto": {"type": "string", "minLength": 1},
+    "template_registry": {"type": "string", "minLength": 1},
+    "output_label": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+    "units": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "source", "template_profile", "material", "edicao"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Z][0-9]{2}$"},
+          "source": {"type": "string", "minLength": 1},
+          "template_profile": {"type": "string", "minLength": 1},
+          "material": {"type": "string", "minLength": 1},
+          "edicao": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

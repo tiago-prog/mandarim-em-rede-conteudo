@@ -165,3 +165,9 @@ As correções recomendadas foram aplicadas na fonte `B01-workbook.typ` e recomp
 | Campos curtos | Lacunas principais aumentadas de 5–6 mm para 7 mm |
 
 A inspeção final confirmou que a versão corrigida continua em 12 páginas, sem compressão prejudicial, sem overflow e sem perda da identidade visual. O workbook está agora **aprovado como base estrutural e pedagógica para um piloto de uso**. A replicação para os demais tópicos deve aguardar apenas o teste com um aluno real, não uma nova revisão estrutural do arquivo.
+
+## Atualização após a integração da capa
+
+A capa PDF-first foi integrada como primeira página física do workbook. O PDF canônico passou de 12 para **13 páginas**: uma capa editorial e doze páginas pedagógicas. A capa usa o mesmo sistema visual aprovado, recebe dados do JSON e não contém mais promessa de áudio.
+
+A análise de estresse das páginas pedagógicas continua válida. A métrica agora identifica a capa como página gráfica sem texto extraível e mantém a análise das doze páginas de trabalho separadamente.

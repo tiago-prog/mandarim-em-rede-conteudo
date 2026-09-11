@@ -52,7 +52,13 @@
 #let tcell(body, fill: none) = table.cell(fill: fill, inset: (x: 4pt, y: 3.5pt))[#body]
 #let small(body) = text(size: 8.5pt, fill: gray)[#body]
 
-// Página 1 — capa funcional.
+// Capa editorial do workbook.
+#page(
+  margin: 0pt,
+  background: image("assets/capa-workbook.png", width: 210mm, height: 297mm),
+)[]
+
+// Página 2 — situação e objetivo.
 #page[
   #align(center)[
     #label("COLEÇÃO 01 · PRIMEIRAS INTERAÇÕES", color: ochre)

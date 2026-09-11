@@ -77,3 +77,7 @@ O limite seguro observado é de uma microinstrução operacional por seção, co
 A página 2 continua funcional com descrições mais longas. O cartão da professora cresce verticalmente, mas não comprime a decisão nem os campos de escrita. Isso confirma que cartões de situação suportam uma descrição de até duas linhas e meia com segurança.
 
 Na página 11, a variante densa continua legível e os campos permanecem utilizáveis. Entretanto, o texto da situação e o texto da produção passam a dominar visualmente os cartões. O limite seguro para esse tipo de artefato é uma instrução de duas ou três linhas, seguida imediatamente pelos campos; explicações adicionais devem ir para uma página de apoio ou para o guia do facilitador.
+
+## Atualização após a capa
+
+A capa foi adicionada ao workbook e ao cenário denso. O PDF de estresse agora tem 13 páginas, sendo a primeira uma capa gráfica e as demais doze páginas pedagógicas. A capa não altera a densidade nem a distribuição das páginas de trabalho.

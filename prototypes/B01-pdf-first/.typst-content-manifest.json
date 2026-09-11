@@ -1,12 +1,12 @@
 {
   "task_kind": "existing-typst",
   "output": "pdf",
-  "signals": ["A4 portrait", "CJK typography", "visual language workbook", "12-page PDF-first prototype"],
-  "hard_constraints": ["No audio in the product", "hanzi, pinyin, writing, visual practice", "preserve existing Mandarim em Rede visual system"],
+  "signals": ["A4 portrait", "CJK typography", "visual language workbook", "13-page PDF-first workbook with editorial cover"],
+  "hard_constraints": ["No audio in the product", "hanzi, pinyin, writing, visual practice", "preserve existing Mandarim em Rede visual system", "cover is the first physical page"],
   "content_features": {
     "code_blocks": 0,
     "defined_terms": 0,
-    "portrait_images": 1,
+    "portrait_images": 2,
     "tables": 8,
     "cjk_text": true,
     "handwriting_fields": true

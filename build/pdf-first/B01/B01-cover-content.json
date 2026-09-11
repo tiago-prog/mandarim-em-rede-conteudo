@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "produto": "Mandarim em Rede",
+  "unidade": {
+    "codigo": "B01",
+    "titulo": "Cumprimentos em contexto",
+    "nivel": "iniciante",
+    "status": "revisao_linguistica",
+    "objetivo_comunicativo": "Escolher e produzir um cumprimento adequado para uma pessoa nova, uma pessoa a quem se deseja demonstrar respeito, um grupo ou uma chamada telefônica.",
+    "resultado_minimo": "Reconhecer quatro situações, escolher o cumprimento adequado e continuar a interação por 15–30 segundos sem consultar a tabela principal.",
+    "situacao_principal": "Encontrar pessoas diferentes em uma aula, uma apresentação e uma chamada telefônica.",
+    "estruturas": [
+      {
+        "funcao": "cumprimentar uma pessoa nova",
+        "mandarim": "你好。",
+        "pinyin": "Nǐ hǎo.",
+        "sentido_funcional": "Olá.",
+        "tipo": "fixo"
+      },
+      {
+        "funcao": "cumprimentar com respeito",
+        "mandarim": "您好。",
+        "pinyin": "Nín hǎo.",
+        "sentido_funcional": "Olá, com respeito.",
+        "tipo": "fixo"
+      },
+      {
+        "funcao": "cumprimentar um grupo",
+        "mandarim": "大家好。",
+        "pinyin": "Dàjiā hǎo.",
+        "sentido_funcional": "Olá a todos.",
+        "tipo": "fixo"
+      },
+      {
+        "funcao": "atender uma chamada",
+        "mandarim": "喂？",
+        "pinyin": "Wéi?",
+        "sentido_funcional": "Alô?",
+        "tipo": "fixo"
+      }
+    ],
+    "sequencia": [
+      "ouvir",
+      "identificar_contexto",
+      "tentar",
+      "consultar",
+      "reconstruir",
+      "recombinar",
+      "transferir",
+      "produzir_sem_olhar"
+    ],
+    "audios": [
+      {
+        "faixa": "A01",
+        "titulo": "Quatro microcenas",
+        "objetivo": "exposição inicial e identificação de contexto"
+      },
+      {
+        "faixa": "A02",
+        "titulo": "Pessoa nova e respeito",
+        "objetivo": "contraste entre 你好 e 您好"
+      },
+      {
+        "faixa": "B01",
+        "titulo": "Escolha e responda",
+        "objetivo": "tentativa com pausas"
+      },
+      {
+        "faixa": "C01",
+        "titulo": "Reconstrução guiada",
+        "objetivo": "repetição de contexto, forma e segunda ação"
+      },
+      {
+        "faixa": "D01",
+        "titulo": "Recombinação",
+        "objetivo": "troca de pessoa, grupo e canal"
+      },
+      {
+        "faixa": "D02",
+        "titulo": "Recombinação com pausa",
+        "objetivo": "produção com menos apoio"
+      },
+      {
+        "faixa": "E01",
+        "titulo": "Transferência",
+        "objetivo": "produção em três situações novas"
+      },
+      {
+        "faixa": "F01",
+        "titulo": "Revisão espaçada",
+        "objetivo": "recuperação das quatro formas"
+      }
+    ],
+    "pacotes": {
+      "essencial": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "V1"
+      ],
+      "extensoes": {
+        "pronuncia": true,
+        "escrita": true,
+        "caracteres": false,
+        "contraste": true,
+        "vocabulario": true,
+        "quiz": false,
+        "anotacoes": false,
+        "consolidacao": false
+      }
+    },
+    "proxima_unidade_sugerida": "Perguntar, responder e devolver usando 吗 e 呢",
+    "material": "WORKBOOK DO ALUNO",
+    "edicao": "EDIÇÃO 01 · 2026",
+    "numero": "01"
+  }
+}
